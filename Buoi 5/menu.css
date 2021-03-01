@@ -121,23 +121,3 @@
 .menulist li:hover .submenu {
     display: block;
 }
-
-.top {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 20px;
-    bottom: 100px;
-    font-size: 40px;
-    background-color: #0084FF;
-    color: white;
-    border-radius: 50%;
-    scroll-behavior: smooth;
-}
-
-.ncl {
-    text-decoration: none;
-}
