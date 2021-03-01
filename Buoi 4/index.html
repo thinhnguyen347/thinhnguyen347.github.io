@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        .color-icon {
+            color: red;
+            font-size: 24px;
+        }
+        
+        .font {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .size {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
+        
+        .green {
+            background-color: green;
+        }
+        
+        .general {
+            float: left
+        }
+        
+        #flex {
+            clear: both;
+            padding-top: 20px;
+        }
+        
+        .parent {
+            /*background-color: blueviolet;*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <!---font icon-->
+    <h2>Font icon</h2>
+    <p>Đây là biểu tượng icon <i class="fas fa-heart color-ico"></i></p>
+
+    <!---
+1: Truy cap vao cdn.js tim link theo thu vien css mong muon
+2: nhung link css vua lay vao html
+3: truy cap vao trang cua thu vien
+4 Chon icon
+Ban chat cua font-icon la text
+--->
+    <!---font family-->
+    <h2>Font family</h2>
+    <p class="font">Bầu trời trong xanh thăm thẳm không một gợn mây
+    </p>
+    <!---Float-->
+
+    <div Class="size red general ">div1</div>
+    <div Class="size green general ">div2</div>
+    <div Class="size blue general">div3</div>
+
+    <!---Flex-->
+    <h2 id="flex">Flex</h2>
+    <div Class="size red ">Muc 1</div>
+    <div Class="size green ">Muc 2</div>
+    <div Class="size blue ">Muc 3</div>
+
+</body>
+
+</html>

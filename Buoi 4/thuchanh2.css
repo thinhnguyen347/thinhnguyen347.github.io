@@ -1,0 +1,195 @@
+                                                    .container1 {
+                                                        background-color: #CB6161;
+                                                        width: 100%;
+                                                        height: 100px;
+                                                    }
+                                                    
+                                                    #body {
+                                                        margin: 60px 100px;
+                                                    }
+                                                    
+                                                    .border {
+                                                        border: 2px solid #AAAAAA;
+                                                    }
+                                                    
+                                                    #heading {
+                                                        text-align: center;
+                                                        font-style: italic;
+                                                        font-size: 25px;
+                                                    }
+                                                    
+                                                    .container2 {
+                                                        width: 100%;
+                                                        height: 150px;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                    }
+                                                    
+                                                    .box1c2 {
+                                                        width: 50%;
+                                                        background-color: #D8D8D8;
+                                                    }
+                                                    
+                                                    .box2c2 {
+                                                        width: 20px;
+                                                        background-color: white;
+                                                    }
+                                                    
+                                                    .container3 {
+                                                        width: 100%;
+                                                        height: 300px;
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    .box1c3 {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        background-color: #D8D8D8;
+                                                    }
+                                                    
+                                                    .box2c3 {
+                                                        height: 20px;
+                                                        width: 100%;
+                                                        background-color: white;
+                                                    }
+                                                    
+                                                    .flex1 {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                    }
+                                                    
+                                                    .container4 {
+                                                        background-color: #D8D8D8;
+                                                        width: 50%;
+                                                        height: 70px;
+                                                    }
+                                                    
+                                                    .flex4 {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                    }
+                                                    
+                                                    .container41 {
+                                                        background-color: none;
+                                                        width: 25%;
+                                                        height: 70px;
+                                                    }
+                                                    
+                                                    .box51 {
+                                                        width: 50%;
+                                                        background-color: #D8D8D8;
+                                                    }
+                                                    
+                                                    .box52 {
+                                                        width: 30%;
+                                                        background-color: #D8D8D8;
+                                                    }
+                                                    
+                                                    .box53 {
+                                                        width: 20%;
+                                                        background-color: #D8D8D8;
+                                                    }
+                                                    /*hinh cuoi*/
+                                                    
+                                                    .container7 {
+                                                        width: 100%;
+                                                        height: 200px;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                    }
+                                                    
+                                                    .item {
+                                                        width: 16.66%;
+                                                        height: 100%;
+                                                    }
+                                                    
+                                                    .container72 {
+                                                        width: 100%;
+                                                        height: 200px;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: space-around;
+                                                    }
+                                                    
+                                                    .cl1 {
+                                                        background-color: #CA8685;
+                                                    }
+                                                    
+                                                    .cl2 {
+                                                        background-color: #C24BCB;
+                                                    }
+                                                    
+                                                    .cl3 {
+                                                        background-color: #B31D1E;
+                                                    }
+                                                    
+                                                    .cl4 {
+                                                        background-color: #B17F80;
+                                                    }
+                                                    
+                                                    .cl5 {
+                                                        background-color: #54988B;
+                                                    }
+                                                    
+                                                    .cl6 {
+                                                        background-color: #455289;
+                                                    }
+                                                    
+                                                    .cl7 {
+                                                        background-color: #8A7272;
+                                                    }
+                                                    
+                                                    .cl8 {
+                                                        background-color: #DD5F60;
+                                                    }
+                                                    
+                                                    .cl9 {
+                                                        background-color: #86B169;
+                                                    }
+                                                    /*hinh con lai*/
+                                                    
+                                                    .block6 {
+                                                        height: 1200px;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: space-between;
+                                                    }
+                                                    
+                                                    .nhom1 {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                    }
+                                                    
+                                                    .hoptrong {
+                                                        background-color: white;
+                                                        height: 15px;
+                                                    }
+                                                    
+                                                    .hop1 {
+                                                        background-color: #D8D8D8;
+                                                        height: 30%;
+                                                    }
+                                                    
+                                                    .nhom2 {
+                                                        width: 100%;
+                                                    }
+                                                    
+                                                    .hop21 {
+                                                        background-color: #D8D8D8;
+                                                        height: 35%;
+                                                    }
+                                                    
+                                                    .hop22 {
+                                                        background-color: #D8D8D8;
+                                                        height: 50%;
+                                                    }
+                                                    
+                                                    .nhom3 {
+                                                        width: 100%;
+                                                    }
+                                                    
+                                                    .hop3 {
+                                                        background-color: #D8D8D8;
+                                                        height: 15%;
+                                                    }

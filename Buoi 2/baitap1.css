@@ -1,0 +1,23 @@
+                        #capital {
+                            text-transform: uppercase;
+                            font-style: bold;
+                        }
+                        
+                        #italic {
+                            font-style: italic;
+                        }
+                        
+                        .center {
+                            text-align: center;
+                        }
+                        
+                        .right {
+                            margin-left: 400px;
+                            font-style: italic;
+                        }
+                        
+                        #align {
+                            margin-left: 400px;
+                            margin-right: 400px;
+                            text-align: justify;
+                        }
