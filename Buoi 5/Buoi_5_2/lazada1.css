@@ -1,0 +1,419 @@
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    font-size: 13px;
+                                }
+                                
+                                .body2 {
+                                    height: 550px;
+                                    background-color: #0342FE;
+                                }
+                                
+                                .content {
+                                    margin: auto 120px auto 120px;
+                                    height: 400px;
+                                    display: grid;
+                                    grid-template-columns: 210px 1fr;
+                                }
+                                
+                                .block1 {
+                                    background-color: white;
+                                    height: 100%;
+                                    border: 1px solid #F2F2F2;
+                                }
+                                
+                                .block2 {
+                                    height: 100%;
+                                    background-image: url(https://icms-image.slatic.net/images/ims-web/cc057999-861a-4534-9175-cd149503be36.jpg);
+                                    background-size: cover;
+                                }
+                                
+                                .icon {
+                                    float: right;
+                                    font-size: 20px;
+                                    padding-top: 7px;
+                                    padding-right: 5px;
+                                    color: #fff;
+                                }
+                                
+                                .icon2 {
+                                    float: right;
+                                    font-size: 20px;
+                                    padding-top: 7px;
+                                    padding-right: 5px;
+                                    color: #fff;
+                                }
+                                
+                                .main li>a:hover {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                
+                                .main li:hover .icon {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                /*menu1*/
+                                
+                                .submenu1 li>a:hover {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                
+                                .submenu1 li:hover .icon2 {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                
+                                a {
+                                    color: #504f4f;
+                                    text-decoration: none;
+                                    display: block;
+                                }
+                                
+                                .main {
+                                    list-style-type: none;
+                                    line-height: 35px;
+                                    position: relative;
+                                    padding-left: 8px;
+                                    height: 100%;
+                                }
+                                
+                                .main li {
+                                    list-style-type: none;
+                                }
+                                
+                                .submenu1 li {
+                                    list-style-type: none;
+                                }
+                                
+                                li:hover {
+                                    display: block;
+                                    background-color: #ECEFF1;
+                                    padding-left: -15px;
+                                    padding-right: -15px;
+                                }
+                                
+                                .main li:hover .submenu1 {
+                                    display: block;
+                                    margin-top: -35.5px;
+                                    margin-bottom: 0px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu1 {
+                                    display: none;
+                                    position: absolute;
+                                    background-color: white;
+                                    height: 100%;
+                                    width: 200px;
+                                    margin-left: 200px;
+                                    margin-bottom: 0%;
+                                    padding: 0px 0 0 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu1 li:hover .submenu51 {
+                                    display: block;
+                                    margin-top: -104px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu1 li:hover .submenu52 {
+                                    display: block;
+                                    margin-top: -138.5px;
+                                    height: 100%;
+                                }
+                                /*menu3*/
+                                
+                                .main li:hover .submenu3 {
+                                    display: block;
+                                    margin-top: -104px;
+                                    margin-bottom: 0px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu3 li:hover .submenu51 {
+                                    display: block;
+                                    margin-top: -36px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu3 li:hover .submenu52 {
+                                    display: block;
+                                    margin-top: -70px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu3 li:hover .icon2 {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                
+                                .submenu3 li:hover .submenu53 {
+                                    display: block;
+                                    margin-top: -104.5px;
+                                    height: 100%;
+                                }
+                                /*menu5*/
+                                
+                                .main li:hover .submenu5 {
+                                    display: block;
+                                    margin-top: -173px;
+                                    margin-bottom: 0px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu5 {
+                                    background-color: white;
+                                    width: 200px;
+                                    height: 100%;
+                                    margin-left: 200px;
+                                    display: none;
+                                    position: absolute;
+                                    padding: 0px 0px 0px 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu5 li:hover .submenu51 {
+                                    display: block;
+                                    margin-top: -35.5px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu51 {
+                                    background-color: white;
+                                    width: 200px;
+                                    height: 100%;
+                                    margin-left: 200px;
+                                    display: none;
+                                    position: absolute;
+                                    padding: 0px 0px 0px 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu52 {
+                                    background-color: white;
+                                    width: 200px;
+                                    height: 100%;
+                                    margin-left: 200px;
+                                    display: none;
+                                    position: absolute;
+                                    padding: 0px 0px 0px 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu5 li:hover .submenu52 {
+                                    display: block;
+                                    margin-top: -69.5px;
+                                    height: 100%;
+                                }
+                                
+                                .Submenu51 {
+                                    display: none
+                                }
+                                
+                                .Submenu52 {
+                                    display: none
+                                }
+                                
+                                .Submenu53 {
+                                    display: none
+                                }
+                                
+                                .Submenu54 {
+                                    display: none
+                                }
+                                
+                                .submenu5 li:hover .icon2 {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                
+                                .submenu53 {
+                                    background-color: white;
+                                    width: 200px;
+                                    height: 100%;
+                                    margin-left: 200px;
+                                    display: none;
+                                    position: absolute;
+                                    padding: 0px 0px 0px 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu5 li:hover .submenu53 {
+                                    display: block;
+                                    margin-top: -104px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu54 {
+                                    background-color: white;
+                                    width: 200px;
+                                    height: 100%;
+                                    margin-left: 200px;
+                                    display: none;
+                                    position: absolute;
+                                    padding: 0px 0px 0px 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu5 li:hover .submenu54 {
+                                    display: block;
+                                    margin-top: -138.5px;
+                                    height: 100%;
+                                }
+                                /*menu7*/
+                                
+                                .main li:hover .submenu7 {
+                                    display: block;
+                                    margin-top: -242px;
+                                    margin-bottom: 0px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu7 {
+                                    background-color: white;
+                                    width: 200px;
+                                    height: 100%;
+                                    margin-left: 200px;
+                                    display: none;
+                                    position: absolute;
+                                    padding: 0px 0px 0px 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu7 li:hover .icon2 {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                
+                                .submenu7 li:hover .submenu51 {
+                                    display: block;
+                                    margin-top: -35.5px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu7 li:hover .submenu52 {
+                                    display: block;
+                                    margin-top: -69.5px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu7 li:hover .submenu53 {
+                                    display: block;
+                                    margin-top: -104px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu7 li:hover .submenu54 {
+                                    display: block;
+                                    margin-top: -138.5px;
+                                    height: 100%;
+                                }
+                                /*menu9*/
+                                
+                                .main li:hover .submenu9 {
+                                    display: block;
+                                    margin-top: -310.5px;
+                                    margin-bottom: 0px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu9 {
+                                    background-color: white;
+                                    width: 200px;
+                                    height: 100%;
+                                    margin-left: 200px;
+                                    display: none;
+                                    position: absolute;
+                                    padding: 0px 0px 0px 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu9 li:hover .icon2 {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                
+                                .submenu9 li:hover .submenu51 {
+                                    display: block;
+                                    margin-top: -35.5px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu9 li:hover .submenu52 {
+                                    display: block;
+                                    margin-top: -69.5px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu9 li:hover .submenu53 {
+                                    display: block;
+                                    margin-top: -104px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu9 li:hover .submenu54 {
+                                    display: block;
+                                    margin-top: -138.5px;
+                                    height: 100%;
+                                }
+                                /*--------menu11-------*/
+                                
+                                .main li:hover .submenu11 {
+                                    display: block;
+                                    margin-top: -482.5px;
+                                    margin-bottom: 0px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu11 {
+                                    background-color: white;
+                                    width: 200px;
+                                    height: 100%;
+                                    margin-left: 200px;
+                                    display: none;
+                                    position: absolute;
+                                    padding: 0px 0px 0px 6px;
+                                    border: 1px solid #F2F2F2;
+                                    line-height: 35px;
+                                }
+                                
+                                .submenu11 li:hover .icon2 {
+                                    display: block;
+                                    color: #F36D00;
+                                }
+                                
+                                .submenu11 li:hover .submenu51 {
+                                    display: block;
+                                    margin-top: -35.5px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu11 li:hover .submenu52 {
+                                    display: block;
+                                    margin-top: -69.5px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu11 li:hover .submenu53 {
+                                    display: block;
+                                    margin-top: -104px;
+                                    height: 100%;
+                                }
+                                
+                                .submenu11 li:hover .submenu54 {
+                                    display: block;
+                                    margin-top: -138.5px;
+                                    height: 100%;
+                                }
