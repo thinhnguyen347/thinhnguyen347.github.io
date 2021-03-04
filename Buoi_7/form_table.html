@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Table</title>
+</head>
+
+<body>
+    <!-- Form -->
+    <Form action="#" method="POST">
+        <!-- ma hoa thong tin ca nhan qua the method-->
+        <label for="username">Họ và tên:</label>
+        <!-- click vào họ va ten để hiện con trỏ trong ô nhập -->
+        <Input id="username" type="text" name="username" placeholder="text here" required/><br><br>
+        <!-- required thể hiện trường bắt buộc -->
+        <label for="password">Mật khẩu:</label>
+        <Input id="password" type="password" name="password"><br>
+        <Br></Br>
+        <label for="">Giới tính:</label>
+        <Input id="Male" type="radio" name="gender" value="male"><label for=" Male">Nam</label>
+        <Input id="Female" type="radio" name="gender" value="female"><label for="Female">Nữ</label>
+        <Input id="Other" type="radio" name="gender" value="other"><label for="Other">Khác</label>
+        <!-- name dùng để chỉ 3 dòng cùng loại và chỉ chọn 1 trong n -->
+        <Br></Br>
+        <label for=" ">Sở thích</label>
+        <Input id="reading" type="checkbox" name="hobby" value="reading"><label for="reading">Đọc sách</label>
+        <Input id="music" type="checkbox" name="hobby" value="music"><label for="music">Nghe nhạc</label>
+        <Input id="swimming" type="checkbox" name="hobby" value="swimming"><label for="swimming">Bơi</label>
+        <br><br>
+        <!-- dropdown list -->
+        <label for="">Thành Phố</label>
+        <select name="country " id="country ">
+            <option value="ha-noi ">Hà Nội</option>
+            <option value="da-nang ">Đà Nẵng</option>
+            <option value="ho-chi-minh ">TP. Hồ Chí Minh</option>
+        </select><br><br>
+        <!-- thẻ button -->
+        <Button type="submit ">Submit</Button>
+        <Button type="reset ">Reset</Button>
+    </Form>
+</body>
+
+</html>

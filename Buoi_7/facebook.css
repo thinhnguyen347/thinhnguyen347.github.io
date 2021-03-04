@@ -1,0 +1,63 @@
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .body {
+                margin: 150px 560px;
+            }
+            
+            .login-box {
+                height: 400px;
+                width: 500x;
+                border-radius: 20px;
+                box-shadow: 2px 5px 30px 5px #888888;
+                padding: 20px;
+            }
+            
+            input {
+                width: 364px;
+                height: 64px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                padding-left: 10px;
+                border-radius: 10px;
+                border: 1px solid lightgrey;
+            }
+            
+            .login-button {
+                background-color: #166FE5;
+                width: 364px;
+                height: 64px;
+                line-height: 64px;
+                border-radius: 10px;
+                border: 2px solid lightgrey;
+                text-align: center;
+                color: white;
+                font-size: 24px;
+            }
+            
+            .forgotpw {
+                text-align: center;
+                color: #189EF6;
+                font-size: 13px;
+            }
+            
+            .new-acc {
+                background-color: #36A420;
+                width: 200px;
+                height: 60px;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 60px;
+                margin-left: 82px;
+                margin-right: 82px;
+                color: white;
+                font-size: 20px;
+            }
+            
+            input:focus {
+                outline: none;
+                border: 1px solid #1877f2;
+            }
