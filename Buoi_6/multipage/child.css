@@ -1,0 +1,53 @@
+                        @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+                        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+                        * {
+                            margin: 0;
+                            Box-sizing: border-box;
+                        }
+                        
+                        .logo {
+                            width: 250px;
+                            height: auto;
+                            margin-left: 250px;
+                        }
+                        
+                        P {
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            text-align: justify;
+                        }
+                        
+                        h1 {
+                            font-family: 'Sriracha', cursive;
+                            text-align: center;
+                        }
+                        
+                        h2 {
+                            font-family: 'Sriracha', cursive;
+                            text-align: left;
+                        }
+                        
+                        .item1 img {
+                            width: 260px;
+                            padding: 15px;
+                            border: 2px solid rgba(167, 166, 166, 0.555);
+                        }
+                        
+                        .container {
+                            display: flex;
+                            flex-direction: row;
+                            Margin: 50px 300px;
+                            justify-content: space-between;
+                        }
+                        
+                        .Item1 {
+                            overflow: hidden;
+                            width: 250px;
+                        }
+                        
+                        .item2 {
+                            padding-left: 15px;
+                        }
+                        
+                        .item3 {
+                            padding-right: 15px;
+                        }
