@@ -236,6 +236,7 @@
     .uppercase2 {
         text-transform: uppercase;
         color: #FFF600;
+        text-align: center;
     }
     
     .content3 {
