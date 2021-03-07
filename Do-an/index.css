@@ -1,0 +1,426 @@
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    #top {
+        position: relative;
+    }
+    
+    .top-line {
+        height: 130px;
+        width: 100%;
+        background: rgb(10, 8, 50);
+        background: linear-gradient(90deg, rgba(10, 8, 50, 1) 0%, rgba(150, 7, 29, 1) 49%, rgba(10, 8, 50, 1) 100%);
+        overflow: hidden;
+        padding: 10px 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .slogan {
+        width: 100%;
+        text-align: right;
+    }
+    
+    .effect {
+        padding-bottom: 50px;
+        padding-top: 40px
+    }
+    
+    .effect::after {
+        content: "";
+        color: white;
+        width: fit-content;
+        Margin: 0 auto;
+        animation: flip 5s 1s infinite;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    @keyframes flip {
+        0% {
+            content: "Giá cả cạnh tranh!";
+        }
+        33% {
+            content: "Dịch vụ chất lượng!";
+        }
+        66% {
+            content: "Vị trí thuận tiện tại trung tâm thành phố!";
+        }
+        100% {
+            content: "Cạnh phố đi bộ và chợ đêm cuối tuần!";
+        }
+    }
+    
+    .logo {
+        height: 130px;
+    }
+    
+    .logo img {
+        height: 100px;
+        margin: auto 0;
+    }
+    
+    .banner1 {
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+    
+    .background {
+        background-image: url();
+    }
+    
+    .menu {
+        height: 50px;
+        width: 100%;
+        background-color: #C00A27;
+    }
+    
+    ul>li {
+        list-style: none;
+    }
+    
+    a.efx {
+        text-decoration: none;
+        color: white;
+        font-family: 'Kanit', sans-serif;
+        font-size: 20px;
+        Text-transform: uppercase;
+        font-weight: 600px;
+    }
+    
+    h2 {
+        font-family: 'Kanit', sans-serif;
+        font-size: 20px;
+        Text-transform: uppercase;
+        font-weight: 600px;
+        text-align: center;
+        padding-top: 15px;
+        color: rgb(46, 46, 46);
+    }
+    
+    .menu li {
+        display: inline-block;
+        padding: 10px 10px;
+        margin-left: 110px;
+    }
+    
+    li:hover .efx {
+        color: #FFF600;
+    }
+    
+    #rate,
+    #combo,
+    #review,
+    #top {
+        padding: 10px auto;
+        height: 60px;
+        width: 100%;
+        background-color: #F6F6F6;
+    }
+    
+    .content {
+        height: 500px;
+        padding-top: 50px;
+        width: 100%;
+        Display: flex;
+        justify-content: space-around;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top;
+        background-image: url('4853433.jpg');
+    }
+    
+    .item {
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+        border: 1px solid rgb(161, 161, 161);
+        box-shadow: 2px 2px 3px rgb(196, 195, 195);
+    }
+    
+    .subitem1 {
+        height: 300px;
+        width: 300px;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .subitem1 img {
+        height: 300px;
+        width: auto;
+    }
+    
+    .subitem2 {
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 20px;
+    }
+    
+    .uppercase {
+        text-transform: uppercase;
+        color: #C00A27;
+    }
+    
+    .footer-content {
+        height: 200px;
+        Display: flex;
+        justify-content: space-between;
+        background: rgb(10, 8, 50);
+        background: linear-gradient(90deg, rgba(10, 8, 50, 1) 0%, rgba(150, 7, 29, 1) 49%, rgba(10, 8, 50, 1) 100%);
+        padding: 50px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        color: ivory;
+    }
+    
+    .item1>ul>li a {
+        color: white;
+        text-decoration: None;
+    }
+    
+    .content2 {
+        height: 500px;
+        padding-top: 60px;
+        width: 100%;
+        Display: flex;
+        justify-content: space-around;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        background-image: url('concrete.jpg');
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .item2 {
+        height: 400px;
+        width: 400px;
+        border-radius: 10px;
+    }
+    
+    .subitem21 {
+        height: 300px;
+        width: 400px;
+        border-radius: 10px;
+        border: 1px solid rgb(32, 32, 32);
+        overflow: hidden;
+    }
+    
+    .subitem21 img {
+        height: 100%;
+        width: auto;
+        border-radius: 10px;
+    }
+    
+    .subitem22 {
+        font-family: 'Kanit', sans-serif;
+        font-size: 20px;
+    }
+    
+    .combo-price {
+        color: white;
+        text-align: center;
+    }
+    
+    .uppercase2 {
+        text-transform: uppercase;
+        color: #FFF600;
+    }
+    
+    .content3 {
+        height: 400px;
+        padding-top: 50px;
+        width: 100%;
+        Display: flex;
+        justify-content: space-around;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top;
+        background-image: url('4853433.jpg');
+    }
+    
+    .item3 {
+        width: 500px;
+        height: 200px;
+        display: flex;
+        padding: 15px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    .rev {
+        font-size: 20px;
+    }
+    
+    .item3 img {
+        height: 100px;
+        border-radius: 50%;
+        padding-right: 10px;
+    }
+    
+    #contact {
+        height: 600px;
+        padding-top: 50px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        background-image: url('contactus.jpg');
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .item4 {
+        height: 500px;
+        width: 500px;
+        font-family: 'Kanit', sans-serif;
+        color: white;
+        padding-top: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .item4 p {
+        color: white;
+        font-family: 'Kanit', sans-serif;
+        font-size: 25px;
+        Text-transform: uppercase;
+        font-weight: 600px;
+        text-align: center;
+    }
+    
+    .box {
+        height: 500px;
+        width: 350px;
+        background: rgba(0, 0, 0, 0.342);
+        padding: 10px;
+        border-radius: 10px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .box p {
+        color: white;
+        font-family: 'Kanit', sans-serif;
+        font-size: 20px;
+        Text-transform: uppercase;
+        font-weight: 600px;
+    }
+    
+    .fillbox {
+        width: 300px;
+        height: 50px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        border: 1px solid lightgrey;
+        background-color: rgba(0, 0, 0, 0.342);
+        color: white;
+        font-family: 'Kanit', sans-serif;
+        font-size: 15px;
+    }
+    
+    .fillbox2 {
+        width: 300px;
+        height: 100px;
+        padding-bottom: 15px;
+        padding-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        border: 1px solid lightgrey;
+        background-color: rgba(0, 0, 0, 0.342);
+        color: white;
+        font-family: 'Kanit', sans-serif;
+        font-size: 15px;
+    }
+    
+    input.btn-grad {
+        width: 100px;
+        height: 40px;
+        margin: 0px 110px;
+    }
+    
+    .btn-grad {
+        background-image: linear-gradient(to right, #355970 0%, #4e4376 51%, #4d762b 100%)
+    }
+    
+    .btn-grad {
+        margin: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 6px #eee;
+        border-radius: 10px;
+        display: block;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .btn-grad:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    input:focus {
+        outline: none;
+        border: 1px solid #f28c18;
+    }
+    
+    .go-to-top {
+        bottom: 50px;
+        right: 50px;
+        position: fixed;
+        text-align: center;
+    }
+    
+    .go-to-top a {
+        font-size: 50px;
+        color: #f28c18
+    }
+    
+    .go-to-top p {
+        font-size: 15px;
+        color: #f28c18;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+    }
+    
+    .info {
+        height: 60px;
+        justify-content: space-between;
+        padding: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        color: ivory;
+        background-color: #C00A27;
+        margin-top: 3px;
+    }
+    
+    .info a {
+        text-decoration: None;
+        color: white;
+    }
+    
+    .info a:hover {
+        color: #FFF600;
+    }

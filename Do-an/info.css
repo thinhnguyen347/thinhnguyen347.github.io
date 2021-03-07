@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script&display=swap');
+Body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
+
+.content {
+    background-image: url("inf.jpg");
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: Cover;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.content img {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.container {
+    line-height: 40px;
+}

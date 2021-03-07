@@ -94,6 +94,7 @@
                                                                                                                                                     color: white;
                                                                                                                                                     width: fit-content;
                                                                                                                                                     Margin: 0 auto;
+                                                                                                                                                    transform: translateY(-50px);
                                                                                                                                                     animation: flip 5s 0.5s infinite;
                                                                                                                                                 }
                                                                                                                                                 
