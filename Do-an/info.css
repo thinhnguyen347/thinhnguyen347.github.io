@@ -13,9 +13,7 @@ Body {
     background-repeat: no-repeat;
     background-size: Cover;
     display: flex;
-    padding-top: 100px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding: 80px 250px;
 }
 
 .content img {
