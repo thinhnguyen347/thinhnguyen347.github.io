@@ -56,6 +56,8 @@
                                                                                                                                                     color: red;
                                                                                                                                                     margin: 0 auto;
                                                                                                                                                     text-align: center;
+                                                                                                                                                    padding-top: 100px;
+                                                                                                                                                    padding-bottom: 100px;
                                                                                                                                                 }
                                                                                                                                                 
                                                                                                                                                 @keyframes beat {
