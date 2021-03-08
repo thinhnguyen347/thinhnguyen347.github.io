@@ -37,7 +37,7 @@
         color: white;
         width: fit-content;
         Margin: 0 auto;
-        animation: flip 5s 1s infinite;
+        animation: flip 5s 7s infinite;
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
         font-size: 20px;
@@ -47,14 +47,17 @@
         0% {
             content: "Giá cả cạnh tranh!";
         }
-        33% {
+        25% {
             content: "Dịch vụ chất lượng!";
         }
-        66% {
+        50% {
             content: "Vị trí thuận tiện tại trung tâm thành phố!";
         }
-        100% {
+        75% {
             content: "Cạnh phố đi bộ và chợ đêm cuối tuần!";
+        }
+        100% {
+            content: "Giá cả cạnh tranh!";
         }
     }
     
@@ -103,7 +106,7 @@
         Text-transform: uppercase;
         font-weight: 600px;
         text-align: center;
-        padding-top: 15px;
+        padding-top: 50px;
         color: rgb(46, 46, 46);
     }
     
@@ -121,10 +124,11 @@
     #combo,
     #review,
     #top {
-        padding: 10px auto;
-        height: 60px;
+        padding: 0 auto;
+        height: 100px;
         width: 100%;
         background-color: #F6F6F6;
+        display: block
     }
     
     .content {
@@ -144,8 +148,8 @@
         height: 400px;
         width: 300px;
         border-radius: 10px;
-        border: 1px solid rgb(161, 161, 161);
-        box-shadow: 2px 2px 3px rgb(196, 195, 195);
+        border: 0.5px solid rgb(161, 161, 161);
+        box-shadow: 0.5px 3px 3px rgb(196, 195, 195);
     }
     
     .subitem1 {
@@ -154,17 +158,20 @@
         overflow: hidden;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        padding: 0px;
     }
     
     .subitem1 img {
         height: 300px;
         width: auto;
+        padding: 0px;
     }
     
     .subitem2 {
         text-align: center;
         font-family: 'Kanit', sans-serif;
         font-size: 20px;
+        padding: 15px;
     }
     
     .uppercase {
@@ -264,6 +271,7 @@
     
     .rev {
         font-size: 20px;
+        text-align: left;
     }
     
     .item3 img {
@@ -328,6 +336,7 @@
         height: 50px;
         padding-bottom: 20px;
         padding-top: 20px;
+        padding-left: 15px;
         margin-left: 15px;
         margin-right: 15px;
         border-radius: 10px;
@@ -341,8 +350,9 @@
     .fillbox2 {
         width: 300px;
         height: 100px;
-        padding-bottom: 15px;
+        padding-bottom: 90px;
         padding-top: 20px;
+        padding-left: 15px;
         margin-left: 15px;
         margin-right: 15px;
         border-radius: 10px;
@@ -370,7 +380,6 @@
         transition: 0.5s;
         background-size: 200% auto;
         color: white;
-        box-shadow: 0 0 6px #eee;
         border-radius: 10px;
         display: block;
         font-family: 'Kanit', sans-serif;
@@ -384,26 +393,19 @@
     
     input:focus {
         outline: none;
-        border: 1px solid #f28c18;
+        border: 1px solid #fcfaf9;
     }
     
     .go-to-top {
-        bottom: 50px;
-        right: 50px;
+        bottom: 20px;
+        right: 20px;
         position: fixed;
         text-align: center;
     }
     
     .go-to-top a {
         font-size: 50px;
-        color: #f28c18
-    }
-    
-    .go-to-top p {
-        font-size: 15px;
-        color: #f28c18;
-        font-family: 'Kanit', sans-serif;
-        text-align: center;
+        color: #C00A27;
     }
     
     .info {
@@ -413,7 +415,7 @@
         font-family: 'Oswald', sans-serif;
         font-size: 15px;
         color: ivory;
-        background-color: #C00A27;
+        background-color: #1F082F;
         margin-top: 3px;
     }
     
