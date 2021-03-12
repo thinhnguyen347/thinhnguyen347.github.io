@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap Javascript</title>
+</head>
+
+<body>
+
+    <script>
+        //Bài tập 1: CHuyển đổi nhiệt độ
+        //Từ độ C sang độ F
+        let a = "Nhiệt độ tính theo độ F là " + Cel_To_Fa(20);
+
+        function Cel_To_Fa(x) {
+            return Math.round(x * 1.8) + 32
+        }
+        //Từ độ F sang độ C
+        let b = "Nhiệt độ tính theo độ C là " + Fa_to_Cel(250);
+
+        function Fa_to_Cel(y) {
+            return Math.round((y - 32) / 1.8);
+        }
+        // Bài tập 2: Chuyển đổi tiền tệ
+        //USD sang VND
+        function USD_VND(f) {
+            return f * 22965
+        }
+        let usdvn = "Số tiền USD chuyển sang VND là " + USD_VND(10);
+        //EURO sang VND
+        function EUR_VND(f) {
+            return f * 26925
+        }
+        let eurvn = "Số tiền EURO chuyển sang VND là " + EUR_VND(10);
+        // Bài tập 3: Tính thế kỷ
+        function century(h) {
+            return Math.ceil(h / 100)
+        }
+        let cen = "Năm 1901 thuộc thế kỷ " + century(1901);
+    </script>
+</body>
+
+</html>
