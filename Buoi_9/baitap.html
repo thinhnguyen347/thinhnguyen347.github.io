@@ -24,6 +24,17 @@
         function Fa_to_Cel(y) {
             return Math.round((y - 32) / 1.8);
         }
+
+        //Chua bai:
+        function doiDoC(f) {
+            let c = (f - 32) / 1.8;
+            return c
+        }
+
+        function doiDof(c) {
+            let f = (c * 1.8) + 32
+            return f
+        }
         // Bài tập 2: Chuyển đổi tiền tệ
         //USD sang VND
         function USD_VND(f) {
@@ -35,11 +46,19 @@
             return f * 26925
         }
         let eurvn = "Số tiền 10 EURO chuyển sang VND là " + EUR_VND(10);
+
         // Bài tập 3: Tính thế kỷ
         function century(h) {
             return Math.ceil(h / 100)
         }
         let cen = "Năm 1901 thuộc thế kỷ " + century(1901);
+
+        //Chua bai:
+        function century(h) {
+            let cen = Math.ceil(h / 100);
+            return cen;
+        }
+        console.log(century(2025))
     </script>
 </body>
 
