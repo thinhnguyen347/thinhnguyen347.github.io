@@ -25,17 +25,27 @@ function MinMax(arr) {
 
 //3. Tìm số lớn thứ 2 trong mảng số nguyên
 
-function SecondMax(x) {
-    for (let i in x) {
-        if (x[i] < x[i + 1]) {
-            return x[i+1]
+function SecondMax(array) {
+    for (let i=0; i<array.length; i++) {
+        if (array[i] < array[i + 1]) {
+            i--
         }
+        return array;
     }
-    console.log(`Số lớn thứ 2 trong dãy là ${x[2]}`)
+    console.log(`Số lớn thứ 2 trong dãy là ${array[2]}`)
 }
 
 //4. Trả về Vị trí đầu tiên của số lẻ, vị trí cuối cùng của số chẵn trong mảng bất kì.
 
 //5. In một chuỗi cho trước theo thứ tự ngược lại (Ví dụ: Hello in thành olleH)
+
+function InvertArray(array) {
+    for (let i=0; i<array.length; i++) {
+        let n=array.length-i;
+        console.log(array[n])
+        }
+        return array;
+    }
+}
 
 //6. Sắp xếp mảng số nguyên theo chiều tăng dần và giảm dần.
