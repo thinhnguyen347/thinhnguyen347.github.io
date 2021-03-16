@@ -9,13 +9,13 @@ let d
 
 
 //2. Tìm số nhỏ nhất và lớn nhất trong mảng số nguyên
-function MinMax(arr){
+function MinMax(arr) {
     let arr;
-    for (let i = 0; i <= arr.length-1; i++){
-        if(arr[i] >= arr[i+1]){
+    for (let i = 0; i <= arr.length - 1; i++) {
+        if (arr[i] >= arr[i + 1]) {
             console.log(`${arr[i]} la so lon nhat`);
         }
-        if(arr[i] < arr[i+1]){
+        if (arr[i] < arr[i + 1]) {
             console.log(`${arr[i]} la so be nhat`);
         }
     }
@@ -24,6 +24,15 @@ function MinMax(arr){
 
 
 //3. Tìm số lớn thứ 2 trong mảng số nguyên
+
+function SecondMax(x) {
+    for (let i in x) {
+        if (x[i] < x[i + 1]) {
+            return x[i+1]
+        }
+    }
+    console.log(`Số lớn thứ 2 trong dãy là ${x[2]}`)
+}
 
 //4. Trả về Vị trí đầu tiên của số lẻ, vị trí cuối cùng của số chẵn trong mảng bất kì.
 
