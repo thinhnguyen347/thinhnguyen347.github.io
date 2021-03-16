@@ -98,3 +98,6 @@ switch (day) {
     default:
         document.write("Another day");
 }
+
+//Bt1: Kiem tra n co phai so nguyen to hay khong
+//BT2: Dem va liet ke cac so nguyen to nho hon hoac bang x (x<1000)
