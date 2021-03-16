@@ -1,4 +1,10 @@
-//BT 1: Lấy ra ngày tháng năm, xác định mùa nào trong năm
+/**BT 1: Lấy ra ngày tháng năm, xác định mùa nào trong năm
+ * 1. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
+ * - Mùa xuân từ tháng 1 đến tháng 3
+ * - Mùa hè từ tháng 4 đến tháng 6
+ * - Mùa thu từ tháng 7 đến tháng 9
+ * - Mùa đông từ tháng 10 đến tháng 12*/
+
 function season() {
     let d = new Date();
     console.log(`Thời gian hiện tại là ${d}`);
@@ -29,7 +35,8 @@ function thang() {
     }
 }
 
-//BT 2: Viết hàm trả về số ngày 1 tháng
+//BT 2: Viết hàm trả về số ngày có trong 1 tháng.
+//Lưu ý: Với tháng 2 có 29 ngày nếu là năm nhuận, 28 ngày nếu là năm không nhuận.
 /** 31 ngày: 1,3,5,7,8,10,12
  * 30 ngày: 4,6,9,11
  * 28/29 ngày: tháng 2
@@ -74,11 +81,17 @@ function NgayThang(m, y) {
 }
 //BT 3: Tính tổng các chữ số trong 1 số nguyên dương.
 function TinhTong(d) {
-    if (Number.isInteger(d) === false) { console.log("Số không hợp lệ"); return d; }
-    let f = d % 10;
+    if (d <= 0 && Number.isInteger(d) === false) { console.log(`Số không hợp lệ`) }
 
+    let x = 0;
+    let y = d % 10;
+    for (; y < 10;) {
+        x += y;
     }
+    console.log(`${x}`);
+
 }
+
 //BT 4: In ra một chuỗi, nếu chuỗi có độ dài lớn hơn 10 ký tự thì thực hiện cắt chuỗi lấy 10 ký tự và hiển thị phía sau là dấu ba chấm 
 
 function CatChuoi(n) {
@@ -126,20 +139,20 @@ function translate(language) {
 // Chua bai
 function translate2(text) {
     if (typeof text !== "string") {
-      return "Xin chao, du lieu cua ban khong hop le";
+        return "Xin chao, du lieu cua ban khong hop le";
     }
-  
+
     if (text === "French") {
-      return "Borjou";
+        return "Borjou";
     } else if (text === "Hawoai") {
-      return "aloha";
+        return "aloha";
     } else if (text === "Gemany") {
-      return "Hallo";
+        return "Hallo";
     } else if (text === "Italy") {
-      return "Ciao";
+        return "Ciao";
     } else if (text === "China") {
-      return "Nihao";
+        return "Nihao";
     } else {
-      return "Xin chao";
+        return "Xin chao";
     }
-  }
+}
