@@ -26,7 +26,7 @@ function MinMax(arr) {
 //3. Tìm số lớn thứ 2 trong mảng số nguyên
 
 function SecondMax(array) {
-    for (let i=0; i<array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if (array[i] < array[i + 1]) {
             i--
         }
@@ -40,12 +40,11 @@ function SecondMax(array) {
 //5. In một chuỗi cho trước theo thứ tự ngược lại (Ví dụ: Hello in thành olleH)
 
 function InvertArray(array) {
-    for (let i=0; i<array.length; i++) {
-        let n=array.length-i;
-        console.log(array[n])
-        }
-        return array;
+    for (let i = array.length; i < array.length; i--) {
+        console.log(array[i])
     }
+    return array;
 }
+
 
 //6. Sắp xếp mảng số nguyên theo chiều tăng dần và giảm dần.
