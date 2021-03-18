@@ -1,4 +1,4 @@
-/**BT 1: Lấy ra ngày tháng năm, xác định mùa nào trong năm
+/**BT 1: Lấy ra ngày tháng năm hiện tại, xác định mùa nào trong năm
  * 1. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
  * - Mùa xuân từ tháng 1 đến tháng 3
  * - Mùa hè từ tháng 4 đến tháng 6
@@ -81,15 +81,34 @@ function NgayThang(m, y) {
 }
 //BT 3: Tính tổng các chữ số trong 1 số nguyên dương.
 function TinhTong(d) {
-    if (d <= 0 && Number.isInteger(d) === false) { console.log(`Số không hợp lệ`) }
+    if (d <= 0 && Number.isInteger(d) == false) { console.log(`Số không hợp lệ`) }
 
     let x = 0;
     let y = d % 10;
     for (; y < 10;) {
+        y = d % 10;
         x += y;
     }
     console.log(`${x}`);
 
+}
+// Chữa bài: 
+/**tinh tong chu so cua so nguyen */
+function tinhTong(number){
+    //kiem tra so dau vao
+    if(number < 0 || Number.isInteger(number) == false){
+        return;
+    }
+
+    //tinh tong
+    let tachSo;
+    let tong = 0;
+    for( ;number != 0 ;){
+        tachSo = number %10;
+        tong += tachSo;
+        number = Math.floor(number/10);
+    }
+    return tong;
 }
 
 //BT 4: In ra một chuỗi, nếu chuỗi có độ dài lớn hơn 10 ký tự thì thực hiện cắt chuỗi lấy 10 ký tự và hiển thị phía sau là dấu ba chấm 
