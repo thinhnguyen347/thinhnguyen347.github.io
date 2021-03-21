@@ -157,13 +157,14 @@ console.log(findLastEven(array));
 //5. In một chuỗi cho trước theo thứ tự ngược lại (Ví dụ: Hello in thành olleH)
 
 function DaoNguoc(array) {
+
     let m = array.length;
     if (m === 0) {
         return 'Không hợp lệ';
     }
     let x = [];
     for (let i = 0; i < m; i++) {
-        
+
         x[i] = array[m - 1 - i];
     }
     return x.join("");
@@ -174,14 +175,21 @@ function DaoNguoc(array) {
 
 //6. Sắp xếp mảng số nguyên theo chiều tăng dần và giảm dần.
 
-function TangDan(a) {
-    let x = a[0];
+function tangdan(a) {
+
+    let x;
     for (i = 0; i < a.length; i++) {
-        if (x < a[i]) {
-            console.log(a[i]);
+        for (j = i + 1; j < a.length; j++) {
+            if (a[i] < a[j]) {
+                x[i] = a[i];
+                a[i] = a[j];
+                x[i] = a[j];
+            }
         }
     }
+    return x;
 }
+
 
 //7. Tinh n!
 
@@ -196,7 +204,3 @@ function giaithua(n) {
     }
     return gt;
 }
-//8. Hai anh em nhà cừu không có gì chơi, thằng anh mới đố thằng em: “Tao cho mày 1 số, nếu nó chẵn thì chia đôi, nó lẻ thì nhân 3 cộng 1. 
-//Đố mày biết sau bao nhiêu phép tính thì nó ra 1 ???”. 
-//Ông em ngẩn tò te không biết trả lời như nào. Bạn hãy giúp chú bé 1 tay với. In ra đáp án hoặc “-1” nếu ko có số nào hợp lệ.
-function Tinh(a) { }
