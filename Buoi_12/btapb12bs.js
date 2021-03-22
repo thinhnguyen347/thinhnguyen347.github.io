@@ -1,4 +1,12 @@
 //1. Đếm số nguyên tố trong đoạn [a, b]
+function songuyento(a,b){
+    if (Number.isInteger(a) === false || Number.isInteger(b) === false || a < b) {
+        document.writeln("Thông số đầu vào không hợp lệ");
+        return;
+    }
+
+
+}
 
 //2. Chèn phần tử có giá trị X vào phía sau phần tử có giá trị lớn nhất trong mảng.
 

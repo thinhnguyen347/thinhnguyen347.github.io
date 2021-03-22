@@ -24,17 +24,17 @@ function tamgiacVuong(m) {
 }
 //5. Vẽ tam giác cân ngược:
 
-function tamgiacCan(m) {
-    if (m <= 0 || Number.isInteger(m) === false) {
+function tamgiacCan(h) {
+    if (h <= 0 || Number.isInteger(h) === false) {
         document.writeln("Thông số đầu vào không hợp lệ");
         return;
     }
     let str = "";
-    for (let i = 0; i < m; i++) {
-        for (let j = 0; j < i; j++) {
-            str += "&#32;";
+    for (let i = 0; i < h; i++) {
+        for (let k = 0; k < i; k++) {
+            str += "*&#32;".fontcolor("white");
         }
-        for (let j = 1; j < 2 * m - 2 * i; j++) {
+        for (let j = 0; j < (2 * h - 1 - 2 * i); j++) {
             str += "*&#32;";
         }
         str += "<br/>";
