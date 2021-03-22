@@ -2,6 +2,30 @@
 // Đố mày biết sau bao nhiêu phép tính thì nó ra 1 ???”. 
 // Ông em ngẩn tò te không biết trả lời như nào. Bạn hãy giúp chú bé 1 tay với. In ra đáp án hoặc “-1” nếu ko có số nào hợp lệ.
 
+function DemPhepTinh(n) {
+    if (Number.isInteger(n) === false) { return `-1`; }
+    let dem = 0;
+    for (let i = 0; i <= n / 2; i++) {
+        k = n / 2;
+        if (n % 2 === 0) {
+            dem++;
+            while (k === 1) {
+                console.log(`So phep tinh la: ` + dem);
+            }
+        } else {
+            n = n * 3 + 1; 
+            for (let i = 0; i <= n / 2; i++) {
+                k = n / 2;
+            
+            
+
+        }
+    }
+
+}
+}
+
+
 // 3. Vẽ hình chữ nhật rỗng:
 
 
