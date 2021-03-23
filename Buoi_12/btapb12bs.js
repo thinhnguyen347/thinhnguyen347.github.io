@@ -12,7 +12,20 @@ function songuyento(a,b){
 
 //3. Chèn phần tử có giá trị X vào mảng sao cho mảng vẫn có thứ tự tăng dần.
 
-//4. Kiểm tra tính đối xứng của một số. 
+//4. Kiểm tra tính đối xứng của một số.
+
+function sodoixung(n){
+    let soMoi= 0;
+    let temp = n;
+    while  (temp > 0){
+        let sotachra = temp%10;
+        soMoi = soMoi*10 + sotachra;
+        temp= Math.floor(temp/10);
+    }
+    if (soMoi === n){
+        console.log(`So ${n} la so doi xung`);
+    } else {console.log(`So ${n} khong la so doi xung`)}
+}
 
 //5. Viết chương trình tính tiền cước TAXI. Biết rằng:
 // Giá cước khi mở cửa là 9.000 đồng/km.

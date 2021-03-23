@@ -13,16 +13,16 @@ function DemPhepTinh(n) {
                 console.log(`So phep tinh la: ` + dem);
             }
         } else {
-            n = n * 3 + 1; 
+            n = n * 3 + 1;
             for (let i = 0; i <= n / 2; i++) {
                 k = n / 2;
-            
-            
 
+
+
+            }
         }
-    }
 
-}
+    }
 }
 
 
@@ -62,6 +62,81 @@ function tamgiacCan(h) {
             str += "*&#32;";
         }
         str += "<br/>";
+    }
+    document.writeln(str);
+}
+// Chua bai
+
+function printSpecialTriangle(h) {
+    var str = "";
+    for (i = h; i >= 1; i--) {
+        for (j = 2 * h - 1; j >= 1; j--) {
+            if (j >= h - i + 1 && j <= h + i - 1) {
+                str += " *  ";
+            } else {
+                str += " *  ".fontcolor("white");
+            }
+        }
+        str += "<br>";
+    }
+    document.writeln(str);
+}
+
+//6: Ve forward arrow:
+
+function arrow(h) {
+    if (h <= 0 || Number.isInteger(h) === false) {
+        document.writeln("Thông số đầu vào không hợp lệ");
+        return;
+    }
+
+    let str = "";
+    for (let i = 0; i < h; i++) {
+        for (let j = 0; j < i; j++) {
+            str += "*&#32;";
+        }
+        str += "<br/>";
+    }
+
+    for (let i = 0; i < h; i++) {
+        for (let j = 0; j < h - 1 - i; j++) {
+            str += "*&#32;";
+        }
+        str += "<br/>";
+    }
+    document.writeln(str);
+}
+
+//7: ve hinh thoi, h la so le.
+
+function vehinhthoi(h) {
+    if (h <= 0 || h % 2 === 0 || Number.isInteger(h) === false) {
+        document.writeln("Thông số đầu vào không hợp lệ");
+        return;
+    }
+    let str = "";
+    // Ve nua tren
+    for (i = 0; i < h; i++) {
+        for (j = 0; j < 2 * h; j++) {
+            if (j <= h - 1 + i && j >= h - 1 - i) {
+                str += "*";
+            } else {
+                str += "*".fontcolor("white");
+            }
+        }
+        str += "<br>";
+    }
+    // ve nua duoi
+    let a = h-1;
+    for (i = a; i >= 1; i--) {
+        for (j = 2 * a - 1; j >= 1; j--) {
+            if (j <= a - 1 + i && j >= a - 1 - i) {
+                str += "*";
+            } else {
+                str += "*".fontcolor("white");
+            }
+        }
+        str += "<br>";
     }
     document.writeln(str);
 }
