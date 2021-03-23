@@ -8,7 +8,7 @@ function tuoiTB(array) {
         sum = sum + array[i].age;
     }
     avg = sum / array.length;
-    console.log(`tuoi trung binh cua sinh vien la `, ${ avg });
+    console.log("tuoi trung binh cua sinh vien la " + avg);
 }
 
 // 2. Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Anh'', age: 20 }. Viết hàm sắp mảng theo tuổi học viên từ cao đến thấp.
@@ -27,7 +27,7 @@ function Sapxep(array) {
 // Cach 2
 function Sapxep2(array) {
 
-    console.log(array.age.sort(););
+    console.log(array.age.sort());
 }
 
 // 3. Viết hàm loại bỏ các giá trị sai trong 1 mảng. Các giá trị sai bao gồm: false, null, undefined, NaN, 0, ''''.
