@@ -62,12 +62,6 @@ function Sapxep(array) {
     console.log(array);
 }
 
-// Cach 2
-function Sapxep2(array) {
-
-    console.log(array.age.sort());
-}
-
 // 3. Viết hàm loại bỏ các giá trị sai trong 1 mảng. Các giá trị sai bao gồm: false, null, undefined, NaN, 0, ''''.
 
 let values = [false, NaN, 24, 0, "", undefined, null, "ANBC", true]
