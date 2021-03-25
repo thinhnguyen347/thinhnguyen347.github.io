@@ -99,15 +99,16 @@ function DoiXung(array) {
 // Cach 2
 
 function DoiXung2(array) {
-
     let a = array.reverse();
-
-    if (array[i] = a[i]) {
-        console.log("Mang doi xung");
-    } else {
-        console.log("Mang khong doi xung")
+    for (i = 0; i < array.length; i++) {
+        for (k = 0; k < array.length; k++) {
+            if (array[i] = a[k]) {
+                console.log("Mang doi xung");
+            } else {
+                console.log("Mang khong doi xung")
+            }
+        }
     }
-
 }
 
 // Chua bai
