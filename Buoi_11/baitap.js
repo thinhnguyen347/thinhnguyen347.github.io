@@ -177,13 +177,13 @@ function DaoNguoc(array) {
 
 function tangdan(a) {
 
-    let x;
+    let x = [];
+    let y = 0;
     for (i = 0; i < a.length; i++) {
-        for (j = i + 1; j < a.length; j++) {
-            if (a[i] < a[j]) {
-                x[i] = a[i];
-                a[i] = a[j];
-                x[i] = a[j];
+        for (j = 0; j < a.length; j++) {
+            if (y > a[i]) {
+                y = a[i];
+                x[i] = y;
             }
         }
     }
