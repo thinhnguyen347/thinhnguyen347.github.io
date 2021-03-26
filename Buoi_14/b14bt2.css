@@ -1,0 +1,28 @@
+body{
+    box-sizing: border-box;
+    margin: 70px 100px;
+    /*background-image: url('https://tinyurl.com/abn3en8p');
+    background-position: top;
+    background-repeat: none;
+    background-size:cover;
+    background-attachment: fixed;*/
+
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.85) ;
+    padding: 50px;
+    border-radius: 10px;
+
+}
+
+h1{
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+

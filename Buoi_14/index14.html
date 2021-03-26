@@ -12,16 +12,20 @@
 <body>
     <script src="./main14.js"></script>
     <div id="container">
-<br>
+        <br>
         <h1>Guess!</h1>
         <p>Bạn có 10 lượt đoán</p>
         <p>Khoảng giá trị có thể đoán từ 0 đến 100</p><br>
-        <form action="">
-            <input type="text" name="number" id="number" placeholder="Nhập số tại đây">
-            <input onClick="" type="button" id="button" value="Guess">
-        </form>
-        <p class="alert"></p>
-        <p class="result"></p>
+        <div class="action">
+            <input type="number" id="number" placeholder="Nhập số tại đây">
+            <button id="guessButton" onclick="clickGuess()">Guess</button>
+        </div>
+
+        <p id="alert"></p>
+
+        <div class="action">
+            <p id="result"></p>
+        </div>
 
     </div>
 </body>

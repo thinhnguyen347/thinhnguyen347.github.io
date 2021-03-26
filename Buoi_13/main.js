@@ -136,5 +136,4 @@ function MaxLength(array) {
         arr.push(array[i]);
     }
     console.log(arr);
-
 }
