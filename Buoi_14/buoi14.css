@@ -1,75 +1,86 @@
 body {
-    margin: 200px auto;
-    box-sizing: border-box;
-    font-size: 20px;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url('https://tinyurl.com/6z42ebcn');
+    margin             : 200px auto;
+    box-sizing         : border-box;
+    font-size          : 20px;
+    display            : flex;
+    flex-direction     : row;
+    justify-content    : center;
+    background-image   : url('https://tinyurl.com/6z42ebcn');
     background-position: top;
-    background-repeat: none;
-    background-size: cover;
-    }
+    background-repeat  : none;
+    background-size    : cover;
+}
+
+#hightlight-number {
+    font-size: 1.3em;
+    color : #D42C2C;
+    font-weight: bolder;
+}
 
 #container {
-    width: 500px;
-    height: auto;
+    width           : 500px;
+    height          : auto;
     background-color: rgba(241, 248, 246, 0.623);
-    text-align:center;
-    border-radius: 5px;
-    }
+    text-align      : center;
+    border-radius   : 5px;
+}
 
-#number{
+#number {
     border-radius: 5px;
-    width: 200px;
-    height: 35px;
-    outline: none;
-    padding-left: 15px;
+    width        : 200px;
+    height       : 35px;
+    outline      : none;
+    padding-left : 15px;
 }
-#guessButton{
-    border-radius: 5px;
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    background-color: rgb(76,218,91);
-    
+
+#guessButton {
+    border-radius   : 5px;
+    width           : 80px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(76, 218, 91);
+
 }
-#guessButton:hover{
-    border-radius: 5px;
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    background-color: rgb(223,64,33);
+
+#guessButton:hover {
+    border-radius   : 5px;
+    width           : 80px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(223, 64, 33);
 }
-#resetButton{
-    border-radius: 5px;
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    background-color: rgb(76,218,91);
-    
+
+#resetButton {
+    border-radius   : 5px;
+    width           : 80px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(76, 218, 91);
+
 }
-#resetButton:hover{
-    border-radius: 5px;
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    background-color: rgb(223,64,33);
+
+#resetButton:hover {
+    border-radius   : 5px;
+    width           : 80px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(223, 64, 33);
 }
-.alert{ 
+
+.alert {
     font-size: 25px;
-    color:rgb(219, 6, 6);
+    color    : rgb(219, 6, 6);
 }
 
-.result{
-    font-size:25px;
-    color: rgb(21, 129, 252);
+.result {
+    font-size: 25px;
+    color    : rgb(21, 129, 252);
 }

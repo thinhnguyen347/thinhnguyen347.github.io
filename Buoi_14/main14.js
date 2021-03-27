@@ -29,8 +29,8 @@ function clickGuess() {
         }
 
         resultMessage.innerHTML += `Lần đoán thứ ${count} có giá trị là ${numberGuess} <br>`;
-        turnMessage.innerHTML = `Bạn còn ${10 - count} lượt đoán`;
-        if (count >= 10) {
+        turnMessage.innerHTML = `Bạn còn <span id="hightlight-number"> ${10 - count} </span> lượt đoán`;
+                if (count >= 10) {
             document.getElementById("guessButton").disabled = true;
         }
     }
