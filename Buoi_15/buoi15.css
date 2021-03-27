@@ -1,7 +1,6 @@
 body {
     margin: 200px auto;
     box-sizing: border-box;
-    font-size: 20px;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -13,20 +12,22 @@ body {
 
 #container {
     width: 500px;
-    height: auto;
+    height: 400px;
     background-color: rgba(241, 248, 246, 0.623);
     text-align:center;
     border-radius: 5px;
     }
+    
+p{font-size: 20px;}
 
 #number{
     border-radius: 5px;
     width: 200px;
-    height: 35px;
+    height: 40px;
     outline: none;
     padding-left: 15px;
 }
-#guessButton{
+#button{
     border-radius: 5px;
     width: 80px;
     height: 40px;

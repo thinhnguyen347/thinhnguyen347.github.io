@@ -17,13 +17,14 @@ function changeBgColor(color){
 //(tham số truyền vào là id của 2 đoạn văn hoặc thứ tự của đoạn văn).
 
 function copyContent(paragraph1, paragraph2){
-    
+    document.getElementById("para2").innerHTML = document.getElementById("para1").innerHTML
 }
 
 // function changeFontSize(x): Thay đổi kích thước font chữ của cả 3 đoạn văn thành x pixels (x là một số nguyên).
 
 function changeFontSize(x){
-    if (!Number.isInteger(x) && x > 0 ){return 'Số không hợp lệ'}
+    let n = prompt("Nhap vao kich thuoc chu", "20px");
+    if (!Number.isInteger(x) && x < 0 ){return 'Số không hợp lệ'}
     document.getElementById("para1").style.fontSize= x;
     document.getElementById("para2").style.fontSize= x;
     document.getElementById("para3").style.fontSize= x;

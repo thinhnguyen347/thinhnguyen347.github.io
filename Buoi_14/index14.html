@@ -10,24 +10,23 @@
 </head>
 
 <body>
-    <script src="./main14.js"></script>
     <div id="container">
         <br>
         <h1>Guess!</h1>
-        <p>Bạn có 10 lượt đoán</p>
+        <p id="turn">Bạn có 10 lượt đoán</p>
         <p>Khoảng giá trị có thể đoán từ 0 đến 100</p><br>
         <div class="action">
             <input type="number" id="number" placeholder="Nhập số tại đây">
             <button id="guessButton" onclick="clickGuess()">Guess</button>
+            <button id="resetButton" onclick="reload()">Reset</button>
         </div>
-
-        <p id="alert"></p>
-
+        <p id="alert"> </p>
         <div class="action">
-            <p id="result"></p>
+            <p id="result"> </p>
         </div>
 
     </div>
+    <script src="./main14.js"></script>
 </body>
 
 </html>

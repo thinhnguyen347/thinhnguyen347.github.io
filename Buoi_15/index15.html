@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buoi hoc 15</title>
+    <link rel="stylesheet" href="buoi15.css">
+</head>
+
+<body>
+    <script src="./main15.js"></script>
+    <div id="container">
+        <br>
+        <h1>Chuyển đổi tiền tệ</h1>
+        <br>
+        <p>Mời bạn nhập vào số tiền và chọn loại tiền tệ cần quy đổi</p><br>
+        <input type="number" name="number" id="number" placeholder="Nhập số tiền tại đây">
+        <div><br>
+            <span class="inputlabel">Từ:</span>
+            <select name="from" id="from">
+                <option value="USD" selected="">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+       
+            <span class="inputlabel">Sang:</span>
+            <select name="from" id="from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </div><br>
+        <button id="button" onclick="Change()">Đổi</button>
+        <button id="resetButton" onclick="reload()">Reset</button>
+    </div>
+    <div class="action">
+        <p id="result"> </p>
+    </div>
+
+    </div>
+</body>
+
+</html>
