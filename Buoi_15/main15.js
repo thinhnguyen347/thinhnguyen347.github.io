@@ -1,7 +1,7 @@
 
 
 function Change() {
-    let number = parseInt(document.getElementById("number").value);
+    let number = document.getElementById("number").value;
     let currencyFr = document.getElementById("from").value;
     let currencyTo = document.getElementById("to").value;
     let result = document.getElementById("result");
@@ -128,7 +128,7 @@ function Change() {
         }
 
     } else {
-        result.innerHTML = "Vui lòng nhập số!";
+        result.innerHTML = "Vui lòng nhập số lớn hơn 0!";
         result.style.color = "red";
     }
 
