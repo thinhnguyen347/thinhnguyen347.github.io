@@ -17,26 +17,33 @@
         <br>
         <p>Mời bạn nhập vào số tiền và chọn loại tiền tệ cần quy đổi</p><br>
         <input type="number" name="number" id="number" placeholder="Nhập số tiền tại đây">
+        <hr>
         <div><br>
             <span class="inputlabel">Từ:</span>
             <select name="from" id="from">
-                <option value="USD" selected="">USD</option>
-                <option value="EUR">EUR</option>
-            </select>
-       
-            <span class="inputlabel">Sang:</span>
-            <select name="from" id="from">
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-            </select>
-        </div><br>
-        <button id="button" onclick="Change()">Đổi</button>
-        <button id="resetButton" onclick="reload()">Reset</button>
-    </div>
-    <div class="action">
-        <p id="result"> </p>
-    </div>
+                <option value="USD" selected="">Đô la Mỹ (USD)</option>
+                <option value="EUR">Đồng Euro (EUR)</option>
+                <option value="VND">Việt Nam Đồng (VND)</option>
+                <option value="GBP">Đồng Bảng Anh (GBP)</option>
+                <option value="KRW">Won Hàn Quốc (KRW)</option>
+            </select> &#32;
 
+            <span class="inputlabel">Sang:</span>
+            <select name="to" id="to">
+                <option value="USD">Đô la Mỹ (USD)</option>
+                <option value="EUR">Đồng Euro (EUR)</option>
+                <option value="VND" selected="">Việt Nam Đồng (VND)</option>
+                <option value="GBP">Đồng Bảng Anh (GBP)</option>
+                <option value="KRW">Won Hàn Quốc (KRW)</option>
+            </select>
+
+        </div>
+        <br>
+        <button id="button" onclick="Change()">Đổi</button>
+        <button id="resetButton" onclick="reload()">Reset</button><br><br>
+        <div class="action">
+            <p id="result"></p>
+        </div><br>
     </div>
 </body>
 

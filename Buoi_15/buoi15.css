@@ -1,76 +1,97 @@
 body {
-    margin: 200px auto;
-    box-sizing: border-box;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url('https://tinyurl.com/6z42ebcn');
+    margin-top         : 150px;
+    margin-left        : 120px;
+    box-sizing         : border-box;
+    background-image   : url('https://i.ibb.co/cTRf8FW/curex.jpg');
     background-position: top;
-    background-repeat: none;
-    background-size: cover;
-    }
+    background-repeat  : none;
+    background-size    : cover;
+}
 
 #container {
-    width: 500px;
-    height: 400px;
-    background-color: rgba(241, 248, 246, 0.623);
-    text-align:center;
-    border-radius: 5px;
-    }
-    
-p{font-size: 20px;}
-
-#number{
-    border-radius: 5px;
-    width: 200px;
-    height: 40px;
-    outline: none;
-    padding-left: 15px;
-}
-#button{
-    border-radius: 5px;
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    background-color: rgb(76,218,91);
-    
-}
-#guessButton:hover{
-    border-radius: 5px;
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    background-color: rgb(223,64,33);
-}
-#resetButton{
-    border-radius: 5px;
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    background-color: rgb(76,218,91);
-    
-}
-#resetButton:hover{
-    border-radius: 5px;
-    width: 80px;
-    height: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    background-color: rgb(223,64,33);
-}
-.alert{ 
-    font-size: 25px;
-    color:rgb(219, 6, 6);
+    width           : 500px;
+    height          : auto;
+    background-color: rgba(255, 255, 255, 0.486);
+    text-align      : center;
+    border-radius   : 10px;
+    border          : 2px solid #342947;
 }
 
-.result{
-    font-size:25px;
-    color: rgb(21, 129, 252);
+p {
+    font-size: 20px;
+}
+
+#number {
+    border-radius: 5px;
+    width        : 300px;
+    height       : 40px;
+    border       : 1px solid #342947;
+    padding-left : 15px;
+}
+
+input {
+    outline: none;
+}
+
+#button {
+    border-radius   : 5px;
+    width           : 80px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(76, 218, 91);
+
+}
+
+#button:hover {
+    border-radius   : 5px;
+    width           : 80px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(223, 64, 33);
+}
+
+#resetButton {
+    border-radius   : 5px;
+    width           : 80px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(76, 218, 91);
+
+}
+
+#resetButton:hover {
+    border-radius   : 5px;
+    width           : 80px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(223, 64, 33);
+}
+
+
+.action {
+    color: rgb(223, 64, 33);
+}
+
+#from,
+#to {
+    height       : 30px;
+    border       : 1px solid #342947;
+    border-radius: 5px;
+    padding-left : 10px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.inputlabel {
+    font-weight: bold;
 }
