@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 16</title>
+    <link rel="stylesheet" href="./index16.css">
+</head>
+
+<body>
+    
+    <div id="container">
+
+        <!-- Kiểm tra tuổi -->
+        <h1>Nhập thông tin của bạn</h1>
+        <label for="">&nbsp;Năm sinh: &nbsp; &nbsp; &nbsp; &nbsp;</label>
+        <input type="number" id="number" placeholder="Năm sinh"><br><br>
+        
+        <!-- BMI -->
+        <label for="">Chiều cao (cm):</label>
+        <input type="number" id="height" placeholder="Chiều cao"><br><br>
+        <label for="">Cân nặng (kg) :</label>
+        <input type="number" id="weight" placeholder="Cân nặng"><br><br>
+        <button onclick="BMI(),Age()"> Xem kết quả</button><br>
+        <div class="message">
+            <p id="alert"></p>
+            <p id="result1"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="./main16.js"></script>
+</body>
+
+</html>

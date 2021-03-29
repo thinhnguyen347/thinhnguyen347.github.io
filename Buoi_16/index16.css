@@ -1,0 +1,67 @@
+body {
+    background-image     : url('https://i.ibb.co/cwpHW95/1107999.jpg');
+    background-repeat    : no-repeat;
+    background-position  : top;
+    background-attachment: fixed;
+    background-size      : 100%;
+    font-family          : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#container {
+    margin-top      : 130px;
+    margin-left     : 150px;
+    border          : 2px solid #214252;
+    border-radius   : 10px;
+    background-color: rgba(255, 255, 255, 0.62);
+    width           : 400px;
+    height          : auto;
+    text-align      : center;
+}
+
+input {
+    outline      : none;
+    border       : 2px solid #214252;
+    border-radius: 5px;
+    height       : 30px;
+    padding-right : 10px;
+    
+}
+
+button {
+    border-radius   : 5px;
+    width           : 120px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: rgb(76, 218, 91);
+
+}
+
+button:hover {
+    border-radius   : 5px;
+    width           : 120px;
+    height          : 40px;
+    text-transform  : uppercase;
+    font-weight     : bold;
+    outline         : none;
+    background-color: #e43804e8;
+    color           : white;
+
+}
+
+h1 {
+    color: #214252
+}
+label {
+    color: #214252; font-size: 1.1em;
+}
+
+.message {
+    padding: 15px 10px;
+}
+
+p {
+    display: inline;
+}
