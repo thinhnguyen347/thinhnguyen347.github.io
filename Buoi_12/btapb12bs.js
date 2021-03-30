@@ -55,9 +55,9 @@ function sodoixung(n) {
 
 function giaCuoc() {
     let km = prompt("Nhập vào số km, phút chờ", "20");
-    let x = prompt("Nhập số phút chờ");
+    let phut = prompt("Nhập số phút chờ");
     
-    wait = x * 20000 / 60;
+    thoiGianCho = phut * 20000 / 60;
 
     if (1 <= km <= 30) {
         gia = (km - 1) * 11000
@@ -66,7 +66,7 @@ function giaCuoc() {
         gia = (km - 30) * 9500 + 30 * 11000
     }
 
-    Tong = 9000 + gia + wait;
+    Tong = 9000 + gia + thoiGianCho;
     console.log(`Tổng tiền phải trả là ${Tong}`)
 
 }
