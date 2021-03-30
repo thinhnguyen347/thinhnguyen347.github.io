@@ -69,7 +69,7 @@ function giaCuoc() {
         }
 
         Tong = 9000 + gia + thoiGianCho;
-        console.log(`Tổng tiền phải trả là ${Tong}`)
+        console.log(`Tổng tiền phải trả là ${Math.ceil(Tong)}`)
     } else { console.log("Thông số không hợp lệ") }
 
 }
