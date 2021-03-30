@@ -56,17 +56,20 @@ function sodoixung(n) {
 function giaCuoc() {
     let km = prompt("Nhập vào số km, phút chờ", "20");
     let phut = prompt("Nhập số phút chờ");
-    
-    thoiGianCho = phut * 20000 / 60;
 
-    if (1 <= km <= 30) {
-        gia = (km - 1) * 11000
-    }
-    if (km > 30) {
-        gia = (km - 30) * 9500 + 30 * 11000
-    }
+    if (km > 0 && phut >= 0) {
 
-    Tong = 9000 + gia + thoiGianCho;
-    console.log(`Tổng tiền phải trả là ${Tong}`)
+        thoiGianCho = phut * 20000 / 60;
+
+        if (1 <= km <= 30) {
+            gia = (km - 1) * 11000
+        }
+        if (km > 30) {
+            gia = (km - 30) * 9500 + 30 * 11000
+        }
+
+        Tong = 9000 + gia + thoiGianCho;
+        console.log(`Tổng tiền phải trả là ${Tong}`)
+    } else { console.log("Thông số không hợp lệ") }
 
 }
