@@ -94,19 +94,19 @@ function TinhTong(d) {
 }
 // Chữa bài: 
 /**tinh tong chu so cua so nguyen */
-function tinhTong(number){
+function tinhTong(number) {
     //kiem tra so dau vao
-    if(number < 0 || Number.isInteger(number) == false){
+    if (number < 0 || Number.isInteger(number) == false) {
         return;
     }
 
     //tinh tong
     let tachSo;
     let tong = 0;
-    for( ;number != 0 ;){
-        tachSo = number %10;
+    for (; number != 0;) {
+        tachSo = number % 10;
         tong += tachSo;
-        number = Math.floor(number/10);
+        number = Math.floor(number / 10);
     }
     return tong;
 }
