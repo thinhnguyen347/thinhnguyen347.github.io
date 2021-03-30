@@ -1,5 +1,4 @@
-/**BT 1: Lấy ra ngày tháng năm hiện tại, xác định mùa nào trong năm
- * 1. Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
+/**BT 1: Viết hàm lấy ra ngày tháng năm hiện tại, xác định đang là mùa nào trong năm. Biết rằng:
  * - Mùa xuân từ tháng 1 đến tháng 3
  * - Mùa hè từ tháng 4 đến tháng 6
  * - Mùa thu từ tháng 7 đến tháng 9
@@ -9,14 +8,15 @@ function season() {
     let d = new Date();
     console.log(`Thời gian hiện tại là ${d}`);
     let n = d.getMonth();
-    if (n <= 2) { console.log("Mùa Xuân"); }
-    else if (n <= 5) { console.log("Mùa Hè"); }
-    else if (n <= 8) { console.log("Mùa Thu"); }
-    else { console.log("Mùa Đông"); }
+    if (n <= 2) { console.log("Hiện tại đang là Mùa Xuân"); }
+    else if (n <= 5) { console.log("Hiện tại đang là Mùa Hè"); }
+    else if (n <= 8) { console.log("Hiện tại đang là Mùa Thu"); }
+    else { console.log("Hiện tại đang là Mùa Đông"); }
 }
 
 //Chua bai
 
+//Lấy ra ngày tháng năm, xác định mùa nào trong năm
 function thang() {
     var date = new Date();
     console.log(date.getDate());
