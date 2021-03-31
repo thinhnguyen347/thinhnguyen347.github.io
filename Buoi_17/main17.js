@@ -38,7 +38,7 @@ function OcSenbo(x, y, h) {
     if (x > 0 && y > 0 && h > 0) {
         let n = x - y;
         dem = 0
-        for (let n = 1; n <= h / (x - y); n++) {
+        for (let n = 1; n <= h / n; n++) {
             dem++;
         }
         console.log(dem)
