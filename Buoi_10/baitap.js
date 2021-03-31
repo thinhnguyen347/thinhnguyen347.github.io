@@ -16,7 +16,7 @@ function season() {
 
 //Chua bai
 
-//Lấy ra ngày tháng năm, xác định mùa nào trong năm
+//Lấy ra ngày tháng năm bất kỳ, xác định mùa nào trong năm
 function thang() {
     var date = new Date();
     console.log(date.getDate());
