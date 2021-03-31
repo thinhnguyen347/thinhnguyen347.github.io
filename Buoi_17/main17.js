@@ -41,7 +41,7 @@ function OcSenbo(x, y, h) {
         for (let n = 1; n <= h / n; n++) {
             dem++;
         }
-        console.log(dem)
+        console.log(`Số ngày để hoàn thành là ${dem}`)
     } else { return "Số không hợp lệ" }
 
 }
