@@ -68,9 +68,9 @@ let values = [false, NaN, 24, 0, "", undefined, null, "ANBC", true]
 function giaTri(arr) {
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i]) newArr.push(arr[i]);
+        if (arr[i]) { newArr.push(arr[i]) };
     }
-    return newArr
+    return newArr;
 }
 console.log(giaTri(values))
 

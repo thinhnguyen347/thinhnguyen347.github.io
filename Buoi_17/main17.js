@@ -20,7 +20,7 @@ function joinText(string) {
     let str = string.toLowerCase();
     let str1 = str.split(' ');
     let str2 = str1.join('-')
-    
+
     console.log(str2);
 
 }
@@ -33,10 +33,22 @@ function joinText(string) {
 //Bài 4: Một con ốc sên leo từ đáy giếng lên miệng giếng, biết ban ngày leo được x mét, ban đêm lại bị tụt xuống y mét.
 // Hỏi sau bao nhiêu ngày thì ốc sên sẽ lên được đến miệng giếng. Viết hàm giải bài toán trên với 3 tham số h > 0 là chiều cao của giếng, x và y như mô tả trên (x > 0, y > 0).
 
+function OcSenbo(x, y, h) {
 
+    if (x > 0 && y > 0 && h > 0) {
+        let n = x - y;
+        dem = 0
+        for (let n = 1; n <= h / (x - y); n++) {
+            dem++;
+        }
+        console.log(dem)
+    } else { return "Số không hợp lệ" }
+
+}
 
 //Bài 5: Cho 1 số nguyên dương, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất (giữ nguyên số chữ số). 
 // Ví dụ với tham số 530751 thì kết quả là 103557.
+
 function sapXep(array) {
     let arr = [];
     let min = array[0];
@@ -48,20 +60,18 @@ function sapXep(array) {
                 if (min > array[j]) {
                     min = array[i];
                     array[i] = array[j];
-                    min = array[j];
+                    array[j] = min;
                 }
                 arr.push(array[j]);
+
             }
 
         }
 
+        console.log(arr);
     }
-    let n = arr.join('');
-    console.log(n)
-
+    console.log(arr.join(''));
 }
-
-
 
 //Bài 6: Tạo 1 trang HTML có một nút để thay đổi màu nền của trang web và hiển thị tên màu tương ứng. 
 //Random màu bất kỳ, sử dụng mã hex, biết rằng, 

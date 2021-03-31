@@ -25,7 +25,7 @@ var chuoi = () => "empty";
 let person = new Object;
 
 person.name =  "Quynh"
-consolelog(person.name);
+console.log(person.name);
 
 let animal = {
     name: "Fish",
