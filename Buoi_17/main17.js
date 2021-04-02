@@ -49,28 +49,36 @@ function OcSenbo(x, y, h) {
 //Bài 5: Cho 1 số nguyên dương, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất (giữ nguyên số chữ số). 
 // Ví dụ với tham số 530751 thì kết quả là 103557.
 
-function sapXep(array) {
-    let arr = [];
-    let min = array[0];
+function sapXep(n) {
+    let array = [];
 
-    if (array > 0) {
-        for (let i = 0; i < array.length; i++) {
+    if (0 < n && n <= 10) { console.log(n) };
 
-            for (let j = 1; j < array.length; j++) {
-                if (min > array[j]) {
-                    min = array[i];
-                    array[i] = array[j];
-                    array[j] = min;
-                }
-                arr.push(array[j]);
-
-            }
-
+    for (i = 0; i < n; i++) {
+        y = n % 10;
+        n = Math.floor(n / 10);
+        if (y < 10) {
+            array.push(y);
         }
 
-        console.log(arr);
     }
-    console.log(arr.join(''));
+    console.log(array);
+
+    if (array[0] === 0) {
+        let min = array[1]
+        for (let i = 1; i < array.length; i++) {
+            if (min > array[i + 1] && min > array[0]) {
+                min = array[i+1];
+                array[i+1] = array[0];
+            }
+        }
+    }
+
+
+
+    console.log(`Số cần tìm là ${array.join("")}`)
+
+
 }
 
 //Bài 6: Tạo 1 trang HTML có một nút để thay đổi màu nền của trang web và hiển thị tên màu tương ứng. 
