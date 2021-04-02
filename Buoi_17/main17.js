@@ -2,13 +2,17 @@
 //Ví dụ với tham số 3 và 8 ta có kết quả là 22 (bằng 4 + 5 + 6 + 7).
 
 function SumAB(a, b) {
-    if (a < b) {
-        let sum = 0;
-        for (let i = a + 1; i < b; i++) {
-            sum = sum + i;
-        }
+    if (Number.isInteger(a) && Number.isInteger(b)) {
 
-        console.log(sum)
+        if (a - b === 0 || Math.abs(a - b) === 1 || Math.abs(b - a) === 1) { return "Không có số nằm giữa hai số đã nhập" }
+
+        if (a < b) {
+            let sum = 0;
+            for (let i = a + 1; i < b; i++) {
+                sum = sum + i;
+            }
+            console.log(sum)
+        }
     } else { return "Số nhập không hợp lệ" }
 
 }
@@ -65,11 +69,13 @@ function sapXep(n) {
     console.log(array);
 
     if (array[0] === 0) {
-        let min = array[1]
+        let min = array[1];
         for (let i = 1; i < array.length; i++) {
-            if (min > array[i + 1] && min > array[0]) {
-                min = array[i+1];
-                array[i+1] = array[0];
+            for (let j = 2; j < array.length; j++) {
+                if (min > array[j] && array[i] !== 0) {
+                    min = array[0];
+                    array[i + 1] = array[0];
+                }
             }
         }
     }
@@ -103,9 +109,6 @@ function changeBgColor() {
 
     document.getElementById("container").style.backgroundColor = `#${color}`;
 
-    if (color === "000000") {
-        document.getElementById("container").style.color = "white";
-    }
     document.getElementById("color").innerHTML = `Màu nền hiện tại là: #${color}`;
 
 }
