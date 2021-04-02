@@ -82,17 +82,22 @@ function reset() {
 }
 
 function changeBgColor() {
-    let color = prompt("Vui lòng nhập mã màu nền 6 ký tự bằng mã hex sử dụng các ký tự sau [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F']");
+    let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
 
-    if (color.length === 6) {
+    i = Math.floor(Math.random() * 16);
+    j = Math.floor(Math.random() * 16);
+    k = Math.floor(Math.random() * 16);
+    l = Math.floor(Math.random() * 16);
+    m = Math.floor(Math.random() * 16);
+    n = Math.floor(Math.random() * 16);
 
-        document.getElementById("container").style.backgroundColor = `#${color}`;
+    color = `${array[i]}` + `${array[j]}` + `${array[k]}` + `${array[l]}` + `${array[m]}` + `${array[n]}`;
 
-        if (color === "000000") {
-            document.getElementById("container").style.color = "white";
-        }
-        document.getElementById("color").innerHTML = `Màu nền hiện tại là: #${color}`;
+    document.getElementById("container").style.backgroundColor = `#${color}`;
 
-    } else { window.alert("Mã màu không hợp lệ") }
+    if (color === "000000") {
+        document.getElementById("container").style.color = "white";
+    }
+    document.getElementById("color").innerHTML = `Màu nền hiện tại là: #${color}`;
 
 }
