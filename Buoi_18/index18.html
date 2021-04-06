@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css18.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- Man hinh -->
+        <div id="screen">
+            <div>
+                <p id="calculation"></p>
+            </div>
+            <div>
+                <p id="result"></p>
+            </div>
+        </div>
+
+        <!-- Nut so -->
+        <div id="btn-group">
+            <!-- Hàng 1 -->
+            <div class="row">
+                <div class="btn btn-padding" onclick="reset()">
+                    <p>AC</p>
+                </div>
+                <div class="btn btn-padding mrc">
+                    <p>MRC</p>
+                </div>
+                <div class="btn btn-padding">
+                    <p>M-</p>
+                </div>
+                <div class="btn btn-padding">
+                    <p>M+</p>
+                </div>
+                <div id="devide" class="btn" onclick="pressDiv()">
+                    <p>&divide;</p>
+                </div>
+            </div>
+            <!-- Hàng 2 -->
+            <div class="row">
+                <div class="btn btn-padding" >
+                    <p id="percent" onclick="percentage()">%</p>
+                </div>
+                <div class="btn btn-padding" onclick="press7()">
+                    <p>7</p>
+                </div>
+                <div class="btn btn-padding" onclick="press8()">
+                    <p>8</p>
+                </div>
+                <div class="btn btn-padding" onclick="press9()">
+                    <p>9</p>
+                </div>
+                <div class="btn" onclick="pressMul()">
+                    <p id="multiply">x</p>
+                </div>
+            </div>
+            <!-- Hàng 3 -->
+            <div class="row">
+                <div class="btn btn-padding">
+                    <p id="sqrt" onclick="Sqrt()"> &Sqrt;</p>
+                </div>
+                <div class="btn btn-padding" onclick="press4()">
+                    <p>4</p>
+                </div>
+                <div class="btn btn-padding" onclick="press5()">
+                    <p>5</p>
+                </div>
+                <div class="btn btn-padding" onclick="press6()">
+                    <p>6</p>
+                </div>
+                <div class="btn" onclick="pressMin()">
+                    <p id="minus">&ndash;</p>
+                </div>
+            </div>
+            <!-- Hàng 4 -->
+            <div class="row">
+                <div class="btn btn-padding">
+                    <p id="superior" onclick="Pow()">x<sup>2</sup></p>
+                </div>
+                <div class="btn btn-padding" onclick="press1()">
+                    <p>1</p>
+                </div>
+                <div class="btn btn-padding" onclick="press2()">
+                    <p>2</p>
+                </div>
+                <div class="btn btn-padding" onclick="press3()">
+                    <p>3</p>
+                </div>
+                <div class="btn" onclick="pressPlus()">
+                    <p id="plus">&plus;</p>
+                </div>
+            </div>
+            <!-- Hàng 5 -->
+            <div class="row">
+                <div class="btn btn-padding">
+                    <p onclick="Factorial()">!</p>
+                </div>
+                <div class="btn btn-padding">
+                    <p>0</p>
+                </div>
+                <div class="btn" onclick="pressDot()">
+                    <p id="period">&period;</p>
+                </div>
+                <div class="btn0">
+                    <p id="equal" onclick="Equal()"> &equals;</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="./main18.js"></script>
+</body>
+
+</html>

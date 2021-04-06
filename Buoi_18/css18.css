@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing : border-box;
+    margin     : 0;
+    font-size  : 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image     : url('https://i.ibb.co/HD96mmV/jay.jpg');
+    background-position  : top;
+    background-repeat    : no-repeat;
+    background-attachment: scroll;
+    background-size      : cover;
+
+}
+
+#container {
+    background-color: #2b2b2acc;
+    width           : 350px;
+    height          : 485px;
+    border-radius   : 20px;
+    margin          : 100px auto;
+    padding-top     : 30px;
+    padding-left    : 25px;
+    padding-right   : 25px;
+
+}
+
+#screen {
+    height          : 100px;
+    width           : 300px;
+    background-color: whitesmoke;
+    border-radius   : 10px;
+    display         : flex;
+    align-content   : flex-start;
+    flex-direction  : column;
+    padding-left    : 15px;
+    padding-right   : 15px;
+    padding-top     : 10px;
+}
+
+#screen p {
+    font-size : 1.6em;
+    text-align: right;
+}
+
+#btn-group {
+    display            : flex;
+    flex-direction     : column;
+    flex-wrap          : wrap;
+    justify-content    : space-between;
+    cursor             : pointer;
+    margin-top         : 20px;
+    /* background-color: aquamarine; */
+}
+
+.row {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    margin-bottom  : 20px;
+}
+
+.btn {
+    width           : 45px;
+    height          : 45px;
+    background-color: whitesmoke;
+    border-radius   : 8px;
+}
+
+.btn-padding {
+    padding-top: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(250, 164, 52);
+}
+
+.btn p {
+    text-align: center;
+}
+
+.mrc p {
+    font-size  : 0.83em !important;
+    padding-top: 2px;
+}
+
+#devide p {
+    font-size  : 1.5em !important;
+    padding-top: 5px;
+}
+
+sup {
+    font-size: 0.5em;
+}
+
+#superior {
+    padding-left: 5px;
+}
+
+#sqrt {
+    padding-right: 5px;
+}
+
+#plus {
+    font-size  : 1.5em !important;
+    padding-top: 5px;
+}
+
+#minus {
+    font-size  : 1.5em !important;
+    padding-top: 3px;
+}
+
+#multiply {
+    font-size  : 1.2em !important;
+    padding-top: 5px;
+}
+
+#period {
+    font-size: 1.6em !important;
+}
+
+.btn0:hover {
+    background-color: rgb(250, 164, 52);
+}
+
+.btn0 p {
+    text-align: center;
+    font-size : 1.8em !important;
+}
+
+.btn0 {
+    width           : 108px;
+    height          : 45px;
+    background-color: whitesmoke;
+    border-radius   : 8px;
+
+}
+
