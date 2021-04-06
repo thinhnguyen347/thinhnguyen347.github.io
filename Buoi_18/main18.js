@@ -124,7 +124,7 @@ function Pow() {
 
 function Factorial() {
     let a = parseInt(document.getElementById("calculation").innerText);
-    if (a != "") {
+    if (a != "" || !Number.isInteger(a)) {
         if (a === 0) {
             document.getElementById("result").innerText = "1";
             return;
