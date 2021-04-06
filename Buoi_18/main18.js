@@ -1,5 +1,5 @@
-function reset() { 
-    document.getElementById("calculation").innerText= "";
+function reset() {
+    document.getElementById("calculation").innerText = "";
     document.getElementById("result").innerText = "";
 }
 //So
@@ -106,16 +106,18 @@ function Equal() {
 }
 // Tinh phan tram
 function percentage() {
-    let a = parseFloat(document.getElementById("calculation").innerText);
-    x = a / 100;
-    if (a != "") {
+    let b = document.getElementById("calculation").innerText
+    if (b !== "") {
+        let a = parseFloat(b);
+        x = a / 100;
         document.getElementById("result").innerText = `${x}`;
     }
 }
 // Binh phuong
 function Pow() {
-    let a = parseFloat(document.getElementById("calculation").innerText);
-    if (a != "") {
+    let b = document.getElementById("calculation").innerText
+    if (b !== "") {
+        let a = parseFloat(b);
         document.getElementById("result").innerText = `${a * a}`;
     }
 }
@@ -123,30 +125,35 @@ function Pow() {
 // Giai Thua
 
 function Factorial() {
-    let a = parseInt(document.getElementById("calculation").innerText);
-    if (a != "" || !Number.isInteger(a)) {
+    let b = document.getElementById("calculation").innerText
+    if (b !== "") {
+        let a = parseInt(b);
         if (a === 0) {
             document.getElementById("result").innerText = "1";
             return;
         }
+        if (Number.isInteger(a)) {
+            let x = 1;
 
-        let x = 1;
+            for (let i = 1; i <= a; i++) {
+                x = x * i;
+            }
 
-        for (let i = 1; i <= a; i++) {
-            x = x * i;
+            document.getElementById("result").innerText = `${x}`;
         }
-
-        document.getElementById("result").innerText = `${x}`;
     }
 }
 
 // Can bac 2
 function Sqrt() {
-    let a = parseFloat(document.getElementById("calculation").innerText);
-    if (a != "") {
+    let b = document.getElementById("calculation").innerText
+    if (b !== "") {
+        let a = parseFloat(b);
+
         if (!Number.isInteger(Math.sqrt(a))) {
             document.getElementById("result").innerText = `${Math.sqrt(a).toFixed(5)}`;
         } else { document.getElementById("result").innerText = `${Math.sqrt(a)}`; }
+
     }
 }
 
