@@ -58,6 +58,7 @@ function press3() {
 }
 
 function press0() {
+    let input = document.getElementsByTagName("p")
     let a = document.getElementById("calculation").innerText;
     document.getElementById("calculation").innerText = a + input[23].innerText;
 }
@@ -105,15 +106,15 @@ function Equal() {
 }
 // Tinh phan tram
 function percentage() {
-    let a = parseInt(document.getElementById("calculation").innerText);
+    let a = parseFloat(document.getElementById("calculation").innerText);
     x = a / 100;
     if (a != "") {
-        document.getElementById("result").innerText = `${x.toFixed(5)}`;
+        document.getElementById("result").innerText = `${x}`;
     }
 }
 // Binh phuong
 function Pow() {
-    let a = parseInt(document.getElementById("calculation").innerText);
+    let a = parseFloat(document.getElementById("calculation").innerText);
     if (a != "") {
         document.getElementById("result").innerText = `${a * a}`;
     }
@@ -141,7 +142,7 @@ function Factorial() {
 
 // Can bac 2
 function Sqrt() {
-    let a = parseInt(document.getElementById("calculation").innerText);
+    let a = parseFloat(document.getElementById("calculation").innerText);
     if (a != "") {
         if (!Number.isInteger(Math.sqrt(a))) {
             document.getElementById("result").innerText = `${Math.sqrt(a).toFixed(5)}`;
