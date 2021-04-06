@@ -1,4 +1,7 @@
-function reset() { window.location.reload() }
+function reset() { 
+    document.getElementById("calculation").innerText= "";
+    document.getElementById("result").innerText = "";
+}
 //So
 function press7() {
     let input = document.getElementsByTagName("p");
