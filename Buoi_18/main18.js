@@ -103,8 +103,9 @@ function pressDot() {
 function Equal() {
     let a = document.getElementById("calculation").innerText;
     x = eval(a);
+    y= Number(x).toLocaleString();
     if (Number.isInteger(x)) { 
-        document.getElementById("result").innerText = `${x.toFixed(0)}` 
+        document.getElementById("result").innerText = `${y}` 
     } else {
         document.getElementById("result").innerText = `${x.toFixed(3)}`;
     }
