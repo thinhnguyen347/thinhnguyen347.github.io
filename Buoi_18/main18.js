@@ -103,7 +103,11 @@ function pressDot() {
 function Equal() {
     let a = document.getElementById("calculation").innerText;
     x = eval(a);
-    document.getElementById("result").innerText = `${x}`;
+    if (Number.isInteger(x)) { 
+        document.getElementById("result").innerText = `${x.toFixed(0)}` 
+    } else {
+        document.getElementById("result").innerText = `${x.toFixed(3)}`;
+    }
 }
 // Tinh phan tram
 function percentage() {
