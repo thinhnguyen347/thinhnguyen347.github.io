@@ -64,7 +64,7 @@ function Equal() {
 
 }
 // Tinh phan tram
-function percentage() {
+function percent() {
     let b = document.getElementById("calculation").innerText
     if (b !== "") {
         let a = parseFloat(b);
