@@ -1,66 +1,17 @@
 function reset() {
-    document.getElementById("calculation").innerText = "";
+    document.getElementById("calculation").innerText = "0";
     document.getElementById("result").innerText = "";
 }
-//So
-function press7() {
-    let input = document.getElementsByTagName("p");
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[8].innerText;
-}
+// Nhập data
 
-function press8() {
-    let input = document.getElementsByTagName("p")
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[9].innerText;
-}
+function press(number) {
 
-function press9() {
-    let input = document.getElementsByTagName("p")
     let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[10].innerText;
-}
-
-function press4() {
-    let input = document.getElementsByTagName("p")
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[13].innerText;
-}
-
-function press5() {
-    let input = document.getElementsByTagName("p")
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[14].innerText;
-}
-
-function press6() {
-    let input = document.getElementsByTagName("p")
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[15].innerText;
-}
-
-function press1() {
-    let input = document.getElementsByTagName("p")
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[18].innerText;
-}
-
-function press2() {
-    let input = document.getElementsByTagName("p")
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[19].innerText;
-}
-
-function press3() {
-    let input = document.getElementsByTagName("p")
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[20].innerText;
-}
-
-function press0() {
-    let input = document.getElementsByTagName("p")
-    let a = document.getElementById("calculation").innerText;
-    document.getElementById("calculation").innerText = a + input[23].innerText;
+    if (a === "0") {
+        document.getElementById("calculation").innerText = "" + number;
+    } else {
+        document.getElementById("calculation").innerText = a + number;
+    }
 }
 
 function pressPlus() {
@@ -99,16 +50,18 @@ function pressDot() {
 }
 
 
-// Dau bang
+// Dấu bằng
 function Equal() {
     let a = document.getElementById("calculation").innerText;
+    let b = document.getElementById("result");
     x = eval(a);
-    y= Number(x).toLocaleString();
-    if (Number.isInteger(x)) { 
-        document.getElementById("result").innerText = `${y}` 
+    y = Number(x).toLocaleString();
+    if (Number.isInteger(x)) {
+        b.innerText = `${y}`
     } else {
-        document.getElementById("result").innerText = `${x.toFixed(3)}`;
+        b.innerText = `${x.toFixed(3)}`;
     }
+
 }
 // Tinh phan tram
 function percentage() {
@@ -167,7 +120,4 @@ function Sqrt() {
 
 //     for (let i = 0; i <= 26; i++) {
 //         x = document.getElementsByTagName("p")[i].innerText;
-//         console.log(`${i} ${x}`);
-//     }
-
-// }
+//         console.log(`${i} ${x}`);   }}
