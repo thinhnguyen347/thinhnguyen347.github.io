@@ -101,8 +101,9 @@ function pressDot() {
 
 // Dau bang
 function Equal() {
-    let a = parseFloat(document.getElementById("calculation").innerText);
-    document.getElementById("result").innerText = `${a}`;
+    let a = document.getElementById("calculation").innerText;
+    x = eval(a);
+    document.getElementById("result").innerText = `${x}`;
 }
 // Tinh phan tram
 function percentage() {
