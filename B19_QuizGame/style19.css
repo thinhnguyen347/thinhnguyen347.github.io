@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin    : 0;
+}
+
+body {
+    background-image   : url('https://i.ibb.co/1ZnB2dL/5134336.jpg');
+    background-position: top;
+    background-size    : cover;
+    font-size          : 20px;
+
+}
+
+#container {
+
+    height     : 80%;
+    width      : 80%;
+    margin     : 5% auto;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+p {
+    text-align: center;
+}
+
+.btn {
+    height       : 100px;
+    width        : 400px;
+    font-family  : 'Dela Gothic One', cursive;
+    font-size    : 1em;
+    border-radius: 10px;
+}
+
+#start {
+    font-size       : 1.5em;
+    background-color: rgb(243, 182, 16);
+}
+
+#container div {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+}
+
+#answer {
+    width          : 80%;
+    height         : 230px;
+    margin         : 0 auto;
+    justify-content: space-around;
+
+}
+
+#answer1 {
+    background-color: #F52533;
+}
+
+#answer2 {
+    background-color: #0067D5;
+}
+
+#answer3 {
+    background-color: #FFA200;
+}
+
+#answer4 {
+    background-color: #008B00;
+}
+
+#next {
+    background-color: #4E1B95;
+}
