@@ -1,60 +1,64 @@
-function reset() {
-    document.getElementById("calculation").innerText = "0";
-    document.getElementById("result").innerText = "";
-}
-// Nhập data
 
+
+const a = document.getElementById("calculation");
+const b = document.getElementById("result");
+// Clear man hinh
+function reset() {
+    a.innerText = "0";
+    b.innerText = "";
+}
+
+// Nhập data
 function press(number) {
 
-    let a = document.getElementById("calculation").innerText;
-    if (a === "0") {
-        document.getElementById("calculation").innerText = "" + number;
+    if (a.innerText === "0") {
+        a.innerText = "" + number;
     } else {
-        document.getElementById("calculation").innerText = a + number;
+        a.innerText = a.innerText + number;
     }
 }
 
 function pressPlus() {
-    let a = document.getElementById("calculation").innerText;
-    if (a != "") {
-        document.getElementById("calculation").innerText = `${a}+`
+
+    if (a.innerText != "") {
+        a.innerText = `${a}+`
     }
 }
 
 function pressMin() {
-    let a = document.getElementById("calculation").innerText;
-    if (a != "") {
-        document.getElementById("calculation").innerText = `${a}-`
+
+    if (a.innerText != "") {
+        a.innerText = `${a}-`
     }
 }
 
 function pressMul() {
-    let a = document.getElementById("calculation").innerText;
-    if (a != "") {
-        document.getElementById("calculation").innerText = `${a}*`
+
+    if (a.innerText != "") {
+        a.innerText = `${a}*`
     }
 }
 
 function pressDiv() {
-    let a = document.getElementById("calculation").innerText;
-    if (a != "") {
-        document.getElementById("calculation").innerText = `${a}/`
+
+    if (a.innerText != "") {
+        a.innerText = `${a}/`
     }
 }
 
 function pressDot() {
-    let a = document.getElementById("calculation").innerText;
-    if (a != "") {
-        document.getElementById("calculation").innerText = `${a}.`
-    } else { document.getElementById("calculation").innerText = `0.` }
+
+    if (a.innerText != "") {
+        a.innerText = `${a}.`
+    } else { a.innerText = `0.` }
 }
 
 
 // Dấu bằng
 function Equal() {
-    let a = document.getElementById("calculation").innerText;
-    let b = document.getElementById("result");
-    x = eval(a);
+
+
+    x = eval(a.innerText);
     y = Number(x).toLocaleString();
     if (Number.isInteger(x)) {
         b.innerText = `${y}`
@@ -65,59 +69,54 @@ function Equal() {
 }
 // Tinh phan tram
 function percent() {
-    let b = document.getElementById("calculation").innerText
-    if (b !== "") {
-        let a = parseFloat(b);
-        x = a / 100;
-        document.getElementById("result").innerText = `${x}`;
+
+    if (a.innerText !== "") {
+        let k = parseFloat(a.innerText);
+        let x = k / 100;
+        b.innerText = `${x}`;
     }
 }
 // Binh phuong
 function Pow() {
-    let b = document.getElementById("calculation").innerText
-    if (b !== "") {
-        let a = parseFloat(b);
-        document.getElementById("result").innerText = `${a * a}`;
+
+    if (a.innerText !== "") {
+        let k = parseFloat(a.innerText);
+        document.getElementById("result").innerText = `${k * k}`;
     }
 }
 
 // Giai Thua
 
 function Factorial() {
-    let b = document.getElementById("calculation").innerText
-    if (b !== "") {
-        let a = parseInt(b);
-        if (a === 0) {
-            document.getElementById("result").innerText = "1";
-            return;
+
+    if (a.innerText !== "") {
+        let k = parseInt(a.innerText);
+        if (k === 0) {
+            b.innerText = "1";
         }
-        if (Number.isInteger(a)) {
+        if (Number.isInteger(k)) {
             let x = 1;
 
-            for (let i = 1; i <= a; i++) {
+            for (let i = 1; i <= k; i++) {
                 x = x * i;
             }
 
-            document.getElementById("result").innerText = `${x}`;
+            b.innerText = `${x}`;
         }
     }
 }
 
 // Can bac 2
 function Sqrt() {
-    let b = document.getElementById("calculation").innerText
-    if (b !== "") {
-        let a = parseFloat(b);
 
-        if (!Number.isInteger(Math.sqrt(a))) {
-            document.getElementById("result").innerText = `${Math.sqrt(a).toFixed(5)}`;
-        } else { document.getElementById("result").innerText = `${Math.sqrt(a)}`; }
+    if (a.innerText !== "") {
+        let k = parseFloat(a.innerText);
+
+        if (!Number.isInteger(Math.sqrt(k))) {
+            b.innerText = `${Math.sqrt(b).toFixed(5)}`;
+        } else { b.innerText = `${Math.sqrt(k)}`; }
 
     }
 }
 
-// function f() {
 
-//     for (let i = 0; i <= 26; i++) {
-//         x = document.getElementsByTagName("p")[i].innerText;
-//         console.log(`${i} ${x}`);   }}

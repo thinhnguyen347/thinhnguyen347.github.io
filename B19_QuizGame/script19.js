@@ -1,11 +1,5 @@
 let questions = [
     {
-        question: "Name a mammal that cannot jump",
-        answer: ["grasshopper", "frog", "kangaroo", "elephant"],
-        correctAns: "elephant",
-    },
-
-    {
         question: "What is the fastest land animal?",
         answer: ["cheetah", "lion", "snake", "kangaroo"],
         correctAns: "cheetah",
@@ -23,3 +17,19 @@ let questions = [
         correctAns: "black",
     },
 ]
+//Ấn nút start để hiện câu hỏi 1
+
+$("#start").click(function () {
+    $(".container").hide("slow");
+    $(".container1").show("slow");
+});
+
+
+
+let count = 1
+$("#next").click(function () {
+    $(".hide").hide();
+    count++;
+});
+
+// random màu nền nút

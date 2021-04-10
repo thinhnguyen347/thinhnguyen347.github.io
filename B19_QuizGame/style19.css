@@ -6,69 +6,141 @@
 }
 
 body {
-    background-image   : url('https://i.ibb.co/1ZnB2dL/5134336.jpg');
-    background-position: top;
-    background-size    : cover;
-    font-size          : 20px;
+    background-image     : url('https://i.ibb.co/6vxWf0L/forest2.jpg');
+    background-position  : top;
+    background-size      : contain;
+    background-attachment: fixed;
+    background-repeat    : no-repeat;
+    font-size            : 20px;
 
 }
 
-#container {
-
-    height     : 80%;
-    width      : 80%;
-    margin     : 5% auto;
+.container {
+    height     : auto;
+    width      : 900px;
+    margin     : 180px auto;
     font-family: 'Dela Gothic One', cursive;
+    }
+
+.container1 {
+    height     : auto;
+    width      : 900px;
+    margin     : 100px auto;
+    font-family: 'Dela Gothic One', cursive;
+    
 }
 
-p {
-    text-align: center;
+.hide{
+    display:none;
 }
 
-.btn {
-    height       : 100px;
-    width        : 400px;
-    font-family  : 'Dela Gothic One', cursive;
-    font-size    : 1em;
-    border-radius: 10px;
+
+/* Phần mở đầu */
+
+img {
+    display     : block;
+    margin-left : auto;
+    margin-right: auto;
 }
 
 #start {
     font-size       : 1.5em;
     background-color: rgb(243, 182, 16);
+    height          : 90px;
+    width           : 250px;
+    font-family     : 'Dela Gothic One', cursive;
+    font-size       : 1.4em;
+    border-radius   : 10px;
+    outline         : none;
+    display         : block;
+    margin-left     : auto;
+    margin-right    : auto;
 }
 
-#container div {
+#start:hover {
+    background-color: rgb(250, 53, 18);
+    color           : white;
+}
+
+.btn {
+    height       : 90px;
+    width        : 350px;
+    font-family  : 'Dela Gothic One', cursive;
+    font-size    : 1em;
+    border-radius: 10px;
+    outline      : none;
+    cursor       : pointer;
+}
+
+.btn:hover {
+    color: rgb(31, 31, 31) !important;
+}
+
+/* Phần câu hỏi */
+
+.container > p{
+    font-size: 1.2em;
+    color:rgb(102, 2, 49);
+    padding-left: 80px;
+}
+.content {
+    word-wrap      : break-word;
+    height         : auto;
+    width          : 800px;
+    margin         : 0 auto;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#question {
+    font-size : 1.4em;
+    text-align: center;
+}
+
+#answer {
     display        : flex;
     flex-direction : row;
     flex-wrap      : wrap;
     justify-content: space-around;
-}
-
-#answer {
-    width          : 80%;
+    padding-top    : 10px;
     height         : 230px;
-    margin         : 0 auto;
-    justify-content: space-around;
-
 }
 
 #answer1 {
     background-color: #F52533;
+    color           : whitesmoke;
 }
 
 #answer2 {
     background-color: #0067D5;
+    color           : whitesmoke;
 }
 
 #answer3 {
     background-color: #FFA200;
+    color           : whitesmoke;
 }
 
 #answer4 {
     background-color: #008B00;
+    color           : whitesmoke;
 }
 
+/* Câu tiếp theo */
 #next {
     background-color: #4E1B95;
+    color           : whitesmoke;
+    font-size       : 1.2em;
+    height          : 70px;
+    width           : 120px;
+    font-family     : 'Dela Gothic One', cursive;
+    border-radius   : 50px;
+    outline         : none;
+    display         : block;
+    margin-left     : auto;
+    margin-right    : auto;
+}
+
+#next:hover {
+    background-color: rgb(145, 5, 70);
 }

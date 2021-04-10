@@ -7,30 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
     <link rel="stylesheet" href="style19.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="container">
-        <p><img src="./textnote.gif" alt="Quiz" width=auto height=80px></p><br><br>
-
-        <div>
-            <button id="start" class="btn">Start</button>
-        </div>
-
-        <h2 id="question">Question 1: </h2><br><br>
-
-        <div id="answer">
-            <button id="answer1" class="btn">Answer 1</button>
-            <button id="answer2" class="btn">Answer 2</button>
-            <button id="answer3" class="btn">Answer 3</button>
-            <button id="answer4" class="btn">Answer 4</button>
-        </div>
-        <br>
-        <div>
-            <button id="next" class="btn">Next</button>
-        </div>
+    <!-- Phần mở đầu (biến mất khi ấn nút start) -->
+    <div class="container">
+        <br><br><br><br>
+        <div><img src="./textnote.gif" alt="Quiz" width=360px height=80px></div>
+        <br><br><br>
+        <button id="start">Start</button>
 
     </div>
+
+    <!-- Phần câu hỏi (hiện ra sau khi ấn start) -->
+    
+    <div class="container1 hide">
+        <br>
+        <p>Score:&nbsp;<span id="score">0</span>&nbsp;/&nbsp;100</p>
+        <div class="content ">
+            <p>Question # <span id="number">1</span>:</p>  <br>
+            <p id="question"> Do you know a mammal that cannot jump?</p>
+            <br><br>
+            <div id="answer">
+                <button id="answer1" class="btn">Grasshopper</button>
+                <button id="answer2" class="btn">Frog</button>
+                <button id="answer3" class="btn">Kangaroo</button>
+                <button id="answer4" class="btn">Elephant</button>
+            </div>
+            <br>
+            <div>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phần end game -->
+    <div class="container hide">
+        <div id="logo ">
+            <img src="./textnote.gif" alt="Quiz" width=360px height=80px><br><br>
+            <br>
+            <button id="start">Start</button>
+        </div>
+    </div>
+
     <script src="./script19.js"></script>
 </body>
 
