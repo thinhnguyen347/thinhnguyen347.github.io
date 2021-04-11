@@ -13,7 +13,7 @@
 
 <body>
     <!-- Phần mở đầu (biến mất khi ấn nút start) -->
-    <div class="container">
+    <div class="container hide">
         <br><br><br><br>
         <div><img src="./textnote.gif" alt="Quiz" width=360px height=80px></div>
         <br><br><br>
@@ -26,15 +26,15 @@
 
     <div class="container1 hide">
         <br><br>
-        <div class="content ">
+        <div class="content">
             <p id="number"></p> <br>
             <p id="question"></p>
             <br><br>
             <div id="answer">
-                <button id="choice1" class="btn"></button>
-                <button id="choice2" class="btn"></button>
-                <button id="choice3" class="btn"></button>
-                <button id="choice4" class="btn"></button>
+                <button id="choice1" class="btn choice"></button>
+                <button id="choice2" class="btn choice"></button>
+                <button id="choice3" class="btn choice"></button>
+                <button id="choice4" class="btn choice"></button>
             </div>
             <br>
             <div>
@@ -44,11 +44,12 @@
     </div>
 
     <!-- Phần end game -->
-    <div class="container hide">
+    <div class="container ">
         <div id="logo ">
             <img src="./textnote.gif" alt="Quiz" width=360px height=80px><br><br>
             <br>
-            <button id="start">Start</button>
+            <p class="end">End Game!</p><br>
+            <p id="score" class="end">Score: 100</p>
         </div>
     </div>
 

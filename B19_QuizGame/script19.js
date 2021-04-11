@@ -25,7 +25,7 @@ let quiz = [
 ]
 
 // Lệnh điền câu hỏi và các phương án
-
+let score = 0;
 function Question(a) {
     $("#question").text(quiz[a].question);
     for (let i = 0; i < 4; i++) {
@@ -35,7 +35,11 @@ function Question(a) {
         $("#choice4").text(quiz[a].choices[3]);
         $("#number").text(`Question ${a + 1}`);
     }
-}
+    // Tính điểm
+
+    Score(a)
+
+    }
 
 //Ấn nút start để hiện câu hỏi đầu tiên
 
@@ -52,15 +56,15 @@ $("#next").click(function () {
     count++;
 })
 
-// 
 
 // Hiện đáp án đúng sau khi chọn & Tính điểm
 
 
-let score = 0;
-function Answer(x) {
-    Array.from($(".btn"))
-    console.log(score)
+function Score(a) {
+    $.each(Array.from($(".choice")), function(){
+        
+    })
 }
 
 // random màu nền nút
+

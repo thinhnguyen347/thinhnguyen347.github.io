@@ -145,3 +145,7 @@ img {
 #next:hover {
     background-color: rgb(145, 5, 70);
 }
+
+.end{
+    text-align: center;
+}
