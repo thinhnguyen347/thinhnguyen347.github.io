@@ -1,151 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin    : 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    background-image     : url('https://i.ibb.co/6vxWf0L/forest2.jpg');
-    background-position  : top;
-    background-size      : contain;
-    background-attachment: fixed;
-    background-repeat    : no-repeat;
-    font-size            : 20px;
-
+  background-image: url("https://i.ibb.co/6vxWf0L/forest2.jpg");
+  background-position: top;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  background-color: rgb(50, 50, 83);
 }
 
 .container {
-    height     : auto;
-    width      : 900px;
-    margin     : 180px auto;
-    font-family: 'Dela Gothic One', cursive;
-    }
+  height: auto;
+  width: 900px;
+  margin: 180px auto;
+  font-family: "Dela Gothic One", cursive;
+}
 
 .container1 {
-    height     : auto;
-    width      : 900px;
-    margin     : 100px auto;
-    font-family: 'Dela Gothic One', cursive;
+  height: auto;
+  width: 900px;
+  margin: 100px auto;
+  font-family: "Dela Gothic One", cursive;
 }
 
-.hide{
-    display:none;
+.hide {
+  display: none;
 }
-
 
 /* Phần mở đầu */
 
 img {
-    display     : block;
-    margin-left : auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #start {
-    font-size       : 1.5em;
-    background-color: rgb(243, 182, 16);
-    height          : 90px;
-    width           : 250px;
-    font-family     : 'Dela Gothic One', cursive;
-    font-size       : 1.4em;
-    border-radius   : 10px;
-    outline         : none;
-    display         : block;
-    margin-left     : auto;
-    margin-right    : auto;
+  font-size: 1.5em;
+  background-color: rgb(243, 182, 16);
+  height: 90px;
+  width: 250px;
+  font-family: "Dela Gothic One", cursive;
+  font-size: 1.4em;
+  border-radius: 10px;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #start:hover {
-    background-color: rgb(250, 53, 18);
-    color           : white;
+  background-color: rgb(250, 53, 18);
+  color: white;
 }
 
 .btn {
-    height       : 90px;
-    width        : 350px;
-    font-family  : 'Dela Gothic One', cursive;
-    font-size    : 1em;
-    border-radius: 10px;
-    outline      : none;
-    cursor       : pointer;
+  height: 90px;
+  width: 350px;
+  font-family: "Dela Gothic One", cursive;
+  font-size: 1em;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn:hover {
-    
-    transform: scale(1.08,1.08);
-    transition: all 0.2s 0s ease-in-out;
+  transform: scale(1.08, 1.08);
+  transition: all 0.2s 0s ease-in-out;
 }
 
 /* Phần câu hỏi */
 
-.container1 > p{
-    font-size: 1.2em;
-    color:rgb(102, 2, 49);
-    padding-left: 50px;
+.container1 > p {
+  font-size: 1.2em;
+  color: rgb(102, 2, 49);
+  padding-left: 50px;
 }
 .content {
-    word-wrap      : break-word;
-    height         : auto;
-    width          : 800px;
-    margin         : 0 auto;
-    justify-content: space-around;
-    padding-top: 30px;
+  word-wrap: break-word;
+  height: auto;
+  width: 800px;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-top: 30px;
 }
 
 #question {
-    font-size : 1.4em;
-    text-align: center;
+  font-size: 1.4em;
+  text-align: center;
 }
 
 #answer {
-    display        : flex;
-    flex-direction : row;
-    flex-wrap      : wrap;
-    justify-content: space-around;
-    padding-top    : 10px;
-    height         : 230px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+  height: 230px;
 }
 
 #choice1 {
-    background-color: #F52533;
-    color           : whitesmoke;
+  background-color: #f52533;
+  color: whitesmoke;
 }
 
 #choice2 {
-    background-color: #0067D5;
-    color           : whitesmoke;
+  background-color: #0067d5;
+  color: whitesmoke;
 }
 
 #choice3 {
-    background-color: #FFA200;
-    color           : whitesmoke;
+  background-color: #ffa200;
+  color: whitesmoke;
 }
 
 #choice4 {
-    background-color: #008B00;
-    color           : whitesmoke;
+  background-color: #008b00;
+  color: whitesmoke;
 }
 
 /* Next */
 #next {
-    background-color: #4E1B95;
-    color           : whitesmoke;
-    font-size       : 1.2em;
-    height          : 70px;
-    width           : 120px;
-    font-family     : 'Dela Gothic One', cursive;
-    border-radius   : 50px;
-    outline         : none;
-    display         : block;
-    margin-left     : auto;
-    margin-right    : auto;
+  background-color: #4e1b95;
+  color: whitesmoke;
+  font-size: 1.2em;
+  height: 70px;
+  width: 120px;
+  font-family: "Dela Gothic One", cursive;
+  border-radius: 50px;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #next:hover {
-    background-color: rgb(145, 5, 70);
+  background-color: rgb(145, 5, 70);
 }
 
-.end{
-    text-align: center;
+.end {
+  text-align: center;
 }

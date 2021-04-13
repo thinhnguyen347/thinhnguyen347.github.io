@@ -36,9 +36,14 @@ function Question(a) {
         $("#number").text(`Question ${a + 1}`);
     }
     // Tính điểm
-
+      
+    console.log(quiz[a].choices)
+    console.log(quiz[a].choices[3])
+    console.log(quiz[a].ans)
+    
     Score(a)
 
+    
 }
 
 //Ấn nút start để hiện câu hỏi đầu tiên
@@ -59,17 +64,19 @@ $("#next").click(function () {
 
 // Hiện đáp án đúng sau khi chọn & Tính điểm
 
-let score=0;
+let score = 0;
 function Score(a) {
-    $(".choice").each(function (index, element) {
-        if ($(this).text() == quiz[a].choices){
-            score +=25;
-            $(this).css("background-color", "green")
-        } else {
-            score +=0;
-            $(this).css("background-color", "green")
-        }
-    })
+    for (let i = 0; i < 4; i++) {
+        $(".choice")[i].click(function () {
+            if ($(this).innerText === quiz[a].ans) {
+                score += 25;
+                $(this).css("background-color", "green")
+            } else {
+                score += 0;
+                $(this).css("background-color", "gray")
+            }
+        })
+    }
 
     console.log(score)
 }

@@ -59,12 +59,14 @@ function Equal() {
 
 
     x = eval(a.innerText);
-    y = Number(x).toLocaleString();
+    y = Number(x).toLocaleString(en-US);
     if (Number.isInteger(x)) {
         b.innerText = `${y}`
     } else {
         b.innerText = `${x.toFixed(3)}`;
     }
+let k = a.innerText.replace("/", ":").replace("*", "x");
+    a.innerText= k;
 
 }
 // Tinh phan tram

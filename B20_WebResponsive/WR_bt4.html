@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive 3</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/fGSWWCm/R.png" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(50, 50, 83);
+        }
+
+        #container {
+            margin: 15px;
+            height: 30px;
+            width: auto;
+            /* background-color: rgb(211, 138, 28); */
+        }
+
+        .item {
+            width: 90px;
+            height: 30px;
+            background-color: #fff;
+            float: left;
+        }
+
+        .left2 {
+            margin-left: 15px;
+        }
+
+        .right {
+            float: right;
+        }
+
+        #container1 {
+            width: auto;
+            height: 500px;
+            background-color: #fff;
+            margin: 15px;
+        }
+
+        /* Mobile */
+
+        @media (max-width:800px) {
+
+            #container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .left2 {
+                margin-left: 0;
+            }
+
+            .item {
+                width: 60px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="item"></div>
+        <div class="item left2"></div>
+        <div class="item right"></div>
+    </div>
+    <div id="container1"></div>
+
+
+
+</body>
+
+</html>
