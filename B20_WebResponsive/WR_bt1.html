@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive 1</title>
-    <link rel="shortcut icon" href="https://i.ibb.co/fGSWWCm/R.png" type="image/x-icon">
     <style>
         * {
             box-sizing: border-box;
@@ -15,40 +14,34 @@
 
         body {
             background-color: rgb(50, 50, 83);
-            padding: 50px 20%;
         }
 
         #container {
-            width: 100%;
-            height: 500px;
             display: grid;
             grid-template-columns: auto auto auto;
             grid-gap: 30px;
-        }
+            padding: 30px;
+            }
 
         .item {
             width: 100%;
+            height: 200px;
             background-color: #fff;
-            height: 250px;
         }
 
         /* Mobile */
-
-        @media (max-width:600px) {
-
+        @media (max-width: 600px) {
             #container {
                 display: grid;
                 grid-template-columns: auto;
+                padding: 15px;
                 grid-gap: 15px;
-
             }
         }
     </style>
-
 </head>
 
 <body>
-
     <div id="container">
         <div class="item"></div>
         <div class="item"></div>
@@ -56,11 +49,7 @@
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
     </div>
-
 </body>
 
 </html>

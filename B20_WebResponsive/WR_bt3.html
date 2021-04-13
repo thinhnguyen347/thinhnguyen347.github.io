@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive 3</title>
+    <title>Responsive 2</title>
     <link rel="shortcut icon" href="https://i.ibb.co/fGSWWCm/R.png" type="image/x-icon">
     <style>
         * {
@@ -15,56 +15,64 @@
 
         body {
             background-color: rgb(50, 50, 83);
-        }
-
-        #container {
-            padding: 10px 15px;
-            height: 50px;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            /* background-color: rgb(211, 138, 28); */
-        }
-
-        .item {
-            width: 90px;
-            height: 30px;
-            background-color: #fff;
+            padding: 15px 30px;
         }
 
         #container1 {
+            width: 50%;
+            height: 300px;
             display: grid;
             grid-template-columns: auto auto;
             grid-gap: 15px;
-            margin: 15px 15px auto 15px;
+            margin-top: 30px;
         }
 
-        .item1 {
+        .item {
             width: 100%;
-            height: 500px;
             background-color: #fff;
+            height: 150px;
+        }
+
+        #wrap-content {
+            display: flex;
+            /* background-color: rgb(211, 138, 28); */
+        }
+
+        #container2 {
+            width: 50%;
+            height: 650px;
+            background-color: #fff;
+            margin-top: 30px;
+            margin-left: 30px;
         }
 
         /* Tablet */
-
         @media (max-width:800px) {
-            #container {
-                padding: 15px 15px 0 15px;
-                height: 45px;
+
+            body {
+                padding: 30px 0;
             }
 
-            .item {
-                width: 60px;
+            #wrap-content {
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+
             }
 
             #container1 {
-                display: grid;
-                grid-template-columns: auto;
-                grid-gap: 15px;
-                margin: 15px 15px auto 15px;
+                width: 100%;
+                height: 300px;
+                margin-bottom: 15px;
+                margin-top: 0px;
             }
 
+            #container2 {
+                width: auto;
+                height: 650px;
+                background-color: #fff;
+                margin-left: 0;
+            }
         }
     </style>
 
@@ -72,17 +80,15 @@
 
 <body>
 
-    <div id="container">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+    <div id="wrap-content">
+        <div id="container1">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div id="container2"></div>
     </div>
-    <div id="container1">
-        <div class="item1"></div>
-        <div class="item1"></div>
-    </div>
-
-
 
 </body>
 
