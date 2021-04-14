@@ -25,60 +25,61 @@ let quiz = [
 ]
 
 // Lệnh điền câu hỏi và các phương án
+let currentQuestion = 0;
+function Question(currentQuestion) {
+    $("#question").text(quiz[currentQuestion].question);
+    $("#choice1").text(quiz[currentQuestion].choices[0]);
+    $("#choice2").text(quiz[currentQuestion].choices[1]);
+    $("#choice3").text(quiz[currentQuestion].choices[2]);
+    $("#choice4").text(quiz[currentQuestion].choices[3]);
+    $("#number").text(`Question ${currentQuestion + 1}`);
 
-function Question(a) {
-    $("#question").text(quiz[a].question);
-    for (let i = 0; i < 4; i++) {
-        $("#choice1").text(quiz[a].choices[0]);
-        $("#choice2").text(quiz[a].choices[1]);
-        $("#choice3").text(quiz[a].choices[2]);
-        $("#choice4").text(quiz[a].choices[3]);
-        $("#number").text(`Question ${a + 1}`);
-    }
     // Tính điểm
-      
-    console.log(quiz[a].choices)
-    console.log(quiz[a].choices[3])
-    console.log(quiz[a].ans)
-    
-    Score(a)
 
-    
+    console.log(quiz[currentQuestion].choices)
+    console.log(quiz[currentQuestion].choices[3])
+    console.log(quiz[currentQuestion].ans)
+    Score(currentQuestion)
 }
 
 //Ấn nút start để hiện câu hỏi đầu tiên
 
 $("#start").click(function () {
     $(".container").hide("slow");
-    $(".container1").show("slow", Question(0));
+    $(".container1").show("slow", Question(currentQuestion));
 });
 
 // Ấn nút next
 
-let count = 1;
+
 $("#next").click(function () {
-    Question(count);
-    count++;
+    Question(currentQuestion);
+    currentQuestion++;
 })
 
 
 // Hiện đáp án đúng sau khi chọn & Tính điểm
 
 let score = 0;
-function Score(a) {
-    for (let i = 0; i < 4; i++) {
-        $(".choice")[i].click(function () {
-            if ($(this).innerText === quiz[a].ans) {
+function Score(currentQuestion) {
+
+    for (let i=1;i<=5;i++){
+
+        let choice= $(`#choice${i}`);
+
+        choice.click(function () {
+
+            if (choice.innerText == quiz[currentQuestion].ans) {
                 score += 25;
-                $(this).css("background-color", "green")
+                choice.css("background-color", "green");
             } else {
                 score += 0;
-                $(this).css("background-color", "gray")
+                choice.css("background-color", "gray");
             }
+            console.log(score);
         })
-    }
 
-    console.log(score)
+    }
 }
 
 // random màu nền nút
