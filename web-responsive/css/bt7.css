@@ -11,25 +11,25 @@ body {
   line-height: 25px;
 }
 
-#header {
+.header {
   height: 60px;
   width: auto;
   margin: 15px;
   display: flex;
 }
 
-#top {
+#first {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-#logo {
+.logo {
   width: 100px;
   height: 30px;
   background-color: white;
 }
 
-#menu {
+.menu {
   width: 100%;
   height: 25px;
   margin-left: 200px;
@@ -63,60 +63,51 @@ body {
 #left-panel {
   height: 600px;
   width: 930px;
-  background-color: rgb(235, 77, 77);
+  background-color: white;
 }
 #right-panel {
   height: 600px;
   width: 550px;
-  background-color: rgb(235, 77, 77);
-}
-
-img {
-  display: none;
+  background-color: white;
 }
 
 .hide {
+  display: none !important;
+}
+/* ------------------ */
+.header1 {
+  height: auto;
+  margin: 15px;
   display: none;
+  }
+#btn {
+  display: flex;
+}
+
+img {
+  display: block;
+  margin-right: 20px;
+}
+
+.menu-mobile {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.menu2 {
+  height: 25px;
+  background-color: white;
+  border-bottom: 1px solid rgb(50, 50, 83);
+  width: auto;
 }
 
 @media (max-width: 600px) {
-  img {
-    display: inline;
+  .header {
+    display: none;
   }
 
-  #logo {
-    display: inline;
-    margin: auto auto auto 15px;
-    width: 80px;
-    height: 20px;
-  }
-
-  #top {
-    display: flex;
-    padding-top: 2px;
-  }
-
-  #header {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    margin-top: 20px;
-  }
-
-  #menu {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-  }
-
-  .menu1 {
-    width: 100%;
-    height: 25px;
-    border-bottom: 0.5px solid rgb(50, 50, 83);
+  .header1 {
+    display: block;
   }
 
   #content {
@@ -129,16 +120,8 @@ img {
 
   #left-panel,
   #right-panel {
-    width: 100%;
+    width: auto;
     height: 400px;
     margin-bottom: 15px;
-  }
-
-  .show-menu {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 115px;
-    justify-content: space-between;
   }
 }
