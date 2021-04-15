@@ -27,7 +27,7 @@ a {
 @media (max-width:600px) {
 
     #container {
-        margin: 50px auto;
+        margin: 80px auto auto auto;
         height: 550px;
         width: 400px;
         background-color: rgb(250, 221, 185);

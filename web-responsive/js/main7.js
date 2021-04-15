@@ -1,9 +1,10 @@
-function MobileView() {
+$(document).ready(function () {
+
     if (window.matchMedia && window.matchMedia('(max-width: 600px)').matches) {
         $("#menu").addClass("hide")
     }
 
     $("img").click(function () {
-        $("#menu").toggleClass("hide")
+        $("#menu").toggleClass("hide");
     })
-}
+})
