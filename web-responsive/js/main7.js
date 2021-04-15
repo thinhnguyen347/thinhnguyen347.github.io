@@ -1,6 +1,9 @@
+function MobileView() {
+    if (window.matchMedia && window.matchMedia('(max-width: 600px)').matches) {
+        $("#menu").addClass("hide")
+    }
 
-if (window.matchMedia && window.matchMedia('(max-width: 500px)').matches) {
-    $("div.show-menu").addClass("hide")}
-    
     $("img").click(function () {
-    $("div.show-menu").toggleClass("hide")})
+        $("#menu").toggleClass("hide")
+    })
+}

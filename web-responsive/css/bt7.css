@@ -18,6 +18,11 @@ body {
   display: flex;
 }
 
+#top {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #logo {
   width: 100px;
   height: 30px;
@@ -25,33 +30,25 @@ body {
 }
 
 #menu {
-  width: 306px;
+  width: 100%;
   height: 25px;
-  margin: auto auto auto 200px;
+  margin-left: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .menu1 {
   height: 25px;
-  width: 300px;
   background-color: white;
-  width: 100px;
+  width: 130px;
+  border-left: 0.5px solid rgb(50, 50, 83);
 }
 
 #login {
-  width: 130px;
-  height: 25px;
-  background-color: white;
-  margin: 0 0 0 auto;
-}
-
-.show-menu {
-  width: 100%;
-  height: 30px;
-  /* background-color: aqua; */
-  display: flex;
-  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 #content {
@@ -82,23 +79,21 @@ img {
   display: none;
 }
 
-hr {
-  border-top: 1px solid;
-}
-
 @media (max-width: 600px) {
   img {
-    display: inline-block;
+    display: inline;
   }
 
   #logo {
-    display: inline-block;
+    display: inline;
     margin: auto auto auto 15px;
+    width: 80px;
+    height: 20px;
   }
 
   #top {
     display: flex;
-    padding-top: 20px;
+    padding-top: 2px;
   }
 
   #header {
@@ -106,11 +101,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-  }
-
-  #login {
-    width: 100%;
-    height: 25px;
+    margin-top: 20px;
   }
 
   #menu {
@@ -120,11 +111,12 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-    }
+  }
 
   .menu1 {
     width: 100%;
     height: 25px;
+    border-bottom: 0.5px solid rgb(50, 50, 83);
   }
 
   #content {
@@ -132,22 +124,21 @@ hr {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    height:auto;
-    }
+    height: auto;
+  }
 
-    #left-panel, #right-panel {
-      width: 100%;
-      height: 400px;
-      margin-bottom: 15px;
-    }
+  #left-panel,
+  #right-panel {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+  }
 
   .show-menu {
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 104px;
+    height: 115px;
     justify-content: space-between;
   }
-
- 
 }
