@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Responsive Design</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="./bt6.css">
     <link rel="shortcut icon" href="https://i.ibb.co/fGSWWCm/R.png" type="image/x-icon">
-    </head>
+    <link rel="stylesheet" href="../css/bt6.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
 
 <body>
     <div id="header">
-        <img src="https://i.ibb.co/6vzRnYW/menubtn-white.png" alt="logo" width=30px>
-        <div class="logo">Logo</div><br>
+        <img src="https://i.ibb.co/6vzRnYW/menubtn-white.png" alt="logo" width=30px height=30px>
+        <div id="logo">Logo</div><br>
         <div id="menu">
             <div class="home">Home</div>
             <div class="menu1">Menu 1</div>
@@ -23,12 +24,15 @@
         </div>
     </div>
     <div id="content"></div>
-    <script>
-        $("#menu").hide();
-        $("img").click(function () {
-            $("#menu").toggle();
-        })
 
+    <!-- script -->
+    <script>
+        if (window.matchMedia && window.matchMedia('(max-width: 600px)').matches) {
+            $("#menu").hide()
+        };
+        $("img").click(function () {
+            $("#menu").toggle("slow");
+        })
     </script>
 </body>
 

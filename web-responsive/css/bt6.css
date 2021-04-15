@@ -2,11 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   text-align: center;
-  color: white;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   background-color: rgb(50, 50, 83);
+  line-height: 25px;
 }
 
 #header {
@@ -18,24 +20,23 @@ body {
   justify-content: space-between;
 }
 
-.logo {
+#logo {
   width: 100px;
   height: 30px;
   background-color: white;
 }
 
 #menu {
-  width: 600px;
-  height: 20px;
-  margin: 5px 0 5px auto;
+  width: 500px;
+  height: 30px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .menu1 {
   background-color: white;
   width: 100px;
-  outline-color: 1px solid rgb(50, 50, 83);
 }
 
 #content {
@@ -46,48 +47,50 @@ body {
 }
 
 .home {
-  visibility: hidden;
+  display: none;
 }
 
 img {
   display: none;
 }
 
+hr {
+  display: none;
+}
+
 @media (max-width: 600px) {
   img {
-    display: inline;
+    display: inline-block;
+    margin: 20px auto auto 0
   }
 
   #header {
     height: auto;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
   }
 
-  .logo {
+  #logo {
     display: none;
   }
 
   .home {
-    visibility: visible;
+    display: inline;
     width: 100%;
     background-color: white;
-    outline-style: solid;
-    outline-color: rgb(50, 50, 83);
+    line-height: 30px;
   }
 
   #menu {
     width: 100%;
-    height: auto;
+    height: 140px;
     display: flex;
     flex-direction: column;
   }
 
   .menu1 {
     width: 100%;
-    outline-style: solid;
-    outline-color: rgb(50, 50, 83);
+    line-height: 30px;
   }
 
   #content {

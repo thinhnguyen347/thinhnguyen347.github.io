@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(50, 50, 83);
+}
+
+
+#container {
+    margin: 60px auto;
+    height:620px;
+    width: 500px;
+    background-color: rgb(250, 221, 185);
+    padding: 20px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width:600px) {
+
+    #container {
+        margin: 50px auto;
+        height: 550px;
+        width: 400px;
+        background-color: rgb(250, 221, 185);
+        padding: 10px;
+        font-size: 23px;
+    }
+}

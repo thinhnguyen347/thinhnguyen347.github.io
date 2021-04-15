@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(50, 50, 83);
+  line-height: 25px;
+}
+
+#header {
+  height: 60px;
+  width: auto;
+  margin: 15px;
+  display: flex;
+}
+
+#logo {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+}
+
+#menu {
+  width: 306px;
+  height: 25px;
+  margin: auto auto auto 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu1 {
+  height: 25px;
+  width: 300px;
+  background-color: white;
+  width: 100px;
+}
+
+#login {
+  width: 130px;
+  height: 25px;
+  background-color: white;
+  margin: 0 0 0 auto;
+}
+
+.show-menu {
+  width: 100%;
+  height: 30px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+}
+
+#content {
+  width: auto;
+  height: 500px;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#left-panel {
+  height: 600px;
+  width: 930px;
+  background-color: rgb(235, 77, 77);
+}
+#right-panel {
+  height: 600px;
+  width: 550px;
+  background-color: white;
+}
+
+img {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+hr {
+  border-top: 1px solid;
+}
+
+@media (max-width: 600px) {
+  img {
+    display: inline-block;
+  }
+
+  #logo {
+    display: inline-block;
+    margin: auto auto auto 15px;
+  }
+
+  #top {
+    display: flex;
+    padding-top: 20px;
+  }
+
+  #header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  #login {
+    width: 100%;
+    height: 25px;
+  }
+
+  #menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    }
+
+  .menu1 {
+    width: 100%;
+    height: 25px;
+  }
+
+  #content {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height:auto;
+    }
+
+    #left-panel, #right-panel {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 15px;
+    }
+
+  .show-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 104px;
+    justify-content: space-between;
+  }
+
+ 
+}
