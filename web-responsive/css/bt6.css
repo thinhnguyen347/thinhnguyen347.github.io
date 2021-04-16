@@ -70,6 +70,11 @@ img {
   border-bottom: 1px solid #323253;
 }
 
+.menu2:hover{
+  background-color: rgb(50, 50, 10);
+  color: white;
+}
+
 @media (max-width: 600px) {
   .header {
     display: none;

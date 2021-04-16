@@ -79,15 +79,20 @@ body {
   height: auto;
   margin: 15px;
   display: none;
-  }
+}
+
 #btn {
-  display: flex;
+  width: 100%;
 }
 
 img {
   display: block;
-  margin-right: 20px;
+  float: left;;
 }
+
+.center {
+  margin: auto;
+  }
 
 .menu-mobile {
   margin-top: 15px;
@@ -99,6 +104,11 @@ img {
   background-color: white;
   border-bottom: 1px solid rgb(50, 50, 83);
   width: auto;
+}
+
+.menu2:hover{
+  background-color: rgb(50, 50, 10);
+  color: white;
 }
 
 @media (max-width: 600px) {
