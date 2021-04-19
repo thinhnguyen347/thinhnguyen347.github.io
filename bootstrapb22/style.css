@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f3f7fa;
+}
+
+.navbar {
+  background-color: #34465c !important;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: azure;
+}
+.nav-item a:hover {
+  color: rgb(156, 156, 156);
+}
+.fa-bars {
+  color: white !important;
+}
+
+.content {
+  margin: 0 130px !important;
+  color: #464646;
+}
+
+.search {
+  width: 18rem !important;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+.card {
+  padding: 0 !important;
+  margin-left: 15px;
+  width: 18rem !important;
+}
+
+.courses img {
+  height: 14rem !important;
+}
+
+.fas {
+  color: #ffd600;
+}
+
+.price {
+  color: #ff7a63;
+}
+
+.text-decoration-line-through {
+  color: #939393 !important;
+}
+
+.footer {
+  background-color: #464646;
+  height: 200px;
+  padding: 50px 130px;
+}
+
+.item {
+  height: auto;
+  width: 200px;
+}
+
+.item p {
+  color: #919294 !important;
+}
+
+.item h5 {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .filter-field {
+    display: none;
+  }
+  
+  .footer {
+    height: auto;
+    text-align: center;
+  }
+}
