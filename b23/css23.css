@@ -27,7 +27,7 @@
 
 .logo {
   line-height: 28px;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: bolder;
   color: white;
 }
@@ -76,8 +76,12 @@ button:hover {
   font-size: 54px;
 }
 
-.description {
+.des {
   font-size: 20px;
+}
+
+.shadow {
+  text-shadow: 2px 5px 6px #777676;
 }
 
 .form {
@@ -126,6 +130,8 @@ button.search {
 
 .des {
   font-size: 20px;
+  display: block;
+  padding: 0 50px;
 }
 
 .list {
@@ -191,6 +197,23 @@ button.search {
   margin: 50px 90px;
   display: flex;
   justify-content: space-between;
+  color: white;
+  font-size: 24px;
+  font-style: bolder;
+}
+
+.top-buying p {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.img {
+  position: relative;
+  width: fit-content;
 }
 
 .bottom-panel {
@@ -207,7 +230,7 @@ button.search {
 }
 
 .color {
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: #ffffffb3 !important;
 }
 
 .email {
@@ -215,6 +238,7 @@ button.search {
   font-size: 13px;
   border: none;
   width: 350px;
+  padding-left: 15px;
 }
 
 .footer {
