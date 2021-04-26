@@ -16,15 +16,15 @@ body {
   display: none;
 }
 
-.container,
+.container1,
 .container2 {
   max-width: 1920px;
   margin: 0 auto;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .fontwhite {
@@ -39,7 +39,7 @@ a {
   height: auto;
 }
 
-.menu-panel {
+.menu-panel-desktop {
   font-family: "Work Sans", sans-serif;
   width: 75%;
   margin: 0 auto;
@@ -240,8 +240,10 @@ ul > li > a:hover {
   color: #a1a4ac;
 }
 
+.iphone-m{max-width: 340px}
+
 @media (max-width: 600px) {
-  .container {
+  .container1 {
     padding: 15px;
     background-image: url("../img/bg-top.png");
     background-position: top;
@@ -256,7 +258,7 @@ ul > li > a:hover {
   }
 
   .iphone,
-  .menu-panel {
+  .menu-panel-desktop {
     display: none;
   }
 

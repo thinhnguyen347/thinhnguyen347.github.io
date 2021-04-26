@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="https://i.ibb.co/ypjQ3yW/M.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -19,9 +21,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container1">
         <div class="section1">
-            <div class="menu-panel ">
+            <div class="menu-panel-desktop ">
                 <div class="logo"><a href="#" target="_self"><img src="img/logo.png" alt="beepb.io" height="40px"></a>
                 </div>
 
@@ -85,8 +87,8 @@
             </div>
 
             <div class="iphone-mobile">
-                <img class="iphone-m2" src="img/iphone_x1.png" alt="mobile-app" width="340px">
-                <img class="iphone-m1" src="img/iphone_x.png" alt="mobile-app" width="340px">
+                <img class="iphone-m" src="img/iphone_x1.png" alt="mobile-app">
+                <img class="iphone-m" src="img/iphone_x.png" alt="mobile-app" width="340px">
             </div>
 
             <div class="feature">
@@ -157,6 +159,8 @@
         </div>
 
         <div class="feature2">
+            <img class="oval-green" src="./img/oval_gr.png" alt="decoration">
+            <img class="oval-black" src="./img/oval-bl.png" alt="decoration">
             <p class="business">For every kind of Business &excl;</p>
             <p class="sub-title">Donec facilisis tortor ut augue lacinia, at viverra est semper.</p>
             <div class="f-list">
@@ -193,15 +197,91 @@
         <div class="section3">
             <p class="business">Our users love the app!</p><br><br>
             <!-- Carousel  -->
+            <div class="carousel">
+                <div>
+                    <div class="review">
+                        <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque
+                            nec pharetra id, tempor a tortor.</p>
+                    </div>
+                    <div class="rate">
+                        <div class="guest"><img src="./img/guest1.jpg" alt="review" width="100px"></div>
+                        <div class="personal-rating">
+                            <div class="guest-name">
+                                <p>Son Tung M-TP</p>
+                            </div>
+                            <div class="rating">
+                                <i class="far fa-star star-color"></i>
+                                <i class="far fa-star star-color"></i>
+                                <i class="far fa-star star-color"></i>
+                                <i class="far fa-star star-color"></i>
+                                <i class="far fa-star star-color"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="review">
+                        <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque
+                            nec pharetra id, tempor a tortor.</p>
+                    </div>
+                    <div class="rate">
+                        <div class="guest"><img src="./img/guest2.jpg" alt="review" width="100px"></div>
+                        <div class="personal-rating">
+                            <div class="guest-name">
+                                <p>Min</p>
+                            </div>
+                            <div class="rating">
+                                <i class="far fa-star star-color"></i>
+                                <i class="far fa-star star-color"></i>
+                                <i class="far fa-star star-color"></i>
+                                <i class="far fa-star star-color"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="review">
+                        <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque
+                            nec pharetra id, tempor a tortor.</p>
+                    </div>
+                    <div class="rate">
+                        <div class="guest"><img src="./img/guest3.jpg" alt="review" width="100px"></div>
+                        <div class="personal-rating">
+                            <div class="guest-name">
+                                <p>Soobin Hoang Son</p>
+                            </div>
+                            <div class="rating"><i class="far fa-star star-color"></i><i
+                                    class="far fa-star star-color"></i><i class="far fa-star star-color"></i><i
+                                    class="far fa-star star-color"></i><i class="far fa-star star-color"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Carousel  -->
+            <div class="dld">
 
+                <div>
+                    <p class="title pdtop">Get started with the mobile app!</p><br>
+                    <p class="f-detail">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
+                </div>
+<br><br>
+                <img src="./img/gglplay.png" alt="google-play" width="119px">
+                <img src="./img/appstore.png" alt="google-play" width="119px">
+
+            </div>
             
-            <!--  -->
 
             <div class="logo2"><a href="#" target="_self"><img src="img/logo.png" alt="beepb.io" height="40px"></a>
             </div>
         </div>
     </div>
     <!-- SCRIPT -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./main.js"></script>
 
 </body>

@@ -51,13 +51,28 @@
 
 .business {
   font-size: 34px;
-  padding-top: 100px !important;
+  padding-top: 250px !important;
 }
 
 .feature2 {
-  width: 1410px;
+  width: 73%;
   text-align: center;
   margin: auto;
+  position: relative;
+}
+
+.oval-green {
+  position: absolute;
+  top: -100px;
+  left: -690px;
+  z-index: -1;
+}
+
+.oval-black {
+  position: absolute;
+  top: 400px;
+  left: 1200px;
+  z-index: -1;
 }
 
 .sub-title {
@@ -97,8 +112,63 @@
   height: auto;
 }
 
-.logo2 {
-  display:block;
+.section3 > p {
+  text-align: center;
+}
+
+.carousel {
+  width: 80%;
+  margin: auto;
+}
+
+.review {
+  width: 45%;
+  padding-bottom: 40px;
+  color: #a1a4ac;
+  text-align: center;
+  font-size: 24px;
+  margin: auto;
+}
+
+.rate {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.guest img {
+  border-radius: 50%;
+}
+
+.personal-rating {
+  margin: auto;
+}
+
+.guest-name {
+  font-size: 20px;
+}
+
+.rating {
+  padding-top: 20px;
+}
+.star-color {
+  color: #f5a623;
+}
+
+.dld {
+  width: 60%;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo2 > a > img {
+  display: block;
   margin: auto;
 }
 
@@ -118,11 +188,31 @@
     background-image: none;
   }
 
+  .oval-green,
+  .oval-black {
+    display: none;
+  }
+
   .download2 {
     margin: 60px auto;
   }
 
   .feature2 {
     width: auto;
+  }
+  .carousel {
+    width: 95%;
+  }
+
+  .business {
+    padding-top: 100px !important;
+  }
+
+  .review {
+    width: 95%;
+  }
+
+  .dld {
+    width: 100%;
   }
 }
