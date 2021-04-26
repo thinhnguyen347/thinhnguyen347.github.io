@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 14px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.hide,
+.iphone-mobile,
+.menu-panel-mobile {
+  display: none;
+}
+
+.container,
+.container2 {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.fontwhite {
+  color: white;
+}
+
+.section1 {
+  background-image: url("../img/bg-top.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+}
+
+.menu-panel {
+  font-family: "Work Sans", sans-serif;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 60%;
+  line-height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin-left: 15px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.drop-down li {
+  margin: 0 !important;
+}
+
+ul > li > a:hover {
+  color: #f5a623;
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  left: 250px;
+}
+
+.menu li:hover .drop-down {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.get-started {
+  background-color: #14b45c;
+  font-size: 13px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 135px;
+}
+
+.logo-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.menu-mobile {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.item {
+  width: 100%;
+  line-height: 30px;
+  background-color: #14b45c;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: "Work Sans", sans-serif;
+  cursor: pointer;
+}
+
+.get-started-mobile {
+  background-color: #14b45c;
+  font-size: 1rem;
+  border: none;
+  line-height: 30px;
+  width: 100%;
+}
+
+.item:hover,
+.get-started:hover,
+.get-started-mobile:hover,
+.download:hover {
+  background-color: #f5a623;
+}
+
+.page1 {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+.iphone {
+  position: relative;
+}
+
+.iphone-x1 {
+  margin-top: 20%;
+  margin-right: 0;
+}
+
+.iphone-x2 {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+.hero-content {
+  width: 500px;
+  padding-top: 190px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #a1a4ac;
+}
+
+.download {
+  background-color: #14b45c;
+  font-size: 16px;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 206px;
+}
+
+.fa-caret-right {
+  color: black;
+  font-size: 25px;
+  background-color: aliceblue;
+  padding: 2px 10px;
+  border-radius: 50%;
+  display: block;
+}
+
+.see-more {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.watch {
+  color: white;
+  padding: 10px;
+  display: flex;
+}
+
+.watch a {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.feature > p {
+  font-size: 34px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.feature {
+  width: 1410px;
+  text-align: center;
+  margin: auto;
+}
+
+.f-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.f-items {
+  width: 320px;
+  margin-bottom: 50px;
+}
+
+.f-icon {
+  padding: 15px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.f-detail {
+  font-size: 16px;
+  color: #a1a4ac;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    background-image: url("../img/bg-top.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 700%;
+    height: auto;
+  }
+
+  .section1,
+  .section2 {
+    background-image: none;
+  }
+
+  .iphone,
+  .menu-panel {
+    display: none;
+  }
+
+  .menu-panel-mobile {
+    display: block;
+  }
+
+  .hero-content {
+    width: auto;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .see-more {
+    display: block;
+    margin: auto;
+  }
+
+  .watch {
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .iphone-mobile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .feature > p {
+    font-size: 34px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .feature {
+    width: auto;
+  }
+
+  .f-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,128 @@
+.section2 {
+  background-image: url("../img/mask.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.content {
+  padding-top: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left-panel,
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  width: 320px;
+}
+
+.description {
+  font-size: 18px;
+  color: #a1a4ac;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.icon {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #14b35b40;
+  width: 60px;
+  height: 60px;
+}
+
+.bg {
+  background-color: #a1a4ac2c !important;
+}
+
+.download2 {
+  margin: 100px auto;
+}
+
+.business {
+  font-size: 34px;
+  padding-top: 100px !important;
+}
+
+.feature2 {
+  width: 1410px;
+  text-align: center;
+  margin: auto;
+}
+
+.sub-title {
+  font-size: 18px !important;
+  color: #a1a4ac;
+  padding-top: 10px !important;
+  padding-bottom: 80px !important;
+}
+
+.img img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.pdtop {
+  padding-top: 20px;
+}
+
+.download3 {
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 206px;
+  color: black !important;
+}
+
+.download3 a {
+  color: black !important;
+}
+
+.section3 {
+  background-image: url("../img/bg-bottom.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+}
+
+.logo2 {
+  display:block;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .container2,
+  .container3 {
+    padding: 15px;
+    height: auto;
+  }
+
+  .container3 {
+    background-image: url("../img/bg-bottom.png");
+    background-position: bottom;
+  }
+  .section2,
+  .section3 {
+    background-image: none;
+  }
+
+  .download2 {
+    margin: 60px auto;
+  }
+
+  .feature2 {
+    width: auto;
+  }
+}
