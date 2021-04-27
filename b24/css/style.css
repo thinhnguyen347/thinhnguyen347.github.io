@@ -487,3 +487,14 @@ img.oval-black {
   margin-left: 15px;
   height: 20px;
 }
+
+.media-icon > a > img:hover {
+  transition: all 0.2s linear 0.05s;
+  transform: scale(1.3, 1.3);
+}
+
+.logo:hover,
+.logo2 > a > img:hover {
+  transition: all 0.2s linear 0.08s;
+  transform: scale(1.1, 1.1);
+}
