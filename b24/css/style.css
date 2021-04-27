@@ -78,7 +78,9 @@ ul > li > a:hover,
   color: #f5a623 !important;
 }
 
-.menuitem {position:relative}
+.menuitem {
+  position: relative;
+}
 
 .drop-down {
   display: none;
@@ -90,7 +92,7 @@ li.menuitem:hover .drop-down {
   display: block;
   width: 200px;
   height: auto;
-  margin-left:-50px
+  margin-left: -50px;
 }
 
 .get-started {
@@ -315,21 +317,23 @@ li.menuitem:hover .drop-down {
   width: 73%;
   text-align: center;
   margin: auto;
+}
+
+body {
   position: relative;
 }
 
 .oval-green {
   position: absolute;
-  top: -100px;
-  left: -690px;
-  z-index: -1;
+  top: 850px;
+  left: -500px;
 }
 
 .oval-black {
   position: absolute;
-  top: -150px;
-  left: 1400px;
-  z-index: -1;
+  bottom: 1000px;
+  right: -500px;
+  
 }
 
 img.oval-green,

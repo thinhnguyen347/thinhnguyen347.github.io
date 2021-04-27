@@ -12,6 +12,13 @@
     padding-top: 20px;
     text-align: center;
   }
+
+  /* .oval-black {
+    position: absolute;
+    top: -150px;
+    left: 1400px;
+    z-index: -1;
+  } */
 }
 
 @media (max-width: 700px) {
@@ -20,7 +27,7 @@
     background-image: url("../img/bg-top.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 700%;
+    background-size: 100%;
     height: auto;
   }
 
@@ -42,6 +49,10 @@
   .iphone,
   .menu-panel-desktop {
     display: none;
+  }
+
+  .feature p {
+    color: black;
   }
 
   .menu-panel-mobile {
@@ -172,8 +183,12 @@
     background-image: url("../img/bg-top.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 700%;
+    background-size: 300%;
     height: auto;
+  }
+
+  .section1 {
+    background-image: none;
   }
 
   .menu-panel-desktop {
@@ -264,13 +279,8 @@
     padding-top: 50px !important;
   }
 
-  .oval-green {
-    left: -620px !important;
-  }
-
-  .oval-black {
-    left: 690px;
-    top: -300px;
+  .oval-green,.oval-black {
+    display: hidden;
   }
 
   .bg-bottom {
@@ -288,7 +298,7 @@
     background-image: url("../img/bg-top.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 700%;
+    background-size: 350%;
     height: auto;
   }
 
@@ -369,14 +379,14 @@
     padding-top: 50px !important;
   }
 
-  .oval-green {
+  /* .oval-green {
     left: -620px !important;
   }
 
   .oval-black {
     left: 920px;
     top: -300px;
-  }
+  } */
 
   .bg-bottom {
     background-size: 200% !important;
