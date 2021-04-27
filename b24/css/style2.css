@@ -253,6 +253,10 @@
   .download2 {
     margin: 20px auto !important;
   }
+
+  .drop-down {
+    left: 250px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -278,6 +282,10 @@
   .menu-panel-desktop {
     width: 100%;
     padding-top: 10px;
+  }
+
+  .drop-down {
+    left: 500px;
   }
 
   .menu {
@@ -349,7 +357,6 @@
   .oval-black {
     left: 920px;
     top: -300px;
-}
   }
 
   .bg-bottom {
@@ -360,4 +367,3 @@
     margin: 20px auto !important;
   }
 }
-
