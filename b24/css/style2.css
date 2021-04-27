@@ -34,7 +34,8 @@
   }
 
   .section1,
-  .section2,.bg-bottom {
+  .section2,
+  .bg-bottom {
     background-image: none;
   }
 
@@ -183,6 +184,9 @@
     display: block;
   }
 
+  .container3 {
+    background-color: #1e202a00;
+  }
   .section2,
   .feature2,
   .bg-bottom {
@@ -276,7 +280,6 @@
   .download2 {
     margin: 20px auto !important;
   }
-
 }
 
 @media (max-width: 1400px) {
