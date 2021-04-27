@@ -32,11 +32,11 @@
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Benefits</a></li>
                         <li><a href="#">Plans</a></li>
-                        <li><a href="#">Downloads &nbsp; <i class="fas fa-angle-down"></i></a>
+                        <li class="menuitem"><a href="#">Downloads &nbsp; <i class="fas fa-angle-down"></i></a>
                             <ul class="drop-down">
-                                <li><a href="#">Item 1</a></li>
-                                <li><a href="#">Item 2</a></li>
-                                <li><a href="#">Item 3</a></li>
+                                <li><a href="#">Android version</a></li>
+                                <li><a href="#">iOs version</a></li>
+                                <li><a href="#">ChromeOS version</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Support</a></li>
@@ -77,7 +77,7 @@
                         business is holding up.</p>
                     <br><br><br>
                     <div class="see-more">
-                        <button class="download fontwhite"><a href="#">Download the app</a></button>
+                        <button class="download fontwhite"><a href="#">Download the app</button></a>
                         <div class="watch">
                             <div><i class="fas fa-caret-right"></i></div>
                             <a href="#">&nbsp;&nbsp; Watch How it Works</a>
@@ -159,8 +159,8 @@
         </div>
 
         <div class="feature2">
-            <img class="oval-green" src="./img/oval_gr.png" alt="decoration">
-            <img class="oval-black" src="./img/oval-bl.png" alt="decoration">
+            <div><img class="oval-green" src="./img/oval_gr.png" alt="decoration"></div>
+            <div><img class="oval-black" src="./img/oval-bl.png" alt="decoration"></div>
             <p class="business">For every kind of Business &excl;</p>
             <p class="sub-title">Donec facilisis tortor ut augue lacinia, at viverra est semper.</p>
             <div class="f-list">
@@ -191,89 +191,134 @@
             </div>
             <button class="download3"><a href="#">Learn more</a></button>
         </div>
-    </div>
-
-    <div class="container3">
-        <div class="section3">
-            <p class="business">Our users love the app!</p><br><br>
-            <!-- Carousel  -->
-            <div class="carousel">
-                <div>
-                    <div class="review">
-                        <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque
-                            nec pharetra id, tempor a tortor.</p>
-                    </div>
-                    <div class="rate">
-                        <div class="guest"><img src="./img/guest1.jpg" alt="review" width="100px"></div>
-                        <div class="personal-rating">
-                            <div class="guest-name">
-                                <p>Son Tung M-TP</p>
+        <div class="bg-bottom">
+            <div class="section3">
+                <p class="business">Our users love the app!</p><br><br>
+                <!-- Carousel  -->
+                <div class="carousel">
+                    <div>
+                        <div class="review">
+                            <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus,
+                                scelerisque
+                                nec pharetra id, tempor a tortor.</p>
+                        </div>
+                        <div class="rate">
+                            <div class="guest"><img src="./img/guest1.jpg" alt="review" width="100px"></div>
+                            <div class="personal-rating">
+                                <div class="guest-name">
+                                    <p>Son Tung</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="far fa-star star-color"></i>
+                                    <i class="far fa-star star-color"></i>
+                                    <i class="far fa-star star-color"></i>
+                                    <i class="far fa-star star-color"></i>
+                                    <i class="far fa-star star-color"></i>
+                                </div>
                             </div>
-                            <div class="rating">
-                                <i class="far fa-star star-color"></i>
-                                <i class="far fa-star star-color"></i>
-                                <i class="far fa-star star-color"></i>
-                                <i class="far fa-star star-color"></i>
-                                <i class="far fa-star star-color"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="review">
+                            <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus,
+                                scelerisque
+                                nec pharetra id, tempor a tortor.</p>
+                        </div>
+                        <div class="rate">
+                            <div class="guest"><img src="./img/guest2.jpg" alt="review" width="100px"></div>
+                            <div class="personal-rating">
+                                <div class="guest-name">
+                                    <p>Min</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="far fa-star star-color"></i>
+                                    <i class="far fa-star star-color"></i>
+                                    <i class="far fa-star star-color"></i>
+                                    <i class="far fa-star star-color"></i>
+                                    <i class="fas fa-star star-gray"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="review">
+                            <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus,
+                                scelerisque
+                                nec pharetra id, tempor a tortor.</p>
+                        </div>
+                        <div class="rate">
+                            <div class="guest"><img src="./img/guest3.jpg" alt="review" width="100px"></div>
+                            <div class="personal-rating">
+                                <div class="guest-name">
+                                    <p>Soobin</p>
+                                </div>
+                                <div class="rating"><i class="far fa-star star-color"></i><i
+                                        class="far fa-star star-color"></i><i class="far fa-star star-color"></i><i
+                                        class="far fa-star star-color"></i><i class="far fa-star star-color"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="review">
-                        <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque
-                            nec pharetra id, tempor a tortor.</p>
+                <!-- End of Carousel  -->
+                <div class="dld">
+                    <div>
+                        <p class="title pdtop">Get started with the mobile app!</p><br>
+                        <p class="f-detail">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien
+                            metus, scelerisque nec pharetra id, tempor a tortor.</p>
                     </div>
-                    <div class="rate">
-                        <div class="guest"><img src="./img/guest2.jpg" alt="review" width="100px"></div>
-                        <div class="personal-rating">
-                            <div class="guest-name">
-                                <p>Min</p>
+                    <br><br>
+                    <img src="./img/gglplay.png" alt="google-play" height="40px">&nbsp;
+                    <img src="./img/appstore.png" alt="appstore" height="40px">
+                </div>
                             </div>
-                            <div class="rating">
-                                <i class="far fa-star star-color"></i>
-                                <i class="far fa-star star-color"></i>
-                                <i class="far fa-star star-color"></i>
-                                <i class="far fa-star star-color"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
+
+
+            <div class="container3">
+                <div class="logo2"><a href="#" target="_self"><img src="img/logo.png" alt="beepb.io" height="40px"></a>
+                </div>
+
+                <div class="bottom-panel">
+                    <div class="block-end">
+                        <div class="bottom-title">FEATURES</div>
+                        <div class="item-end"><a href="#">Tour</a></div>
+                        <div class="item-end"><a href="#">Analytics</a></div>
+                        <div class="item-end"><a href="#">Security</a></div>
+                        <div class="item-end"><a href="#">Intelligent AI</a></div>
+                        <div class="item-end"><a href="#">SmartEngine</a></div>
+                    </div>
+                    <div class="block-end">
+                        <div class="bottom-title">DOWNLOADS</div>
+                        <div class="item-end"><a href="#">Android (Google Play)</a></div>
+                        <div class="item-end"><a href="#">iOs (App Store)</a></div>
+                        <div class="item-end"><a href="#">ChromeOS (Coming soon)</a></div>
+                    </div>
+                    <div class="block-end">
+                        <div class="bottom-title">RESOURCES</div>
+                        <div class="item-end"><a href="#">API</a></div>
+                        <div class="item-end"><a href="#">Mobile SDK</a></div>
+                        <div class="item-end"><a href="#">Blog</a></div>
+                        <div class="item-end"><a href="#">Videos</a></div>
+                    </div>
+                    <div class="block-end">
+                        <div class="bottom-title">COMPANY</div>
+                        <div class="item-end"><a href="#">About us</a></div>
+                        <div class="item-end"><a href="#">Jobs</a></div>
+                        <div class="item-end"><a href="#">Press & Media</a></div>
+                        <div class="item-end"><a href="#">Sitemap</a></div>
                     </div>
                 </div>
-                <div>
-                    <div class="review">
-                        <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque
-                            nec pharetra id, tempor a tortor.</p>
-                    </div>
-                    <div class="rate">
-                        <div class="guest"><img src="./img/guest3.jpg" alt="review" width="100px"></div>
-                        <div class="personal-rating">
-                            <div class="guest-name">
-                                <p>Soobin Hoang Son</p>
-                            </div>
-                            <div class="rating"><i class="far fa-star star-color"></i><i
-                                    class="far fa-star star-color"></i><i class="far fa-star star-color"></i><i
-                                    class="far fa-star star-color"></i><i class="far fa-star star-color"></i>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="social-media">
+                    <div class="media-icon"><a href="http://www.facebook.com"><img src="./img/facebook.png"
+                                alt="facebook" width="30px"></a></div>
+                    <div class="media-icon "><a href="http://www.twitter.com"><img src="./img/twitter.png" alt="twitter"
+                                width="30px"></a></div>
+                    <div class="media-icon "><a href="http://www.youtube.com"><img src="./img/youtube.png" alt="youtube"
+                                width="30px"></a></div>
+                    <div class="media-icon"><a href="http://www.google.com"><img src="./img/googleplus.png"
+                                alt="google-plus" width="30px"></a></div>
                 </div>
-            </div>
-            <!-- End of Carousel  -->
-            <div class="dld">
-
-                <div>
-                    <p class="title pdtop">Get started with the mobile app!</p><br>
-                    <p class="f-detail">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
-                </div>
-<br><br>
-                <img src="./img/gglplay.png" alt="google-play" width="119px">
-                <img src="./img/appstore.png" alt="google-play" width="119px">
-
-            </div>
-            
-
-            <div class="logo2"><a href="#" target="_self"><img src="img/logo.png" alt="beepb.io" height="40px"></a>
             </div>
         </div>
     </div>

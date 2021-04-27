@@ -73,6 +73,12 @@
   top: 400px;
   left: 1200px;
   z-index: -1;
+  overflow: hidden;
+}
+
+.oval-green img,
+img.oval-black {
+  overflow: hidden;
 }
 
 .sub-title {
@@ -105,11 +111,16 @@
 }
 
 .section3 {
+  height: auto;
+}
+
+.bg-bottom {
   background-image: url("../img/bg-bottom.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
   height: auto;
+  width:100%;
 }
 
 .section3 > p {
@@ -152,24 +163,75 @@
 .rating {
   padding-top: 20px;
 }
+
 .star-color {
   color: #f5a623;
 }
 
+.star-gray {
+  color: #cdcecf;
+}
+
 .dld {
   width: 60%;
-  margin: auto;
+  margin: 150px auto 0px auto;
   background-color: #fff;
   text-align: center;
   padding-top: 90px;
   padding-bottom: 90px;
   padding-left: 10%;
   padding-right: 10%;
+  border-radius: 15px;
+  /* box-shadow: -0px -5px #14b35b; */
+  box-shadow: 5px 05px 15px #5555556e;
+  border-top: 5px solid #14b35b;
 }
 
 .logo2 > a > img {
   display: block;
   margin: auto;
+}
+
+.bottom-panel {
+  width: 66%;
+  height: auto;
+}
+
+.bottom-panel {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px auto auto auto;
+}
+
+.logo2 {
+  padding-top: 60px;
+}
+
+.bottom-title {
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+
+.item-end {
+  padding-bottom: 30px;
+  font-weight: lighter;
+}
+
+.social-media {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.media-icon {
+  margin-left: 15px;
+  height: 20px;
 }
 
 @media (max-width: 600px) {
@@ -180,8 +242,7 @@
   }
 
   .container3 {
-    background-image: url("../img/bg-bottom.png");
-    background-position: bottom;
+    background-color: #1e202a;
   }
   .section2,
   .section3 {
@@ -214,5 +275,26 @@
 
   .dld {
     width: 100%;
+    margin: 40px auto 40px auto;
+  }
+
+  .bottom-panel {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .block-end {
+    width: 40%;
+    text-align: center;
+    padding-bottom:50px;
+  }
+
+  .social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+    padding: 40px 0;
   }
 }

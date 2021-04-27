@@ -20,6 +20,7 @@ body {
 .container2 {
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 a {
@@ -66,19 +67,26 @@ a {
   margin: 0 !important;
 }
 
-ul > li > a:hover {
-  color: #f5a623;
+button:hover{
+  transition:all 0.3s ease-in-out 0.1s;
+  transform:scale(1.1,1.1);
+  cursor: pointer;
+}
+
+ul > li > a:hover,
+.item-end > a:hover {
+  color: #f5a623 !important;
 }
 
 .drop-down {
   display: none;
   position: absolute;
-  left: 250px;
+  left: 300px;
 }
 
 .menu li:hover .drop-down {
   display: block;
-  width: 100px;
+  width: 200px;
   height: auto;
 }
 
@@ -240,7 +248,9 @@ ul > li > a:hover {
   color: #a1a4ac;
 }
 
-.iphone-m{max-width: 340px}
+.iphone-m {
+  max-width: 340px;
+}
 
 @media (max-width: 600px) {
   .container1 {
