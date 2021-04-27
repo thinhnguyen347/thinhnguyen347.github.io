@@ -14,7 +14,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .container1 {
     padding: 15px;
     background-image: url("../img/bg-top.png");
@@ -166,6 +166,14 @@
     height: auto;
   }
 
+  .menu-panel-desktop {
+    display: none;
+  }
+
+  .menu-panel-mobile {
+    display: block;
+  }
+
   .section2,
   .feature2,
   .bg-bottom {
@@ -262,7 +270,7 @@
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .container1 {
     padding: 15px;
     background-image: url("../img/bg-top.png");
