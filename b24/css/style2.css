@@ -24,8 +24,17 @@
     height: auto;
   }
 
+  .container2 {
+    padding: 15px;
+    background-image: url("../img/bg-bottom.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 500%;
+    height: auto;
+  }
+
   .section1,
-  .section2 {
+  .section2,.bg-bottom {
     background-image: none;
   }
 
