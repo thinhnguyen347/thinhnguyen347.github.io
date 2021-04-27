@@ -260,9 +260,6 @@
     margin: 20px auto !important;
   }
 
-  .drop-down {
-    left: 250px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -288,10 +285,6 @@
   .menu-panel-desktop {
     width: 100%;
     padding-top: 10px;
-  }
-
-  .drop-down {
-    left: 500px;
   }
 
   .menu {

@@ -78,16 +78,19 @@ ul > li > a:hover,
   color: #f5a623 !important;
 }
 
+.menuitem {position:relative}
+
 .drop-down {
   display: none;
   position: absolute;
-  left: 300px;
+  /* left: 300px; */
 }
 
-.menu li:hover .drop-down {
+li.menuitem:hover .drop-down {
   display: block;
   width: 200px;
   height: auto;
+  margin-left:-50px
 }
 
 .get-started {
