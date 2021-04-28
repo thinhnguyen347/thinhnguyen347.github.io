@@ -144,7 +144,7 @@ li.menuitem:hover .drop-down {
 .download:hover {
   background-color: #f5a623;
   transition: all 0.2s linear 0.05s;
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
 }
 
 .page1 {
