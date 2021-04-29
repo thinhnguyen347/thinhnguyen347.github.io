@@ -1,6 +1,6 @@
 @media (max-width: 400px) {
   .feature p {
-    color: black;
+    color: black !important;
   }
 
   .container2 {
@@ -12,13 +12,7 @@
     padding-top: 20px;
     text-align: center;
   }
-
-  /* .oval-black {
-    position: absolute;
-    top: -150px;
-    left: 1400px;
-    z-index: -1;
-  } */
+  
 }
 
 @media (max-width: 700px) {
@@ -27,7 +21,6 @@
     background-image: url("../img/bg-top.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 100%;
     height: auto;
   }
 
@@ -52,7 +45,7 @@
   }
 
   .feature p {
-    color: black;
+    color: black !important;
   }
 
   .menu-panel-mobile {
@@ -183,7 +176,6 @@
     background-image: url("../img/bg-top.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 300%;
     height: auto;
   }
 
@@ -250,8 +242,7 @@
 
   .feature {
     width: 100%;
-    color: white;
-  }
+    }
   .content {
     flex-direction: column;
     padding-top: 50px;
@@ -279,7 +270,8 @@
     padding-top: 50px !important;
   }
 
-  .oval-green,.oval-black {
+  .oval-green,
+  .oval-black {
     display: hidden;
   }
 
@@ -298,7 +290,6 @@
     background-image: url("../img/bg-top.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 350%;
     height: auto;
   }
 
@@ -350,8 +341,7 @@
 
   .feature {
     width: 100%;
-    color: white;
-  }
+      }
   .content {
     flex-direction: column;
     padding-top: 50px;
@@ -378,15 +368,6 @@
   .business {
     padding-top: 50px !important;
   }
-
-  /* .oval-green {
-    left: -620px !important;
-  }
-
-  .oval-black {
-    left: 920px;
-    top: -300px;
-  } */
 
   .bg-bottom {
     background-size: 200% !important;

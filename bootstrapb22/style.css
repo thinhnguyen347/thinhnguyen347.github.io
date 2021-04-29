@@ -13,13 +13,8 @@ body {
   background-color: #34465c;
 }
 
-.nav-link {
-  color: #fff !important;
-  text-transform: uppercase;
-}
-
 .nav-item:hover{
-border-bottom: 4px solid white ;
+border-bottom: 2px solid white ;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -44,5 +39,11 @@ i.fa-star{color:#FFD600}
 .rate{
   color:#FF4F32;
 }
+.footer{
+  background-color: #464646
+}
 
 
+.text-gray{
+  color: white !important;
+}
