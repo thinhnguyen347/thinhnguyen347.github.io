@@ -64,10 +64,19 @@ $(document).ready(function () {
     $(".ending").click(function(){
         $(this).toggleClass("rounded-bottom");
     })
+    
+    // $(".content-box").slideUp(0);
+    $(".content-box").addClass("hide");
+    
 
     $(".title-box").click(function () {
+        
         $(this).next(".content-box").toggleClass("hide");
-        $(this).children("div:nth-child(2)").toggleClass("chevron-down")
+        // $(this).next(".content-box").slideDown("slow");
+        $(this).next(".content-box").siblings(".content-box").addClass("hide");
+        // $(this).next(".content-box").siblings(".content-box").slideUp("slow");
+        $(this).children("div:nth-child(2)").addClass("chevron-down")
+        
     })
 
     // -------------MODAL------------------------------------
