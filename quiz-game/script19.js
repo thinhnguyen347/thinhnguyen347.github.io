@@ -26,61 +26,75 @@ let quiz = [
 
 // Lệnh điền câu hỏi và các phương án
 let currentQuestion = 0;
+
 function Question(currentQuestion) {
+
     $("#question").text(quiz[currentQuestion].question);
+
     $("#choice1").text(quiz[currentQuestion].choices[0]);
     $("#choice2").text(quiz[currentQuestion].choices[1]);
     $("#choice3").text(quiz[currentQuestion].choices[2]);
     $("#choice4").text(quiz[currentQuestion].choices[3]);
-    $("#number").text(`Question ${currentQuestion + 1}`);
+    $("#number").text(`Question ${currentQuestion + 1} of 4`);
 
     // Tính điểm
+    
+    //disable
 
-    console.log(quiz[currentQuestion].choices)
-    console.log(quiz[currentQuestion].choices[3])
-    console.log(quiz[currentQuestion].ans)
-    Score(currentQuestion)
 }
 
 //Ấn nút start để hiện câu hỏi đầu tiên
 
 $("#start").click(function () {
     $(".container").hide("slow");
-    $(".container1").show("slow", Question(currentQuestion));
+    $(".container1").show(Question(currentQuestion));
 });
 
 // Ấn nút next
 
-
-$("#next").click(function () {
-    Question(currentQuestion);
+$(".finish").hide();
+$(".next").click(function () {
     currentQuestion++;
+    if (currentQuestion <= 3) {
+        Question(currentQuestion);
+    }
+
+    if (currentQuestion > 3) {
+        $(".finish").show();
+        $(this).hide();
+    }
 })
 
+// Tổng kết
 
-// Hiện đáp án đúng sau khi chọn & Tính điểm
+$(".finish").click(function () {
+    $(".container").hide();
+    $(".container1").hide();
+    $(".container2").removeClass("hide");
+})
 
+// Tính điểm
+let answer = [];
 let score = 0;
-function Score(currentQuestion) {
 
-    for (let i=1;i<=5;i++){
 
-        let choice= $(`#choice${i}`);
 
-        choice.click(function () {
+    $each("button.choice").click(function(){
+        answer.push($(this).text());
+        console.log(answer)
+    })
 
-            if (choice.innerText == quiz[currentQuestion].ans) {
-                score += 25;
-                choice.css("background-color", "green");
-            } else {
-                score += 0;
-                choice.css("background-color", "gray");
-            }
-            console.log(score);
-        })
+    // for (let i = 0; i < 4; i++) {
+    //     if (answer[i] = quiz[i].ans) {
+    //         score = + 25;
+    //     } else {
+    //         score = + 0;
+    //     }
+    // }
 
-    }
-}
+    // console.log(score);
 
-// random màu nền nút
+    // function Score(currentQuestion) {}
+
+
 

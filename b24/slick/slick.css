@@ -117,3 +117,58 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.prevArrow{
+    background-color: white;
+    box-shadow: 0 10px 10px gray;
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 380px;
+    left: 200px;
+}
+
+.fa-chevron-left{
+    font-size: 30px !important;
+    color:black !important;
+    text-align: center;
+    padding: 7px;
+}
+
+.prevArrow{
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.658);
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 380px;
+    left: 200px;
+}
+
+.fa-chevron-left{
+    font-size: 30px !important;
+    color:black !important;
+    text-align: center;
+    padding: 7px;
+}
+
+.nextArrow{
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.658);
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 380px;
+    right: 200px;
+}
+
+.fa-chevron-right{
+    font-size: 30px !important;
+    color:black !important;
+    text-align: center;
+    padding: 7px 9px 7px 12px;
+}
+

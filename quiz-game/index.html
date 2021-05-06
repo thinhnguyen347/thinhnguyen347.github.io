@@ -8,11 +8,14 @@
     <title>Quiz Game</title>
     <link rel="stylesheet" href="style19.css">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <!-- Phần mở đầu (biến mất khi ấn nút start) -->
+
+    <audio controls loop autoplay="autoplay" hidden="hidden"> <source src="audio/kid-world.mp3" type="audio/mpeg"> </audio>
+    
+    <!-- Phần mở đầu -->
     <div class="container ">
         <br><br><br><br>
         <div><img src="./textnote.gif" alt="Quiz" width=360px height=80px></div>
@@ -22,7 +25,7 @@
 
     </div>
 
-    <!-- Phần câu hỏi (hiện ra sau khi ấn start) -->
+    <!-- Phần câu hỏi-->
 
     <div class="container1 hide">
         <br><br>
@@ -38,13 +41,14 @@
             </div>
             <br>
             <div>
-                <button id="next">Next</button>
+                <button class="next">Next</button>
+                <button class="finish">Finish</button>
             </div>
         </div>
     </div>
 
     <!-- Phần end game -->
-    <div class="container hide">
+    <div class="container2 hide">
         <div id="logo ">
             <img src="./textnote.gif" alt="Quiz" width=360px height=80px><br><br>
             <br>

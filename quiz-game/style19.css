@@ -18,7 +18,7 @@ body {
 .container {
   height: auto;
   width: 900px;
-  margin: 180px auto;
+  margin: 100px auto;
   font-family: "Dela Gothic One", cursive;
 }
 
@@ -126,7 +126,7 @@ img {
 }
 
 /* Next */
-#next {
+.next,.finish {
   background-color: #4e1b95;
   color: whitesmoke;
   font-size: 1.2em;
@@ -140,10 +140,16 @@ img {
   margin-right: auto;
 }
 
-#next:hover {
+.next:hover, .finish:hover {
   background-color: rgb(145, 5, 70);
 }
 
 .end {
   text-align: center;
+  font-size: 1.2em;
+  font-family: "Dela Gothic One", cursive;
+}
+
+.container2{
+  margin: 250px auto;
 }
