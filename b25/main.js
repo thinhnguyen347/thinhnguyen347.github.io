@@ -62,7 +62,7 @@ $(document).ready(function () {
 
     //-------------ARCORDION----------------------------------
     $(".ending").click(function(){
-        $(this).toggleClass("rounded-bottom");
+        $("div.ending").toggleClass("rounded-bottom");
     })
     
     // $(".content-box").slideUp(0);
