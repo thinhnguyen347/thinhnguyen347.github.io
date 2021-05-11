@@ -10,7 +10,7 @@
   border-radius: 5px;
   background-color: #fff;
   text-align: center;
-  position:absolute;
+  position: absolute;
 }
 
 .hide {
@@ -45,6 +45,9 @@
   text-align: justify;
 }
 
+.nav-item {
+  cursor: pointer;
+}
 /* ---------------ARCORDION--------------- */
 .title-box,
 .content-box {
@@ -66,17 +69,26 @@ div .content-box {
 }
 
 /* ---------------MODAL---------------- */
-.info-container{
-  width:100%;
-  height:100%;
+.info-container {
+  width: 100%;
+  height: 100%;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
-.info{
-  width:50%;
+.info {
+  width: 50%;
   background-color: #fff;
+  z-index: 1000 !important;
+  top: 25%;
+  left: 25%;
+}
+
+/* ---------------PROGRESS BAR---------------- */
+
+.content-area {
+  width: 70%;
 }

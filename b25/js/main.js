@@ -1,6 +1,6 @@
-$(document).ready(function () {
 
-    //-------------POPOVERS-------------------------------------
+
+    //---------------------------------POPOVERS--------------------------------------------------
     $(".left").addClass("hide");
     $(".btn-primary").click(function () {
         $(".left").toggleClass("hide");
@@ -33,7 +33,7 @@ $(document).ready(function () {
         // $(".left").addClass("hide");
     })
 
-    // ----------------TABS------------------------------------
+    // ----------------------------------TABS------------------------------------
     $(".nav-link").click(function () {
 
         $(".nav-link").removeClass("active");
@@ -60,37 +60,28 @@ $(document).ready(function () {
         }
     })
 
-    //-------------ARCORDION----------------------------------
+    //----------------------------------ARCORDION----------------------------------
 
     $("#ending").click(function () {
         $("div#ending").toggleClass("rounded-bottom");
     })
 
-    // $(".content-box").slideUp(0);
     $(".content-box").addClass("hide");
-
 
     $(".title-box").click(function () {
 
-        $(this).next(".content-box").toggleClass("hide");
-        // $(this).next(".content-box").slideDown("slow");
-        $(this).next(".content-box").siblings(".content-box").addClass("hide");
-        // $(this).next(".content-box").siblings(".content-box").slideUp("slow");
-        $(this).children("div:nth-child(2)").addClass("chevron-down")
+        let index = $(".title-box").index(this);
 
+        $(".content-box").eq(index).toggleClass("hide");
+        $(".content-box").eq(index).siblings("div.content-box").addClass("hide");
+        $(".content-box").eq(index).slideDown("slow");
+        let hide = $("div.content-box").hasClass("hide");
+        if (hide == false) {
+            $(this).neighbor().slideUp("slow");
+        }
+        // $(this).next(".content-box").toggleClass("hide");
+        // $(this).next(".content-box").siblings(".content-box").addClass("hide");
+        // $(this).children("div:nth-child(2)").addClass("chevron-down")
     })
 
-    // -------------MODAL------------------------------------
-
-    $("button.click").click(function () {
-        $("div.info-container").toggleClass("d-none")
-    })
-
-    $("button.close").click(function () {
-        $("div.info-container").addClass("d-none")
-    })
-
-    $("div.info-container").click(function () {
-        $(this).addClass("d-none")
-    })
-})
+      
