@@ -26,7 +26,7 @@ $(".btn-primary").click(function () {
         clearInterval(timer);
         $(".progress-bar").css("width", time + "%");
         $(".btn-danger").attr("disabled", "disabled");
-        $(this).next().text("Resume");
+        $(this).text("Resume");
     }
     else {
         setInterval(callback, 1000);
