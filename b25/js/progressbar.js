@@ -2,7 +2,7 @@
 let time = 0;
 
 function callback() {
-    if (!paused) {
+    if (!paused && time <= 99) {
         time++;
         $(".progress-bar").css("width", time + "%");
         $(".progress-bar").text(time + "%");
@@ -30,7 +30,7 @@ $(".btn-primary").click(function () {
     }
     else {
         setInterval(callback, 1000);
-        }
+    }
     console.log(paused)
 })
 
@@ -44,4 +44,3 @@ $(".btn-success").click(function () {
     $(".btn-danger").removeAttr("disabled", "disabled");
     $(".btn-primary").text("Pause");
 })
-
