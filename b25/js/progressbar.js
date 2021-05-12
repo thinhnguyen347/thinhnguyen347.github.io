@@ -1,37 +1,36 @@
 // --------------------------------PROGRESS BAR--------------------------------
 let time = 0;
+let timer;
+let pause = false;
 
 function callback() {
-    if (!paused && time <= 99) {
+    if (!pause && time <= 99) {
         time++;
         $(".progress-bar").css("width", time + "%");
         $(".progress-bar").text(time + "%");
         console.log(time)
     }
 }
-let timer;
+
 // Nút Start
 $(".btn-danger").click(function () {
     timer = setInterval(callback, 1000);
-    paused = false;
     $(this).attr("disabled", "disabled");
     $(this).siblings().removeAttr("disabled", "disabled");
 })
 
 // Nút Pause/Resume
 
-let paused = false;
 $(".btn-primary").click(function () {
-    if (!paused) {
+    if (!pause) {
         clearInterval(timer);
-        $(".progress-bar").css("width", time + "%");
         $(".btn-danger").attr("disabled", "disabled");
         $(this).text("Resume");
+        pause == true;
     }
     else {
         setInterval(callback, 1000);
     }
-    console.log(paused)
 })
 
 // Nút Reset
