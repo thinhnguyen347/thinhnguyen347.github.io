@@ -1,7 +1,7 @@
 // --------------------------------PROGRESS BAR--------------------------------
 let time = 0;
 let timer;
-let pause = false;
+let pause = true;
 
 function callback() {
     if (!pause && time <= 99) {
@@ -14,6 +14,7 @@ function callback() {
 
 // Nút Start
 $(".btn-danger").click(function () {
+    pause = false;
     timer = setInterval(callback, 1000);
     $(this).attr("disabled", "disabled");
     $(this).siblings().removeAttr("disabled", "disabled");
@@ -22,20 +23,29 @@ $(".btn-danger").click(function () {
 // Nút Pause/Resume
 
 $(".btn-primary").click(function () {
-    if (!pause) {
+    if (pause === false) {
         clearInterval(timer);
         $(".btn-danger").attr("disabled", "disabled");
         $(this).text("Resume");
-        pause == true;
     }
     else {
-        setInterval(callback, 1000);
+        $(this).text("Pause");
+        timer = setInterval(function () {
+            if (time <= 99) {
+                time++;
+                $(".progress-bar").css("width", time + "%");
+                $(".progress-bar").text(time + "%");
+                console.log(time)
+            }
+        }, 1000);
+        pause = false;
     }
 })
 
 // Nút Reset
 $(".btn-success").click(function () {
     time = 0;
+    pause = true;
     clearInterval(timer);
     $(".progress-bar").css("width", "0%");
     $(this).attr("disabled", "disabled");

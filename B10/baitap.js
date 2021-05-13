@@ -163,7 +163,7 @@ function translate2(text) {
 
     if (text === "French") {
         return "Borjou";
-    } else if (text === "Hawoai") {
+    } else if (text === "Hawaii") {
         return "aloha";
     } else if (text === "Gemany") {
         return "Hallo";
