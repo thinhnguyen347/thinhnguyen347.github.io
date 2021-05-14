@@ -9,6 +9,7 @@ $(".btn").click(function () {
     // Ấn nút "x" để tắt pop-up ngay lập tức
     $(".close").click(function () {
         $("div.info").addClass("d-none");
+        clearTimeout(timer);
     })
 
     // Tự tắt pop-up sau 5s
@@ -21,16 +22,17 @@ $(".btn").click(function () {
     timer = setTimeout(callback, 5000);
 
     // Đếm ngược đến lúc tự tắt
+
     countDown = setInterval(count, 1000);
 
     function count() {
-        time--;
-        $(".count-down").text(time);
+        if (time>=1){
+            time--;
+            $(".count-down").text(time);
+        } else{
+            clearInterval(countDown);
+        }
+        
+        console.log(time)
     }
-
-    if (time == 0) {
-        clearInterval(countDown);
-        clearTimeout(timer);
-    }
-
 })
