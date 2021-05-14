@@ -1,39 +1,32 @@
-$(".info").addClass("d-none")
+let time = 5;
+let countDown;
 
 $(".btn").click(function () {
-    let time = 5;
-    let timer, countDown;
-
+    // Hiện popup
+    $(".count-down").text(time);
     $(".info").removeClass("d-none");
 
-    // Ấn nút "x" để tắt pop-up ngay lập tức
-
-    $(".close").click(function () {
-        $("div.info").addClass("d-none");
-        clearTimeout(timer);
-    })
-
-    // Tự tắt pop-up sau 5s
-
-    timer = setTimeout(callback, 5000);
-
-    function callback() {
-        time--;
-        $(".info").addClass("d-none");
-    }
+    // Xóa timer cũ
+    clearInterval(countDown);
 
     // Đếm ngược đến lúc tự tắt
-
     countDown = setInterval(count, 1000);
+});
 
-    function count() {
-        if (time >= 1) {
-            time--;
-            $(".count-down").text(time);
-        } else {
-            clearInterval(countDown);
-        }
+// Ấn nút "x" để tắt pop-up ngay lập tức
+$(".close").click(close);
 
-        // console.log(time)
+function close() {
+    $("div.info").addClass("d-none");
+    clearInterval(countDown);
+    time = 5;
+}
+
+function count() {
+    time--;
+    $(".count-down").text(time);
+
+    if (time == 0) {
+        close();
     }
-})
+}

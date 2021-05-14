@@ -27,17 +27,11 @@ $(".btn-primary").click(function () {
         clearInterval(timer);
         $(".btn-danger").attr("disabled", "disabled");
         $(this).text("Resume");
+        pause = true;
     }
     else {
         $(this).text("Pause");
-        timer = setInterval(function () {
-            if (time <= 99) {
-                time++;
-                $(".progress-bar").css("width", time + "%");
-                $(".progress-bar").text(time + "%");
-                console.log(time)
-            }
-        }, 1000);
+        timer = setInterval(callback, 1000);
         pause = false;
     }
 })
