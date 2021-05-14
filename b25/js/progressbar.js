@@ -23,7 +23,7 @@ $(".btn-danger").click(function () {
 // Nút Pause/Resume
 
 $(".btn-primary").click(function () {
-    if (pause === false) {
+    if (pause == false) {
         clearInterval(timer);
         $(".btn-danger").attr("disabled", "disabled");
         $(this).text("Resume");
