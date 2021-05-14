@@ -2,6 +2,7 @@ $(".info").addClass("d-none")
 
 $(".btn").click(function () {
     let time = 5;
+    let timer, countDown;
 
     $(".info").removeClass("d-none");
 
@@ -13,25 +14,23 @@ $(".btn").click(function () {
     // Tự tắt pop-up sau 5s
 
     function callback() {
-        let time = 5;
         time--;
         $(".info").addClass("d-none");
     }
 
-    let timer = setTimeout(callback, 5000);
+    timer = setTimeout(callback, 5000);
 
     // Đếm ngược đến lúc tự tắt
-    let count = 5;
-    counts = setInterval(counter, 1000);
+    countDown = setInterval(count, 1000);
 
-    if (count < 0) {
-        clearInterval(counts);
-        clearTimeout(timer)
+    function count() {
+        time--;
+        $(".count-down").text(time);
     }
 
-    function counter() {
-        count--;
-        $(".count-down").text(count);
-        console.log(count);
+    if (time == 0) {
+        clearInterval(countDown);
+        clearTimeout(timer);
     }
+
 })
