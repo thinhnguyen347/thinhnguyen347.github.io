@@ -196,7 +196,7 @@ input[type="number"] {
 }
 
 input:focus {
-  border: 2px solid #038958af;
+  border-bottom: 1px solid #038958af;
 }
 
 .btn-update {
