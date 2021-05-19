@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý học viên</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <h1 class="title">Danh sách lớp</h1><br>
+    <img class="deco title" src="img/deco.png" alt="deco" width="120px">
+
+
+    <!-- Danh sách học viên -->
+    <div class="container">
+
+        <button class="btn-add">&plus; Thêm học viên</button><br>
+
+        <div class="item-list">
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student2.jpg" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">Min</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">07/12/1988</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nữ</span></li>
+                        <li>Địa chỉ: <span class="DiaChi"> Hà Nội</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student1.jpg" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">Sơn Tùng</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">05/07/1994</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nam</span></li>
+                        <li>Địa chỉ: <span class="DiaChi">Thành phố Thái Bình, Thái Bình</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student3.jpg" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">Hoàng Sơn</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">10/09/1992</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nam</span></li>
+                        <li>Địa chỉ: <span class="DiaChi">Hà Nội</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student4.png" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">Phạm Băng Băng</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">16/09/1981</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nữ</span></li>
+                        <li>Địa chỉ: <span class="DiaChi">Thanh Đảo, Sơn Đông, Trung Quốc</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student5.png" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">Kim Tae Hye</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">19/03/1980</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nữ</span></li>
+                        <li>Địa chỉ: <span class="DiaChi">Ulsan, Hàn Quốc</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student6.png" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">So Ji Sub</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">04/11/1977</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nam</span></li>
+                        <li>Địa chỉ: <span class="DiaChi">Seoul, Hàn Quốc</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student7.png" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">Park Shin Hye</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">18/02/1990</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nữ</span></li>
+                        <li>Địa chỉ: <span class="DiaChi">Quận Nam, Gwangju, Hàn Quốc</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student8.png" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">Dương Mịch</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">12/09/1986</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nữ</span></li>
+                        <li>Địa chỉ: <span class="DiaChi">Tuyên Vũ, Bắc Kinh, Trung Quốc</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <div class="avatar">
+                    <img src="img/student9.png" alt="student-image">
+                </div>
+                <div class="details">
+                    <h3 class="HoTen">Park Seo Joon</h3>
+                    <ul>
+                        <li>Ngày sinh: <span class="NgaySinh">16/12/1988</span></li>
+                        <li>Giới tính: <span class="GioiTinh">Nam</span></li>
+                        <li>Địa chỉ: <span class="DiaChi">Seoul, Hàn Quốc</span></li>
+                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
+                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Thêm item -->
+
+    <div class="modal-add hide">
+        <div class="input-data">
+            <h3 class="form-title">Thêm học viên mới <i class="fas fa-times"></i></h3>
+
+            <form action="" method="get">
+                <label for="name">Họ và tên:</label><br>
+                <input type="text" id="name" required><br><br>
+                <label for="dob">Ngày sinh:</label><br>
+                <input type="text" id="dob" required><br><br>
+                <span>Giới tính:</span>&nbsp;&nbsp;
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Nam</label>&nbsp;&nbsp;
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Nữ</label>&nbsp;&nbsp;
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Khác</label><br><br>
+                <label for="name">Địa chỉ:</label><br>
+                <input type="text" id="DiaChi" required><br><br>
+                <label for="name">E-mail:</label><br>
+                <input type="text" id="email" required><br><br>
+                <label for="name">Số điện thoại:</label><br>
+                <input type="number" id="sdt" required><br><br>
+                <label for="name">Ảnh đại diện (link):</label><br>
+                <input type="text" id="avatar" required><br><br>
+                <div class="btn-update"><button class="submit">Cập nhật</button></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit item -->
+
+    <div class="modal-edit hide">
+        <div class="edit-data">
+            <h3 class="form-title">Chỉnh sửa thông tin <i class="fas fa-times"></i></h3>
+            <img src="img/student10.png" alt="student" width="150px">
+            <form action="" method="get">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" required><br><br>
+                <label for="dob">Ngày sinh:</label><br>
+                <input type="text" id="dob" required><br><br>
+                <span>Giới tính:</span>&nbsp;&nbsp;
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Nam</label>&nbsp;&nbsp;
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Nữ</label>&nbsp;&nbsp;
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Khác</label><br><br>
+                <label for="name">Địa chỉ:</label><br>
+                <input type="text" id="DiaChi" required><br><br>
+                <label for="name">E-mail:</label><br>
+                <input type="text" id="email" required><br><br>
+                <label for="name">Số điện thoại:</label><br>
+                <input type="text" id="sdt" required><br><br>
+                <div class="btn-update">
+                    <button class="submit">Cập nhật</button><button class="delete">Xoá</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
