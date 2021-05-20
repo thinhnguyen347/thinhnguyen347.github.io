@@ -1,11 +1,11 @@
-function Stt() {
+function SoThuTu() {
     let array = $('td.number');
     for (let i = 0; i < array.length; i++) {
         array[i].innerText = i + 1;
     }
 }
 
-Stt();
+SoThuTu();
 
 // Nút Thêm học viên
 $('.btn-add').click(function () {
@@ -13,45 +13,40 @@ $('.btn-add').click(function () {
 })
 
 // Lấy dữ liệu từ form nhập-----------------------------------------------------------------
-// let new_avatar = $(".input-data #avatar").val();
-let new_name = $('.input-data #name').val();
-let new_dob = $('.input-data #dob').val();
-let new_gender = $('.input-data input[name="gender"]:checked').val();
-let new_address = $('.input-data #DiaChi').val();
-let new_email = $('.input-data #email').val();
-let new_phone = $('.input-data #sdt').val();
 
-$('button.submit').click(function () {
+function NhapData() {
 
     $('.modal-add').addClass('hide');
-    $('tr').last().append(
-        '<tr>' +
-        '<td class="number"></td>' +
-        '<td class="avatar"><img src="img/student8.png" alt="student-image" width="150px"></td>' +
-        '<td class="name">' + new_name + '</td>' +
-        '<td class="dob">' + new_dob + "</td>" +
-        '<td class="gender">' + new_gender + '</td>' +
-        '<td class="address">' + new_address + '</td>' +
-        '<td class="email">' + new_email + '</td>' +
-        '<td class="phone">' + new_phone + '</td>' +
-        '<td><i class="far fa-edit"></i><i class="far fa-trash-alt"></i></td></tr>'
+
+    // let new_avatar = $(".input-data #avatar").val();
+    let new_name = $('.input-data #name').val();
+    let new_dob = $('.input-data #dob').val();
+    let new_gender = $('.input-data input[name="gender"]:checked').val();
+    let new_address = $('.input-data #DiaChi').val();
+    let new_email = $('.input-data #email').val();
+    let new_phone = $('.input-data #sdt').val();
+
+    $('table > tbody').append('<tr><td class="number"></td><td class="avatar"><img src="img/student4.png" alt="student-image" width="150px"></td><td class="name">' + new_name + '</td><td class="dob">' + new_dob + '</td><td class="gender">' + new_gender + '</td>' +
+        '<td class="address">' + new_address + '</td><td class="email">' + new_email + '</td><td class="phone">' + new_phone + '</td><td><i class="far fa-edit"></i>&nbsp;&nbsp;&nbsp;<i class="far fa-trash-alt"></i></td></tr>'
     )
-})
+
+    SoThuTu()
+}
 
 // Nút Sửa thông tin học viên--------------------------------------------------------------------
-
+let row_index = 0;
 $('.fa-edit').click(function () {
     $('.modal-edit').removeClass('hide');
 
     let item = $(this).parent().parent();
-
+    index = item.index();
+    row_index = index;
     // Lấy avatar
     let current_avatar = item.find('img').attr('src');
     $('.edit-data img').attr('src', current_avatar);
 
     // Lấy thông tin tên
     let current_name = item.find('.name').text();
-    console.log(current_name);
     $('.edit-data #name').val(current_name);
 
     // Lấy thông tin ngày sinh
@@ -81,14 +76,38 @@ $('.fa-edit').click(function () {
     $('.edit-data #sdt').val(current_phone);
 })
 
+function updateData() {
+
+    let new_name = $('.edit-data input#name').val();
+    let new_dob = $('.edit-data #dob').val();
+    let new_gender = $('.edit-data input[name="gender"]:checked').val();
+    let new_address = $('.edit-data #DiaChi').val();
+    let new_email = $('.edit-data #email').val();
+    let new_phone = $('.edit-data #sdt').val();
+
+    $('tr').eq(row_index).find('td.name').text(new_name);
+    $('tr').eq(row_index).find('td.dob').text(new_dob);
+    $('tr').eq(row_index).find('td.gender').text(new_gender);
+    $('tr').eq(row_index).find('td.address').text(new_address);
+    $('tr').eq(row_index).find('td.email').text(new_email);
+    $('tr').eq(row_index).find('td.phone').text(new_phone);
+
+}
+
+$('.update').click(function () {
+    updateData();
+    $('.modal-edit').addClass('hide');
+})
+
 
 // Tắt Modal thêm/edit thông tin
 $('.fa-times').click(function () {
     $('.modal-edit').addClass('hide');
     $('.modal-add').addClass('hide');
+    row_index = 0;
 })
 
-// Nút Xoá học viên
+// Xoá học viên khi ấn vào icon thùng rác
 $('.fa-trash-alt').click(function () {
     $('.modal-delete').removeClass('hide');
     let item = $(this).parent().parent();
@@ -96,10 +115,15 @@ $('.fa-trash-alt').click(function () {
         function () {
             if ($(this).hasClass('confirm')) {
                 item.html('');
-                Stt();
+                SoThuTu();
             }
         }
     )
+})
+
+// Xoá học viên khi ấn vào nút Xoá
+
+$('.confirm').click({
 
 })
 
