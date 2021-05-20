@@ -34,7 +34,7 @@ function NhapData() {
 }
 
 // Nút Sửa thông tin học viên--------------------------------------------------------------------
-let row_index = 0;
+let row_index;
 $('.fa-edit').click(function () {
     $('.modal-edit').removeClass('hide');
 
@@ -123,8 +123,9 @@ $('.fa-trash-alt').click(function () {
 
 // Xoá học viên khi ấn vào nút Xoá
 
-$('.confirm').click({
-
+$('.confirm').click(function(){
+    $('tr').eq(row_index).remove();
+    SoThuTu();
 })
 
 // Tắt Modal xoá item -------------------------------------------------------------------------------
