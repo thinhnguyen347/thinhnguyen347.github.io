@@ -95,7 +95,7 @@ td > img {
 .submit:hover,
 .cancel:hover,
 .update:hover {
-  background-color: #04754a;
+  background-color: #f8a230;
   transform: translateY(-5px);
 }
 
@@ -207,7 +207,7 @@ input:focus {
 
 .delete:hover,
 .confirm:hover {
-  background-color: #de4f00;
+  background-color: #de0000;
   transform: translateY(-5px);
 }
 
