@@ -38,7 +38,7 @@
                         <li>Giới tính: <span class="GioiTinh">Nữ</span></li>
                         <li>Địa chỉ: <span class="DiaChi"> Hà Nội</span></li>
                         <li>E-mail: <span class="Email">123@gmail.com</span></li>
-                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                        <li>Số điện thoại: <span class="sdt">0352478595</span></li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                         <li>Giới tính: <span class="GioiTinh">Nam</span></li>
                         <li>Địa chỉ: <span class="DiaChi">Hà Nội</span></li>
                         <li>E-mail: <span class="Email">123@gmail.com</span></li>
-                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                        <li>Số điện thoại: <span class="sdt">0989 666 888</span></li>
                     </ul>
                 </div>
             </div>
@@ -174,11 +174,10 @@
                         <li>Giới tính: <span class="GioiTinh">Nam</span></li>
                         <li>Địa chỉ: <span class="DiaChi">Seoul, Hàn Quốc</span></li>
                         <li>E-mail: <span class="Email">123@gmail.com</span></li>
-                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
+                        <li>Số điện thoại: <span class="sdt">024 3833 2727</span></li>
                     </ul>
                 </div>
             </div>
-
 
         </div>
     </div>
@@ -194,11 +193,11 @@
                 <label for="dob">Ngày sinh:</label><br>
                 <input type="text" id="dob" required><br><br>
                 <span>Giới tính:</span>&nbsp;&nbsp;
-                <input type="radio" id="male" name="gender" value="male" checked>
+                <input type="radio" id="male" name="gender" value="Nam" checked>
                 <label for="male">Nam</label>&nbsp;&nbsp;
-                <input type="radio" id="female" name="gender" value="female">
+                <input type="radio" id="female" name="gender" value="Nữ">
                 <label for="female">Nữ</label>&nbsp;&nbsp;
-                <input type="radio" id="other" name="gender" value="other">
+                <input type="radio" id="other" name="gender" value="Khác">
                 <label for="other">Khác</label><br><br>
                 <label for="name">Địa chỉ:</label><br>
                 <input type="text" id="DiaChi" required><br><br>
@@ -207,8 +206,10 @@
                 <label for="name">Số điện thoại:</label><br>
                 <input type="text" id="sdt" required><br><br>
                 <label for="name">Ảnh đại diện (link):</label><br>
-                <input type="text" id="avatar" required><br><br>
-                <div class="btn-update"><button class="submit">Cập nhật</button></div>
+                <input type="text" id="avatar"><br><br>
+                <div class="btn-update">
+                    <button class="submit">Lưu</button>
+                </div>
             </form>
         </div>
     </div>
@@ -218,7 +219,10 @@
     <div class="modal-edit hide">
         <div class="edit-data">
             <h3 class="form-title">Chỉnh sửa thông tin <i class="fas fa-times"></i></h3>
-            <img src="img/student10.png" alt="student" width="150px">
+            <div class="ava-edit">
+                <div class="icon"><i class="far fa-edit"></i></div>
+                <img src="img/student10.png" alt="student" width="150px">
+            </div>
             <form action="" method="get">
                 <label for="name">Họ và tên:</label>
                 <input type="text" id="name" required><br><br>
@@ -238,11 +242,37 @@
                 <label for="name">Số điện thoại:</label><br>
                 <input type="text" id="sdt" required><br><br>
                 <div class="btn-update">
-                    <button class="submit">Cập nhật</button><button class="delete">Xoá</button>
+                    <button class="update">Cập nhật</button><button class="delete">Xoá</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <!-- Xoá item -->
+
+    <div class="modal-delete hide">
+        <div class="delete-data">
+            <h3 class="form-title">Xoá thông tin học viên</h3>
+            <br><br>
+            <h4>Bạn có chắc chắn muốn xoá mục này?</h4>
+            <br><br>
+            <div class="btn-update">
+                <button class="cancel">Huỷ bỏ</button><button class="confirm">Xoá</button>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- Update thành công thì hiện thông báo -->
+
+    <!-- <div class="modal-complete hide">
+        <div class="complete-data">
+            <h3 class="form-title">Thông báo</h3>
+            <br><br>
+            <h4>Thông tin cập nhật thành công</h4>
+            <br><br>
+        </div>
+    </div> -->
 
 
     <script src="./js/main.js"></script>
