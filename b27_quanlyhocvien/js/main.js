@@ -4,43 +4,31 @@ $('.btn-add').click(function () {
 })
 
 // Lấy dữ liệu từ form nhập-----------------------------------------------------------------
-// let new_avatar = $(".input-data #avatar").val();
-let new_name = $('.input-data #name').val();
-let new_dob = $('.input-data #dob').val();
-let new_gender = $('.input-data input[name="gender"]:checked').val();
-let new_address = $('.input-data #DiaChi').val();
-let new_email = $('.input-data #email').val();
-let new_phone = $('.input-data #sdt').val();
 
-$('button.submit').click(function () {
+function NhapData() {
 
     $('.modal-add').addClass('hide');
+
+    let new_avatar = $(".input-data #avatar").val();
+    let new_name = $('.input-data #name').val();
+    let new_dob = $('.input-data #dob').val();
+    let new_gender = $('.input-data input[name="gender"]:checked').val();
+    let new_address = $('.input-data #DiaChi').val();
+    let new_email = $('.input-data #email').val();
+    let new_phone = $('.input-data #sdt').val();
+
     $('.item-list').append(
-        '<div class="item">' +
-        '<div class="icon"><i class="far fa-edit"></i></div>' +
-        '<div class="avatar">' +
-        '<img src="img/student10.png" alt="student-image">' +
-        '</div>' +
-        '<div class="details">' +
-        '<h3 class="HoTen">' + new_name + '</h3>' +
-        '<ul>' +
-        '<li>Ngày sinh: <span class="NgaySinh">' + new_dob + '</span></li>' +
-        '<li>Giới tính: <span class="GioiTinh">' + new_gender + '</span></li>' +
-        '<li>Địa chỉ: <span class="DiaChi">' + new_address + '</span></li>' +
-        '<li> E - mail: <span class="Email">' + new_email + '</span></li >' +
-        '<li>Số điện thoại: <span class="sdt">' + new_phone + '</span></li>' +
-        '</ul >' +
-        '</div >' +
-        '</div >'
+        '<div class="item"><div class="icon"><i class="far fa-edit"></i></div><div class="avatar"><img src="' + new_avatar + '" alt="student-image"></div><div class="details"><h3 class="HoTen">' + new_name + '</h3><ul><li>Ngày sinh: <span class="NgaySinh">' + new_dob + '</span></li><li>Giới tính: <span class="GioiTinh">' + new_gender + '</span></li><li>Địa chỉ: <span class="DiaChi">' + new_address + '</span></li><li> E - mail: <span class="Email">' + new_email + '</span></li><li>Số điện thoại: <span class="sdt">' + new_phone + '</span></li></ul></div></div>'
     )
-})
+}
 
 // Nút Sửa/Xoá học viên--------------------------------------------------------------------
-
+let index;
 $('.fa-edit').click(function () {
     $('.modal-edit').removeClass('hide');
 
     let item = $(this).parent().parent();
+    index = item.index();
 
     // Lấy avatar
     let current_avatar = item.find('.avatar img').attr('src');
@@ -87,7 +75,7 @@ $('.fa-times').click(function () {
 // Tắt Modal xoá item -------------------------------------------------------------------------------
 $('.confirm').click(function () {
     $('.modal-delete').addClass('hide');
-    
+
 })
 
 $('.cancel').click(function () {
@@ -101,6 +89,34 @@ $('.delete').click(function () {
 })
 
 //Cập nhật thông tin item----------------------------------------------------------------------------
+function updateData() {
+
+    $('.modal-edit').addClass('hide');
+
+    let new_name = $('.edit-data #name').val();
+    let new_dob = $('.edit-data #dob').val();
+    let new_gender = $('.edit-data input[name="gender"]:checked').val();
+    let new_address = $('.edit-data #DiaChi').val();
+    let new_email = $('.edit-data #email').val();
+    let new_phone = $('.edit-data #sdt').val();
+    
+    $('.item').eq(index).find('.HoTen').text(new_name);
+    $('.item').eq(index).find('.NgaySinh').text(new_dob);
+    $('.item').eq(index).find('.GioiTinh').text(new_gender);
+    $('.item').eq(index).find('.DiaChi').text(new_address);
+    $('.item').eq(index).find('.Email').text(new_email);
+    $('.item').eq(index).find('.sdt').text(new_phone);
+
+}
+
+//Xoá học viên
+
+$('.confirm').click(
+    function () {
+        $('.item').eq(index).remove();
+    }
+)
+
 
 
 // Nút Update & Tắt/bật thông báo chỉnh sửa thành công

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
 * {
   margin: 0;
@@ -13,7 +13,8 @@ body {
   background-color: #c9c8c8;
 }
 
-.title, h4 {
+.title,
+h4 {
   text-align: center;
 }
 
@@ -50,15 +51,46 @@ img.deco {
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  margin-right: 5%;
+  margin-right: 3%;
   margin-left: auto;
   display: block;
   transition: 0.5s;
 }
 
 .btn-add:hover,
-.submit:hover, .cancel:hover, .update:hover {
-  background-color: #04754a;
+.submit:hover,
+.cancel:hover,
+.update:hover {
+  background-color: #037ae9;
+  transform: translateY(-5px);
+}
+
+.submit,
+.delete,
+.cancel,
+.confirm,
+.update {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  transition: 0.2s;
+  width: 100px;
+}
+
+.delete,
+.cancel,
+.update {
+  background-color: #e98d03;}
+
+
+.delete:hover,
+.confirm:hover {
+  background-color: #de0000;
   transform: translateY(-5px);
 }
 
@@ -122,7 +154,9 @@ ul > li {
 }
 
 .modal-add,
-.modal-edit, .modal-delete, .modal-complete {
+.modal-edit,
+.modal-delete,
+.modal-complete {
   position: fixed;
   top: 0;
   left: 0;
@@ -142,7 +176,9 @@ ul > li {
 }
 
 .input-data,
-.edit-data,.delete-data, .complete-data {
+.edit-data,
+.delete-data,
+.complete-data {
   background-color: #fff;
   border-radius: 30px;
   width: 420px;
@@ -187,7 +223,7 @@ input[type="number"] {
   font-size: 18px;
   line-height: 20px;
   margin: 5px 0 auto auto;
-  font-family: 'Sriracha', cursive;
+  font-family: "Sriracha", cursive;
   border-bottom: 0.7px solid #44444465;
   border-top: none;
   border-right: none;
@@ -206,34 +242,15 @@ input:focus {
   justify-content: space-around;
 }
 
-.submit,
-.delete,.cancel, .confirm, .update {
-  background-color: #04aa6d;
-  color: white;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  display: block;
-  transition: 0.2s;
-  width: 100px;
-}
-
-.delete:hover, .confirm:hover {
-  background-color: #de4f00;
-  transform: translateY(-5px);
-}
-
 .edit-data img {
   border-radius: 50%;
   display: block;
   margin: 5px auto;
 }
 
-.ava-edit{
+.ava-edit {
   position: relative;
-  width:180px;
-  height:180px;
-  margin:0 auto
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
 }

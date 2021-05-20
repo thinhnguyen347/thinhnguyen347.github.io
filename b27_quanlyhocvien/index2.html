@@ -18,7 +18,7 @@
 
     <h1 class="title">Danh sách lớp</h1><br>
     <img class="deco title" src="img/deco.png" alt="deco" width="120px">
-
+    <br>
 
     <!-- Danh sách học viên -->
     <div class="container">
@@ -97,57 +97,6 @@
             <div class="item">
                 <div class="icon"><i class="far fa-edit"></i></div>
                 <div class="avatar">
-                    <img src="img/student5.png" alt="student-image">
-                </div>
-                <div class="details">
-                    <h3 class="HoTen">Kim Tae Hye</h3>
-                    <ul>
-                        <li>Ngày sinh: <span class="NgaySinh">19/03/1980</span></li>
-                        <li>Giới tính: <span class="GioiTinh">Nữ</span></li>
-                        <li>Địa chỉ: <span class="DiaChi">Ulsan, Hàn Quốc</span></li>
-                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
-                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="icon"><i class="far fa-edit"></i></div>
-                <div class="avatar">
-                    <img src="img/student6.png" alt="student-image">
-                </div>
-                <div class="details">
-                    <h3 class="HoTen">So Ji Sub</h3>
-                    <ul>
-                        <li>Ngày sinh: <span class="NgaySinh">04/11/1977</span></li>
-                        <li>Giới tính: <span class="GioiTinh">Nam</span></li>
-                        <li>Địa chỉ: <span class="DiaChi">Seoul, Hàn Quốc</span></li>
-                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
-                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="icon"><i class="far fa-edit"></i></div>
-                <div class="avatar">
-                    <img src="img/student7.png" alt="student-image">
-                </div>
-                <div class="details">
-                    <h3 class="HoTen">Park Shin Hye</h3>
-                    <ul>
-                        <li>Ngày sinh: <span class="NgaySinh">18/02/1990</span></li>
-                        <li>Giới tính: <span class="GioiTinh">Nữ</span></li>
-                        <li>Địa chỉ: <span class="DiaChi">Quận Nam, Gwangju, Hàn Quốc</span></li>
-                        <li>E-mail: <span class="Email">123@gmail.com</span></li>
-                        <li>Số điện thoại: <span class="sdt">04 1900 8090</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="icon"><i class="far fa-edit"></i></div>
-                <div class="avatar">
                     <img src="img/student8.png" alt="student-image">
                 </div>
                 <div class="details">
@@ -187,7 +136,7 @@
         <div class="input-data">
             <h3 class="form-title">Thêm học viên mới <i class="fas fa-times"></i></h3>
 
-            <form action="" method="get">
+            <form action="javascript:NhapData();" method="get">
                 <label for="name">Họ và tên:</label><br>
                 <input type="text" id="name" required><br><br>
                 <label for="dob">Ngày sinh:</label><br>
@@ -205,10 +154,10 @@
                 <input type="text" id="email" required><br><br>
                 <label for="sdt">Số điện thoại:</label><br>
                 <input type="text" id="sdt" required><br><br>
-                <label for="avatar">Ảnh đại diện (&lt;2Mb):</label><br>
-                <input type="text" id="avatar"><br><br>
+                <label for="avatar" value="">Ảnh đại diện (&lt;2Mb):</label><br>
+                <input type="text" id="avatar" value="img/student10.png"><br><br>
                 <div class="btn-update">
-                    <button class="submit">Lưu</button>
+                    <input type="submit" class="submit" value="Lưu">
                 </div>
             </form>
         </div>
@@ -223,7 +172,7 @@
                 <div class="icon"><i class="far fa-edit"></i></div>
                 <img src="img/student10.png" alt="student" width="150px">
             </div>
-            <form action="" method="get">
+            <form action="javascript:updateData();" method="get">
                 <label for="name">Họ và tên:</label><br>
                 <input type="text" id="name" required><br><br>
                 <label for="dob">Ngày sinh:</label><br>
@@ -242,7 +191,7 @@
                 <label for="sdt">Số điện thoại:</label><br>
                 <input type="text" id="sdt" required><br><br>
                 <div class="btn-update">
-                    <button class="update">Cập nhật</button><button class="delete">Xoá</button>
+                    <input type="submit" class="submit" value="Cập nhật"><button class="delete">Xoá</button>
                 </div>
             </form>
         </div>
