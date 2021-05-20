@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px auto;
+  font-family: "Lexend", sans-serif;
+  background-color: #c9c8c8;
+}
+
+.title,
+h4 {
+  text-align: center;
+}
+
+img.deco {
+    display: block;
+    margin: 0 auto;
+  }
+
+button {
+  font-family: "Lexend", sans-serif;
+}
+
+.fa-edit,
+.fa-trash-alt {
+  font-size: 0.9em;
+  color: #de4f00;
+  transition: 0.3s ease-in-out;
+}
+
+.fa-edit:hover,
+.fa-trash-alt:hover {
+  transform: scale(1.4);
+  color: #04aa6d;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+th {
+  padding: 10px;
+  background-color: #04754a;
+  color: #fff;
+}
+
+.number {
+  text-align: center;
+}
+
+td {
+  padding-left: 10px;
+  border-bottom: 1px solid #838282;
+  background-color: #fff;
+  text-align: center;
+}
+
+td > img {
+  border-radius: 50%;
+  display: block;
+  margin: 5px auto;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.btn-add {
+  background-color: #039b63;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-left: auto;
+  display: block;
+  transition: 0.5s;
+}
+
+.btn-add:hover,
+.submit:hover,
+.cancel:hover,
+.update:hover {
+  background-color: #04754a;
+  transform: translateY(-5px);
+}
+
+.modal-add,
+.modal-edit,
+.modal-delete,
+.modal-complete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  background-color: #07070786;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+.input-data,
+.edit-data,
+.delete-data,
+.complete-data {
+  background-color: #fff;
+  border-radius: 30px;
+  width: 420px;
+  padding: 0px;
+}
+
+.form-title {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+  width: 100%;
+  background-color: #038958;
+  color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+}
+
+.fa-times {
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: black;
+}
+
+.fa-times:hover {
+  color: #de4f00;
+}
+
+form {
+  padding: 10px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 350px;
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 5px 0 auto auto;
+  font-family: "Sriracha", cursive;
+  border-bottom: 0.7px solid #44444465;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline-style: none;
+  text-align: center;
+}
+
+input:focus {
+  border-bottom: 1px solid #038958af;
+}
+
+.btn-update {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.submit,
+.delete,
+.cancel,
+.confirm,
+.update {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  transition: 0.2s;
+  width: 100px;
+}
+
+.delete:hover,
+.confirm:hover {
+  background-color: #de4f00;
+  transform: translateY(-5px);
+}
+
+.edit-data img {
+  border-radius: 50%;
+  display: block;
+  margin: 5px auto;
+}
+
+.ava-edit {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.ava-edit i {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
