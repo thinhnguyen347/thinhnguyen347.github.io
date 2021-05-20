@@ -39,7 +39,7 @@ $('button.submit').click(function () {
 $('.fa-edit').click(function () {
     $('.modal-edit').removeClass('hide');
 
-    let item = $(this).parent().siblings();
+    let item = $(this).parent().parent();
 
     // Lấy avatar
     let current_avatar = item.find('img').attr('src');
@@ -51,11 +51,11 @@ $('.fa-edit').click(function () {
     $('.edit-data #name').val(current_name);
 
     // Lấy thông tin ngày sinh
-    let current_dob = item.find('.NgaySinh').text();
+    let current_dob = item.find('.dob').text();
     $('.edit-data #dob').val(current_dob);
 
     // Lấy thông tin giới tính
-    let gender = item.find('.GioiTinh').text();
+    let gender = item.find('.gender').text();
     if (gender == "Nam") {
         $('.edit-data #male').attr('checked', 'checked');
     } else if (gender == "Nữ") {
@@ -65,15 +65,15 @@ $('.fa-edit').click(function () {
     }
 
     // Lấy thông tin địa chỉ
-    let current_address = item.find('.DiaChi').text();
+    let current_address = item.find('.address').text();
     $('.edit-data #DiaChi').val(current_address);
 
     // Lấy thông tin e-mail
-    let current_email = item.find('.Email').text();
+    let current_email = item.find('.email').text();
     $('.edit-data #email').val(current_email);
 
     // Lấy thông tin sdt
-    let current_phone = item.find('.sdt').text();
+    let current_phone = item.find('.phone').text();
     $('.edit-data #sdt').val(current_phone);
 })
 
