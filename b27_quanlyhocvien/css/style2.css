@@ -95,7 +95,7 @@ td > img {
 .submit:hover,
 .cancel:hover,
 .update:hover {
-  background-color: #f8a230;
+  background-color: #da7e06;
   transform: translateY(-5px);
 }
 

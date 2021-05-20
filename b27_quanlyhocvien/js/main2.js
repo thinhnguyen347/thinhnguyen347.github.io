@@ -143,9 +143,6 @@ $('.delete').click(function () {
     $('.modal-delete').removeClass('hide');
 })
 
-//Cập nhật thông tin item----------------------------------------------------------------------------
-
-
 // Nút Update & Tắt/bật thông báo chỉnh sửa thành công
 // $(".update").click(function () {
 //     $('.modal-edit').addClass('hide');
