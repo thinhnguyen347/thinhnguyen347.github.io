@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <header></header>
+    <h1>Đăng nhập trang quản lý học viên</h1>
+    <div class="login">
+        <h3>thông tin tài khoản</h3>
+        <form name="form" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" id="username"><br><br>
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" name="password" id="password"><br>
+            <span class="alert hide"><i class="far fa-times-circle"></i> &nbsp;Thông tin đăng nhập chưa chính xác</span>
+            <span class="success hide"><i class="far fa-check-circle"></i> &nbsp; Xác thực thông tin đăng nhập thành công</span><br>
+            <input type="submit" value="Đăng nhập">
+        </form>
+    </div>
+    <br>
+    <p>Tài khoản test: admin/admin</p>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

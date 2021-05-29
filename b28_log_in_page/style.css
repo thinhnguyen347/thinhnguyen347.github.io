@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 64px;
+  width: 100%;
+  background-color: #04754a;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  background-color: #c9c8c8;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.login {
+  width: 400px;
+  height: auto;
+  background: #fff;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+form {
+  padding: 15px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 45px;
+  background-color: #228f65;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+label {
+  line-height: 40px;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+input[type="text"], input[type="password"] {
+  width: 80%;
+  padding: 0 10px;
+  line-height: 40px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #04754a;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border: 1px solid #f86329;
+}
+
+input[type="submit"] {
+  width: 120px;
+  padding: 5px 10px;
+  line-height: 30px;
+  font-size: 1em;
+  border: none;
+  border-radius: 40px;
+  background-color: #f86329;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+  background-color: #da3648;
+  color: #fff;
+}
+
+p {
+  font-style: italic;
+  text-align: center;
+}
+
+span {
+  line-height: 35px;
+}
+
+.hide {
+  display: none;
+}
+
+.alert{
+  color: red;
+}
+
+.success{
+  color: green;
+}
