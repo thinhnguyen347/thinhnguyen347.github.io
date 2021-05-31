@@ -3,40 +3,42 @@ $.ajax({
 })
     .done(function (data) {
 
-        $('form').on('submit', function (event) {
+        $('form').submit(function (event) {
+
             event.preventDefault();
 
             let userInfo = $('#username').val();
-            let password = $('#password').val();
+            let current_password = $('#password').val();
 
             let success = false;
 
             $.each(data, function () {
 
-                console.log(this.password)
 
-                if (password == this.password && userInfo == this.username) {
+                if (current_password == this.password && userInfo == this.username) {
 
                     success = true;
-                    
+                    console.log(success);
+
+                    return success = true;
                 }
 
             })
 
             if (success) {
-                $('.alert').addClass('hide');
-                $('.success').removeClass('hide');
+
+                $('p.message').empty();
+                $('p.message').append('<span class="success"><i class="far fa-check-circle"></i> &nbsp; Đăng nhập thành công</span><br>')
 
                 setTimeout(function () {
                     window.location.href = "https://quanly-hv.herokuapp.com/";
-                }, 2000)
+                }, 1000)
 
             } else {
-                $('.alert').removeClass('hide');
-                $('.success').addClass('hide');
-                setTimeout(function () {
-                    window.location.reload()
-                }, 3000)
+
+                $('p.message').fadeOut().empty();
+                $('p.message').fadeIn().append('<span class="alert"><i class="far fa-times-circle"></i> &nbsp;Thông tin đăng nhập chưa chính xác</span>')
+            
             }
 
         })

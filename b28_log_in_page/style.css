@@ -77,6 +77,7 @@ input[type="submit"] {
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 input[type="submit"]:hover {
@@ -94,8 +95,8 @@ span {
   line-height: 35px;
 }
 
-.hide {
-  display: none;
+p.message{
+  margin-top: 15px;
 }
 
 .alert{
