@@ -88,8 +88,7 @@ function Question(currentQuestion) {
 //Ấn nút start để hiện câu hỏi đầu tiên
 
 $("#start").click(function () {
-    score = 0;
-    currentQuestion = 0;
+    
     $(".container").addClass('hide');
     $(".container1").removeClass('hide');
     Question(currentQuestion);
@@ -97,7 +96,6 @@ $("#start").click(function () {
     $(".finish").addClass('hide');
     $(".next").addClass('hide');
 
-    console.log(score)
 });
 
 // Ấn nút next
@@ -125,8 +123,6 @@ $(".finish").click(function () {
 // Tính điểm
 
 function Score(currentQuestion) {
-
-    if (currentQuestion == 0) { score = 0 }
 
     $('.btn').click((e) => {
 
