@@ -32,9 +32,9 @@ const quiz = [
     },
 
     {
-        question: "What is the fastest land animal?",
-        choices: ["Cheetah", "Lion", "Snake", "Butterfly"],
-        ans: "Cheetah",
+        question: "What is the sweet food made by bees?",
+        choices: ["Chocolate", "Pollen", "Honey", "Flower"],
+        ans: "Honey",
     },
 
     {
@@ -126,17 +126,18 @@ function Score(currentQuestion) {
 
     $('.btn').click((e) => {
 
-        
+
         let choice = $(e.target).text();
 
         if (choice == quiz[currentQuestion].ans) {
             score += 25;
             Correct();
-            
-        } else {
+        }
+
+        if (choice != quiz[currentQuestion].ans) {
             score += 0;
             Wrong();
-        }  
+        }
 
         $('.subscore').text(`Score: ${score}`);
 
@@ -151,7 +152,7 @@ function Score(currentQuestion) {
         }
     })
 
-   
+
 }
 
 
@@ -165,11 +166,13 @@ $('.restart').click(function () {
 let x = document.getElementById("correct");
 function Correct() {
     x.play();
+    y.pause()
 }
 
 let y = document.getElementById("wrong");
-function Wrong() {
+function Wrong() {   
     y.play();
+    x.pause()
 }
 
 
