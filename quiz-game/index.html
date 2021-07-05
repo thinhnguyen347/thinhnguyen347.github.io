@@ -13,49 +13,58 @@
 
 <body>
 
-    <audio controls loop autoplay="autoplay" hidden="hidden"> <source src="audio/kid-world.mp3" type="audio/mpeg"> </audio>
-    
-    <!-- Phần mở đầu -->
-    <div class="container ">
-        <br><br><br><br>
-        <div><img src="./textnote.gif" alt="Quiz" width=360px height=80px></div>
-        <br><br><br>
-        <button id="start">Start</button>
-        <p id="result"></p>
-
-    </div>
-
-    <!-- Phần câu hỏi-->
-
-    <div class="container1 hide">
-        <br><br>
-        <div class="content">
-            <p id="number"></p> <br>
-            <p id="question"></p>
+    <audio controls autoplay="autoplay" hidden="hidden">
+        <source src="audio/kid-world.mp3" type="audio/mpeg">
+    </audio>
+   
+    <div class="wrapper">
+        <!-- Phần mở đầu -->
+        <div class="container ">
             <br><br>
+            <div><img src="./textnote.gif" alt="Quiz" width=360px height=80px></div>
+            <br><br><br>
+            <button id="start">Start</button>
+            <p id="result"></p>
+
+        </div>
+
+        <!-- Phần câu hỏi-->
+
+        <div class="container1 hide">
+            <br>
+            <div class="num-subs">
+                <p class="number"></p>
+                <p class="subscore">Score: 0</p>
+            </div>
+            <br>
+            <p id="question"></p>
+            <br>
             <div id="answer">
-                <button id="choice1" class="btn choice"></button>
-                <button id="choice2" class="btn choice"></button>
-                <button id="choice3" class="btn choice"></button>
-                <button id="choice4" class="btn choice"></button>
+                <button class="btn choice1 red"></button>
+                <button class="btn choice2 blue"></button>
+                <button class="btn choice3 yellow"></button>
+                <button class="btn choice4 green"></button>
             </div>
             <br>
             <div>
                 <button class="next">Next</button>
                 <button class="finish">Finish</button>
             </div>
+
         </div>
     </div>
-
     <!-- Phần end game -->
     <div class="container2 hide">
-        <div id="logo ">
-            <img src="./textnote.gif" alt="Quiz" width=360px height=80px><br><br>
+        
+            <img src="./textnote.gif" alt="Quiz"><br><br>
             <br>
             <p class="end">End Game!</p><br>
-            <p id="score" class="end">Score: 100</p>
-        </div>
+            <p class="total-score"></p>
+            <br>
+            <button class="restart">Play again</button>
+
     </div>
+
 
     <script src="./script19.js"></script>
 </body>

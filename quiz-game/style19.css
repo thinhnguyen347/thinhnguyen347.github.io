@@ -3,34 +3,33 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Dela Gothic One", cursive;
 }
 
 body {
   background-image: url("https://i.ibb.co/6vxWf0L/forest2.jpg");
   background-position: top;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-size: 20px;
   background-color: rgb(50, 50, 83);
 }
 
-.container {
-  height: auto;
-  width: 900px;
-  margin: 100px auto;
-  font-family: "Dela Gothic One", cursive;
+.wrapper {
+  width: 100%;
+  padding: 200px 150px 0px 150px;
 }
 
-.container1 {
+.container,
+.container1,
+.container2 {
   height: auto;
-  width: 900px;
-  margin: 100px auto;
-  font-family: "Dela Gothic One", cursive;
+  width: 100%;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /* Phần mở đầu */
@@ -39,6 +38,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 360px;
+  height: 80px;
 }
 
 #start {
@@ -77,20 +78,6 @@ img {
 
 /* Phần câu hỏi */
 
-.container1 > p {
-  font-size: 1.2em;
-  color: rgb(102, 2, 49);
-  padding-left: 50px;
-}
-.content {
-  word-wrap: break-word;
-  height: auto;
-  width: 800px;
-  margin: 0 auto;
-  justify-content: space-around;
-  padding-top: 30px;
-}
-
 #question {
   font-size: 1.4em;
   text-align: center;
@@ -101,32 +88,43 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 10px;
-  height: 230px;
+  padding: 10px 100px;
+  height: auto;
 }
 
-#choice1 {
+#answer .btn {
+  margin-top: 20px;
+}
+
+.red {
   background-color: #f52533;
   color: whitesmoke;
 }
 
-#choice2 {
+.blue {
   background-color: #0067d5;
   color: whitesmoke;
 }
 
-#choice3 {
+.yellow {
   background-color: #ffa200;
   color: whitesmoke;
 }
 
-#choice4 {
+.green {
   background-color: #008b00;
   color: whitesmoke;
 }
 
+.gray {
+  background-color: #828382 !important;
+  color: whitesmoke;
+}
+
 /* Next */
-.next,.finish {
+.next,
+.finish,
+.restart {
   background-color: #4e1b95;
   color: whitesmoke;
   font-size: 1.2em;
@@ -140,16 +138,65 @@ img {
   margin-right: auto;
 }
 
-.next:hover, .finish:hover {
+.next:hover,
+.finish:hover,
+.restart:hover {
   background-color: rgb(145, 5, 70);
 }
 
+.total-score,
 .end {
   text-align: center;
   font-size: 1.2em;
   font-family: "Dela Gothic One", cursive;
 }
 
-.container2{
-  margin: 250px auto;
+.num-subs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+
+.restart {
+  width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 100%;
+    padding: 200px 100px 0px 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+  }
+
+  #question {
+    font-size: 1em;
+  }
+
+  #answer {
+    padding: 10px 10px;
+  }
+
+  .btn {
+    height: 60px;
+    width: 100%;
+  }
+
+  img {
+    height: 60px;
+    width: 270px;
+  }
+
+  .container, .container2 {
+    margin-top: 100px;
+  }
 }
