@@ -88,7 +88,7 @@ function Question(currentQuestion) {
 //Ấn nút start để hiện câu hỏi đầu tiên
 
 $("#start").click(function () {
-    
+
     $(".container").addClass('hide');
     $(".container1").removeClass('hide');
     Question(currentQuestion);
@@ -126,15 +126,17 @@ function Score(currentQuestion) {
 
     $('.btn').click((e) => {
 
+        
         let choice = $(e.target).text();
 
         if (choice == quiz[currentQuestion].ans) {
             score += 25;
-
+            Correct();
+            
         } else {
             score += 0;
-
-        }
+            Wrong();
+        }  
 
         $('.subscore').text(`Score: ${score}`);
 
@@ -143,11 +145,13 @@ function Score(currentQuestion) {
 
         $(".next").removeClass('hide');
 
-        if (currentQuestion >= quiz.length-1 ) {
+        if (currentQuestion >= quiz.length - 1) {
             $(".finish").removeClass('hide');
             $('.next').addClass('hide');
         }
     })
+
+   
 }
 
 
@@ -156,6 +160,18 @@ function Score(currentQuestion) {
 $('.restart').click(function () {
     window.location.reload()
 })
+
+
+let x = document.getElementById("correct");
+function Correct() {
+    x.play();
+}
+
+let y = document.getElementById("wrong");
+function Wrong() {
+    y.play();
+}
+
 
 
 
