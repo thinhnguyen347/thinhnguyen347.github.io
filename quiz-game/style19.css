@@ -128,10 +128,9 @@ img {
   background-color: #4e1b95;
   color: whitesmoke;
   font-size: 1.2em;
-  height: 70px;
-  width: 120px;
+  padding: 15px 15px;
   font-family: "Dela Gothic One", cursive;
-  border-radius: 50px;
+  border-radius: 40px;
   outline: none;
   display: block;
   margin-left: auto;
@@ -173,7 +172,7 @@ button {
 
 @media screen and (max-width: 800px) {
   .wrapper {
-    padding: 200px 100px 0px 100px;
+    padding: 120px 100px 0px 100px;
   }
 }
 
