@@ -82,7 +82,7 @@ function Question(currentQuestion) {
     $(".choice2").text(quiz[currentQuestion].choices[1]);
     $(".choice3").text(quiz[currentQuestion].choices[2]);
     $(".choice4").text(quiz[currentQuestion].choices[3]);
-    $(".number").text(`Question ${currentQuestion + 1} of ${quiz.length}`);
+    $(".number").text(`Câu hỏi ${currentQuestion + 1} / ${quiz.length}`);
 
     $(".next").addClass('hide');
     // Tính điểm
@@ -124,7 +124,7 @@ $(".finish").click(function () {
     $(".container").addClass('hide');
     $(".container1").addClass('hide');
     $(".container2").removeClass("hide");
-    $(".total-score").text(`Your score: ${score}`);
+    $(".total-score").text(`Tổng điểm: ${score}`);
 
 })
 
@@ -147,7 +147,7 @@ function Score(currentQuestion) {
             Wrong();
         }
 
-        $('.subscore').text(`Score: ${score}`);
+        $('.subscore').text(`Điểm: ${score}`);
 
         $('.btn').attr('disabled', 'disabled');
         $(e.target).siblings().addClass('gray');
