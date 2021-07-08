@@ -96,6 +96,8 @@ $("#start").click(function () {
     $(".finish").addClass('hide');
     $(".next").addClass('hide');
 
+    bgAudio();
+
 });
 
 // Ấn nút next
@@ -173,6 +175,11 @@ let y = document.getElementById("wrong");
 function Wrong() {   
     y.play();
     x.pause()
+}
+
+let z = document.getElementById("bg-audio");
+function bgAudio() {   
+    z.play();
 }
 
 
