@@ -60,6 +60,12 @@ const quiz = [
         choices: ["Cầu lông", "Cầu vồng", "Cầu thủ", "Cầu mong"],
         ans: "Cầu thủ",
     },
+
+    {
+        question: "Do you know a mammal that cannot jump?",
+        choices: ["Grasshopper", "Frog", "Kangaroo", "Elephant"],
+        ans: "Elephant",
+    }
 ]
 
 
@@ -172,13 +178,13 @@ function Correct() {
 }
 
 let y = document.getElementById("wrong");
-function Wrong() {   
+function Wrong() {
     y.play();
     x.pause()
 }
 
 let z = document.getElementById("bg-audio");
-function bgAudio() {   
+function bgAudio() {
     z.play();
 }
 
