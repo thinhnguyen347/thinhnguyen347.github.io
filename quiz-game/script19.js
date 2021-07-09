@@ -1,29 +1,3 @@
-// const quiz = [
-//     {
-//         question: "Do you know a mammal that cannot jump?",
-//         choices: ["Grasshopper", "Frog", "Kangaroo", "Elephant"],
-//         ans: "Elephant",
-//     },
-
-//     {
-//         question: "What is the fastest land animal?",
-//         choices: ["Cheetah", "Lion", "Snake", "Butterfly"],
-//         ans: "Cheetah",
-//     },
-
-//     {
-//         question: "What is the sweet food made by bees?",
-//         choices: ["Chocolate", "Pollen", "Honey", "Flower"],
-//         ans: "Honey",
-//     },
-
-//     {
-//         question: "On a common ladybug, what color are its spots?",
-//         choices: ["Red", "Black", "Yellow", "White"],
-//         ans: "Black",
-//     },
-// ]
-
 const quiz = [
     {
         question: "Môn gì càng thắng lại càng thua?",
@@ -62,9 +36,15 @@ const quiz = [
     },
 
     {
-        question: "Do you know a mammal that cannot jump?",
+        question: "Do you know an animal that cannot jump?",
         choices: ["Grasshopper", "Frog", "Kangaroo", "Elephant"],
         ans: "Elephant",
+    },
+
+    {
+        question: "Con mèo nào cực kỳ sợ chuột?",
+        choices: ["Mèo Doraemon", "Mèo Tom", "Mèo Kitty", "Mèo mướp"],
+        ans: "Mèo Doraemon",
     }
 ]
 
