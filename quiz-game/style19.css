@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("https://i.ibb.co/6vxWf0L/forest2.jpg");
+  background-image: url("https://i.ibb.co/L6zwJNx/forest-mini.webp");
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -162,6 +162,12 @@ button {
 
 .restart {
   width: 200px;
+}
+
+#author{
+  padding-top: 180px;
+  font-size: 0.6em;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
