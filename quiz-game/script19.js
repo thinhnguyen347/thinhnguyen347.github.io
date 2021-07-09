@@ -45,6 +45,18 @@ const quiz = [
         question: "Con mèo nào cực kỳ sợ chuột?",
         choices: ["Mèo Doraemon", "Mèo Tom", "Mèo Kitty", "Mèo mướp"],
         ans: "Mèo Doraemon",
+    },
+
+    {
+        question: "How many dots on a dice?",
+        choices: [19, 20, 21, 22],
+        ans: 21,
+    },
+
+    {
+        question: "Which month of the year has the least number of days?",
+        choices: ['December', 'August', 'February', 'May'],
+        ans: 'February',
     }
 ]
 
@@ -118,7 +130,7 @@ function Score(currentQuestion) {
         let choice = $(e.target).text();
 
         if (choice == quiz[currentQuestion].ans) {
-            score += 25;
+            score += 10;
             Correct();
         }
 
