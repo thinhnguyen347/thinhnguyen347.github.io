@@ -174,11 +174,19 @@ button {
   .wrapper {
      padding: 400px 50px 0px 50px;
   }
+
+  #author{
+    padding-top: 450px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .wrapper {
     padding: 120px 100px 0px 100px;
+  }
+
+  #author{
+    padding-top: 450px;
   }
 }
 
@@ -207,5 +215,9 @@ button {
 
   .container, .container2 {
     margin-top: 100px;
+  }
+
+  #author{
+    padding-top: 150px;
   }
 }
