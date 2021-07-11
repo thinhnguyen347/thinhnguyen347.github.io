@@ -90,7 +90,7 @@ $("#start").click(function () {
     $(".container").addClass('hide');
     $(".container1").removeClass('hide');
     Question(currentQuestion);
-    $('.subscore').text(`Score: ${score}`);
+    $('.subscore').text(`Điểm: ${score}`);
     $(".finish").addClass('hide');
     $(".next").addClass('hide');
 

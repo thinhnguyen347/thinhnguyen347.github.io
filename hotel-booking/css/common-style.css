@@ -1,0 +1,25 @@
+@font-face {
+    font-family: H-regular;
+    src: url('./fonts/helveticaneue.ttf');
+}
+    
+@font-face {
+    font-family: H-bold;
+    src: url('./fonts/helveticaneuebold.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: H-regular;
+}
+
+nav{
+    height: 150px
+}
+
+
+footer{
+    height: 471px;
+    background-color: blueviolet;
+}
