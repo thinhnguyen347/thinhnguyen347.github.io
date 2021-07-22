@@ -337,10 +337,6 @@ input[type="number"]::-webkit-outer-spin-button {
   background: #fff;
 }
 
-.special-offers .card-body .btn:hover {
-  background: #f3a70c;
-}
-
 .special-offers .card-body {
   padding: 28px auto;
 }
@@ -363,11 +359,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .card img {
   width: 100%;
-}
-
-.card:hover img {
-  transform: scale(1.05);
-  transition: transform 0.5s ease;
 }
 
 /* Map */

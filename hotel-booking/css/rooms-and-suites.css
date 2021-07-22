@@ -1,5 +1,108 @@
-/* Hero content */
+/* Sign-up */
 
+.signup {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 90px;
+  border-radius: 20px;
+  border: 3px solid #f3a70c;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #fff;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f3a70c;
+  border-radius: 50px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-rectangle-out:hover,
+.hvr-rectangle-out:focus,
+.hvr-rectangle-out:active {
+  color: white;
+}
+
+.hvr-rectangle-out:hover:before,
+.hvr-rectangle-out:focus:before,
+.hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* Modal */
+
+.hvr-shutter-in-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  background: #f3a70c;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-in-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f0c062;
+  /* border: 1px solid #f3a70c; */
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-in-horizontal:hover,
+.hvr-shutter-in-horizontal:focus,
+.hvr-shutter-in-horizontal:active {
+  color: white;
+}
+.hvr-shutter-in-horizontal:hover:before,
+.hvr-shutter-in-horizontal:focus:before,
+.hvr-shutter-in-horizontal:active:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+/* Hero content */
 .hero-content img {
   width: 100%;
   height: 600px;
@@ -100,29 +203,43 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #be820a;
 }
 
-/* Welcome area */
-
-.welcome-text {
-  max-width: 608px;
-}
-
-.welcome-text img {
-  padding-bottom: 32px;
-}
-
-.welcome-img {
-  max-width: 608px;
-}
-
-.welcome-img img {
-  border-radius: 12px;
-  width: 100%;
-}
-
 .guest-number {
   display: flex;
   justify-content: space-between;
 }
+
+h5.title::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #f3a70c;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.card-body .btn:hover {
+  transform: translateY(-10px);
+}
+
+.book-now {
+  background: #f3a70c !important;
+}
+
+.more-details {
+  background: #fff;
+}
+
+.col i {
+  color: #f3a70c;
+}
+
+.icon{
+    width: 24px;
+}
+
+
 /* End of Herocontent */
 
 @media (max-width: 1399.98px) {

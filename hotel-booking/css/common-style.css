@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: H-regular;
   src: url("../fonts/helveticaneue.ttf") format("truetype");
@@ -32,7 +38,7 @@ nav .container-fluid {
   padding: 64px 100px;
 }
 
-.px-100{
+.px-100 {
   padding: 0 100px;
 }
 
@@ -67,18 +73,18 @@ a {
 
 .title {
   font-family: H-condensedbold;
-  color: #054e61;
+  color: #054e61 !important;
 }
 
 .font-condense {
   font-family: H-condensedbold !important;
 }
 
-.font-regular{
+.font-regular {
   font-family: H-regular !important;
 }
 
-.devider {
+.divider {
   display: block;
   margin: 0 auto;
   max-width: 150px;
@@ -86,21 +92,22 @@ a {
 }
 
 footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/bg/footer.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../img/bg/footer.webp");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   background-position: center;
 }
 
-hr{
-  color: #ECA413;
-  border: 1px solid #ECA413;
+hr {
+  color: #eca413;
+  border: 1px solid #eca413;
   width: 100%;
   opacity: 1;
 }
 
-.social-media i{
+.social-media i {
   font-size: 32px;
   color: #f3a70c;
 }
@@ -116,7 +123,7 @@ hr{
   z-index: 1000;
 }
 
-.back-to-top >a > i{
+.back-to-top > a > i {
   font-size: 30px;
 }
 
@@ -125,8 +132,23 @@ hr{
   border: 2px solid rgba(83, 83, 83, 0.25);
 }
 
-.primary-color{
+.card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.btn {
+  width: 160px;
+  transition: 0.5s;
+  border: 2px solid #f3a70c;
+}
+
+.primary-color {
   background: #f3a70c;
+}
+
+h5.title {
+  color: #177185;
 }
 
 @media (max-width: 1199.98px) {
@@ -151,8 +173,8 @@ hr{
   .padding-standard {
     padding: 64px 80px;
   }
-  
-  .px-100{
+
+  .px-100 {
     padding: 0 80px;
   }
 
@@ -164,9 +186,7 @@ hr{
     margin-left: 0 !important;
   }
 
-  .devider {
-    display: block;
-    margin: 0 auto;
+  .divider {
     max-width: 130px;
   }
 }
@@ -184,8 +204,8 @@ hr{
   .padding-standard {
     padding: 64px 50px;
   }
-  
-  .px-100{
+
+  .px-100 {
     padding: 0 50px;
   }
 
@@ -197,26 +217,31 @@ hr{
     margin-left: 0 !important;
   }
 
-   .devider {
-    display: block;
-    margin: 0 auto;
+  .divider {
     max-width: 120px;
+  }
+
+  .btn {
+    width: 120px;
   }
 }
 
 @media (max-width: 575.98px) {
-  
   .padding-standard {
     padding: 64px 15px;
   }
-  
-  .px-100{
+
+  .px-100 {
     padding: 0 15px;
   }
 
-  .devider {
+  .divider {
     display: block;
     margin: 0 auto;
     max-width: 100px;
+  }
+
+  .btn {
+    width: 120px;
   }
 }
