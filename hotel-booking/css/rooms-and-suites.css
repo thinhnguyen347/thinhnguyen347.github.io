@@ -1,0 +1,248 @@
+/* Hero content */
+
+.hero-content img {
+  width: 100%;
+  height: 600px;
+}
+
+.pick-date {
+  width: 826px;
+  height: 76px;
+  margin: 20px auto;
+  background-color: rgb(83, 83, 83, 0.85);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.check-in-date,
+.check-out-date {
+  width: 214px;
+  height: 100%;
+  padding: 8px 16px;
+}
+
+.calendar {
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  width: 36px;
+  z-index: 1;
+}
+
+.fa-calendar-alt {
+  font-size: 24px;
+  color: #f3a70c;
+  cursor: pointer;
+}
+
+.kid-number > label,
+.adult-number > label,
+.check-in-date > label > p,
+.check-out-date > label > p {
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  margin: 0;
+  font-family: H-condensedbold;
+}
+
+.hero-content input[type="text"],
+.hero-content input[type="number"] {
+  width: 100%;
+  background-color: #12121200;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-family: H-condensedbold;
+  font-size: 24px;
+}
+
+.hero-content input[type="text"] {
+  padding: 0 8px;
+}
+
+.hero-content input[type="number"] {
+  text-align: center;
+  padding: 0;
+}
+
+.hero-content input[type="text"]:focus,
+.hero-content input[type="number"]:focus {
+  outline: none;
+  border-color: #f3a70c;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1 !important;
+}
+
+.adult-number,
+.kid-number {
+  width: 112px;
+  padding: 8px 16px;
+}
+
+.check-avail {
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3a70c;
+  width: 174px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-family: H-condensedbold;
+}
+
+.check-avail:hover {
+  background-color: #be820a;
+}
+
+/* Welcome area */
+
+.welcome-text {
+  max-width: 608px;
+}
+
+.welcome-text img {
+  padding-bottom: 32px;
+}
+
+.welcome-img {
+  max-width: 608px;
+}
+
+.welcome-img img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.guest-number {
+  display: flex;
+  justify-content: space-between;
+}
+/* End of Herocontent */
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+  .hero-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content input[type="text"],
+  .hero-content input[type="number"] {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content input[type="text"],
+  .hero-content input[type="number"] {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .pick-date {
+    width: fit-content;
+  }
+
+  .check-in-date,
+  .check-out-date {
+    width: 180px;
+    padding: 8px 16px;
+  }
+
+  .adult-number,
+  .kid-number {
+    width: 90px;
+  }
+
+  .check-avail {
+    width: 130px;
+  }
+
+  .calendar {
+    bottom: 15px;
+    right: 4px;
+  }
+
+  .fa-calendar-alt {
+    font-size: 20px;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1 !important;
+  }
+
+  .signup {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-content input[type="text"],
+  .hero-content input[type="number"] {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .pick-date {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    transform: translateX(0%);
+    margin-top: 16px;
+  }
+
+  .check-in-date,
+  .check-out-date {
+    width: 100%;
+  }
+
+  .adult-number,
+  .kid-number {
+    width: 40%;
+  }
+
+  .check-avail {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .calendar {
+    display: block;
+  }
+
+  .fa-calendar-alt {
+    font-size: 18px;
+  }
+
+  .calendar {
+    bottom: 10px;
+    right: 4px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .signup {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
