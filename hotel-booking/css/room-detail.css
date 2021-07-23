@@ -102,7 +102,7 @@
   transform: scaleX(0);
 }
 
-/* Wobble To Top Right */
+/* Effect of Book Now button */
 @-webkit-keyframes hvr-wobble-to-top-right {
   16.65% {
     -webkit-transform: translate(8px, -8px);
@@ -180,10 +180,10 @@
   border-radius: 12px;
 }
 
-h5.title::after {
+h5.des::after {
   content: "";
-  width: 50%;
-  height: 2px;
+  width: 30%;
+  height: 1px;
   background-color: #f3a70c;
   position: absolute;
   left: 50%;
@@ -193,4 +193,15 @@ h5.title::after {
 
 .btn:hover{
   background-color: #f3a70c;
+}
+
+/* accordion */
+
+.accordion-button{
+  background: linear-gradient(45deg, #f3a60cc7 55%, #fff 45%)  !important;
+}
+
+.accordion-body{
+  border:none !important;
+  border-style: hidden;
 }

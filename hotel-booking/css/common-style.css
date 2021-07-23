@@ -6,13 +6,13 @@
 
 @font-face {
   font-family: H-regular;
-  src: url("../fonts/helveticaneue.ttf") format("truetype");
+  src: url("../fonts/helveticaneue.ttf") format("truetype"), url('../fonts/helveticaneue.woff') format('woff');
   font-display: block;
 }
 
 @font-face {
   font-family: H-condensedbold;
-  src: url("../fonts/helveticaneuecondensedbold.ttf") format("truetype");
+  src: url("../fonts/helveticaneuecondensedbold.ttf") format("truetype"), url('../fonts/helveticaneuecondensedbold.woff') format('woff');
   font-display: block;
 }
 
@@ -42,7 +42,7 @@ nav .container-fluid {
   padding: 0 100px;
 }
 
-a {
+.nav-item a {
   position: relative;
   color: #121212 !important;
 }
@@ -55,10 +55,16 @@ a {
   margin-left: 24px;
 }
 
-.nav-link.active,
+.nav-link, .signup{
+  font-family: H-condensedbold;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover, .nav-link.active,
 .nav-item:hover {
   font-weight: bold;
   cursor: pointer;
+  color: #054e61 !important;
 }
 
 .nav-link.active::before {
@@ -71,9 +77,30 @@ a {
   border-bottom: 3px solid #f3a70c;
 }
 
+.nav-link::before {
+  content: "";
+  width: 0%;
+  padding: 0px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  border-bottom: 3px solid #f3a70c;
+  transition: width 0.5s ease;
+}
+
+.nav-link:hover::before {
+  content: "";
+  width: 100%;
+}
+
 .title {
   font-family: H-condensedbold;
   color: #054e61 !important;
+}
+
+.des {
+  font-family: H-condensedbold;
+  color: #177185;
 }
 
 .font-condense {
@@ -147,7 +174,7 @@ hr {
   background: #f3a70c;
 }
 
-h5.title {
+h5.des {
   color: #177185;
 }
 
