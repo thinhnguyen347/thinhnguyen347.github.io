@@ -18,3 +18,6 @@ function scrollFunction() {
     $('.back-to-top').css('display', 'none');
   }
 }
+
+//Title animation
+AOS.init();

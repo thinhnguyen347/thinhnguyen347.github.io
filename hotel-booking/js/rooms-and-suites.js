@@ -1,6 +1,3 @@
-//Title animation
-AOS.init();
-
 // Date Picker
 let date = new Date();
 let day = date.getDate();
