@@ -14,3 +14,9 @@ $("#checkIn, #checkOut").attr("value", today);
 $("#checkIn, #checkOut").datepicker({
     minDate: today,
 });
+
+//See more
+$('span.fst-italic').on('click', function () {
+    $('.see-more').toggleClass('d-none')
+})
+

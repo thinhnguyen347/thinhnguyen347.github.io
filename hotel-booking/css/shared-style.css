@@ -291,6 +291,11 @@ h5.des {
   background: #fff;
 }
 
+.nav-link .fa-user-circle-o{
+  color:#054e61 !important;
+  cursor: pointer;
+}
+
 @media (max-width: 1199.98px) {
   .hero-content {
     height: auto;
@@ -364,11 +369,16 @@ h5.des {
   .btn {
     width: 120px;
   }
+
+  .signup {
+    width: 100% !important;
+    margin: 10px auto;
+  }
 }
 
 @media (max-width: 575.98px) {
   .padding-standard {
-    padding: 64px 15px;
+    padding: 40px 15px;
   }
 
   .px-100 {
@@ -383,5 +393,10 @@ h5.des {
 
   .btn {
     width: 120px;
+  }
+
+  .signup {
+    width: 100%;
+    margin: 10px 0;
   }
 }

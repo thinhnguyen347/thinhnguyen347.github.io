@@ -170,6 +170,20 @@ select:focus {
       color:#f3a70c
   }
 
-  li{
-      margin-right: 24px
+  .see-more li{
+      margin-right: 24px;
+  }
+
+  .cancellation{
+      font-size: 14px;
+      color: red;
+  }
+
+  #roomNo{
+      width: 110px
+  }
+
+  .book-now{
+    top: 10px;
+    position: -webkit-sticky;
   }

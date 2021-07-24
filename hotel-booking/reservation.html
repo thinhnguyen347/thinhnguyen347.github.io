@@ -11,6 +11,8 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="js/jquery-3.6.0.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https:////code.jquery.com/ui/1.11.3/themes/flick/jquery-ui.css" />
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/shared-style.css">
   <link rel="stylesheet" href="css/reservation.css">
@@ -20,7 +22,7 @@
   <!-- Menu bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-100">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/logo.webp" alt="oriental-jade-hotel" width="100px"></a>
+      <a class="navbar-brand" href="index.html"><img src="img/logo.webp" alt="oriental-jade-hotel" width="100px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,7 +94,7 @@
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
-                    class="title" href="#" target="_blank">Terms of Use</a></span> and <span><a href="#" class="title"
+                    class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a href="policy.html" class="title"
                     target="_blank">Privacy&nbsp;Policy</a> </span></label>
             </div>
             <button type="submit" class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
@@ -160,7 +162,7 @@
       <div class="row ">
 
         <div class="col">
-          <div class="row row-cols-md-3 row-cols-lg-3">
+          <div class="row row-cols-lg-3">
             <div class="col">
               <div class="check-in-date d-flex flex-column mx-auto ms-lg-0 align-content-between position-relative">
                 <label for="checkIn">
@@ -183,41 +185,43 @@
         </div>
 
         <div class="col">
-          <div class="currency-select d-flex flex-column align-content-between me-md-1 ms-md-auto mx-xs-auto mx-auto">
+          <div class="currency-select d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
             <label for="currency">Currency</label>
             <select class="title bg-light" id="currency">
-              <option class="font-condense" selected value="USD">US Dollar (USD)</option>
-              <option class="font-condense" value="VND">Vietnam Dong (VND)</option>
-              <option class="font-condense" value="EUR">Euro (EUR)</option>
+              <option class="font-condense" selected value="1">US Dollar (USD)</option>
+              <option class="font-condense" value="22800">Vietnam Dong (VND)</option>
+              <option class="font-condense" value="25350">Euro (EUR)</option>
             </select>
-
           </div>
-
         </div>
       </div>
     </div>
-    <!-- end of date ppicker -->
+    <!-- end of date picker -->
 
-    <!-- Room list -->
+    <!-- ROOM LIST -->
+
     <div class="container-fluid pt-5">
-      <div class="row row-cols-md-2">
-        <div class="col-12 col-md-10 px-0">
+      <div class="row row-cols-md-2 row-cols-lg-2">
+        <div class="col-12 col-md-12 col-lg-10 px-0">
+          <!-- Room 1 -->
           <div class="container-fluid g-0">
             <div class="row row-cols-md-10">
               <div class="col-12 col-md-3 py-3">
-                <img src="/img/room/ptr/ptr.webp" alt="room-photo" class="rounded-3 w-100">
+                <img src="/img/room/ptr/ptr-r.webp" alt="room-photo" class="rounded-3 w-100">
               </div>
               <div class="col-12 col-md-9 text-break">
                 <h4 class="title py-3">ORIENTAL PEARL TWIN</h4>
-                <p class="">Contemporarily designed with modern furnishing, ensuite with standing shower, The Oriental Pearl Room (25 - 28 sqm) offers a relaxing stay with medium&nbsp;window.</p>
+                <p class="">Contemporarily designed with modern furnishing, ensuite with standing shower, The Oriental
+                  Pearl Room (25 - 28 sqm) offers a relaxing stay with medium&nbsp;window.</p>
                 <div class="d-flex ">
                   <i class="fas fa-shower me-2"></i>
                   <i class="fas fa-wifi me-2"></i>
                   <i class="far fa-snowflake me-2"></i>
-                  <span class="fst-italic fw-light">(see more)</span>    
+                  <span class="fst-italic fw-light">(see more)</span>
                 </div>
-
-                <div class="see-more">
+                <p>Default occupancy: 2 people - Room size: 25 sqm</p>
+                <!-- See more info -->
+                <div class="see-more d-none">
                   <ul class="d-flex flex-wrap">
                     <li>Air-conditioning</li>
                     <li>Alarm clock</li>
@@ -232,22 +236,505 @@
                     <li>Towels provided</li>
                     <li>Wardrobe</li>
                     <li>Work/writing desk</li>
-                  </ul>                  
+                  </ul>
                 </div>
 
+                <!-- Check box -->
+                <div class="d-flex flex-wrap justify-content-between justify-content-md-start my-2">
+                  <div class="form-check me-md-4">
+                    <input class="form-check-input" type="radio" name="rate-plan" id="No-breakfast">
+                    <label class="form-check-label title fs-6" for="No-breakfast">
+                      No breakfast
+                    </label>
+                  </div>
+                  <div class="form-check me-md-4">
+                    <input class="form-check-input" type="radio" name="rate-plan" id="BF-Included">
+                    <label class="form-check-label title fs-6" for="BF-Included">
+                      Breakfast included
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="extrabed" id="extrabed">
+                    <label class="form-check-label des fs-6" for="extrabed">
+                      Extra-bed (15 USD/night, only 1 available for this room)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid g-0">
+            <!-- No breakfast -->
+            <div class="row row-cols-md-10 no-breakfast">
+              <div class="col-12 col-md-3 py-3">
+                <h5 class="title">No breakfast</h5>
+                <p class="cancellation">Free cancellation 1 day before check-in</p>
+              </div>
+              <div class="col-12 col-md-9 px-0 align-content-center">
+                <div class="container-fluid ">
+                  <div class="row row-cols-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+                      <p class="guest d-block d-flex align-items-center mb-0 justify-content-center">
+                        <i class="fa fa-lg fa-user d-block"></i>
+                        <i class="fa fa-lg fa-user d-block"></i> &plus;
+                        <i class="fa fa-lg fa-user d-block"></i>
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
+                      <div class="my-auto"><span class="rateRO title fs-3">40</span>&nbsp;&nbsp;<span
+                          class="current-currency">USD</span>/night</div>
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                        <select class="py-2 ps-2" id="roomNo">
+                          <option class="font-regular text-center" selected value="0">0 room</option>
+                          <option class="font-regular text-center" value="1">1 rooms</option>
+                          <option class="font-regular text-center" value="2">2 rooms</option>
+                          <option class="font-regular text-center" value="3">3 rooms</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
             </div>
+
+            <!-- Breakfast included -->
+            <div class="row row-cols-md-10 d-none breakfast">
+              <div class="col-12 col-md-3 py-3">
+                <h5 class="title">Breakfast included</h5>
+                <p class="cancellation">Free cancellation 1 day before check-in</p>
+              </div>
+              <div class="col-12 col-md-9 px-0 ">
+                <div class="container-fluid ">
+                  <div class="row row-cols-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+                      <p class="guest d-block d-flex align-items-center mb-0 justify-content-center">
+                        <i class="fa fa-lg fa-user d-block"></i>
+                        <i class="fa fa-lg fa-user d-block"></i> &plus;
+                        <i class="fa fa-lg fa-user d-block"></i>
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex">
+                      <div class="my-auto"><span class="rateBB title fs-3">50</span>&nbsp;&nbsp;<span
+                          class="current-currency">USD</span>/night</div>
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                        <select class="py-2 ps-2" id="roomNo1">
+                          <option class="font-regular text-center" selected value="0">0 room</option>
+                          <option class="font-regular text-center" value="1">1 rooms</option>
+                          <option class="font-regular text-center" value="2">2 rooms</option>
+                          <option class="font-regular text-center" value="3">3 rooms</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
+          <!-- Room 2 -->
+
+          <div class="container-fluid g-0">
+            <div class="row row-cols-md-10">
+              <div class="col-12 col-md-3 py-3">
+                <img src="/img/room/ed/ed-r.webp" alt="room-photo" class="rounded-3 w-100">
+              </div>
+              <div class="col-12 col-md-9 text-break">
+                <h4 class="title py-3">ORIENTAL EMERALD</h4>
+                <p class="">Featuring a large window to bring in natural light, the Oriental Emerald Room is equipped
+                  with modern facilities and designed in a stylish way that makes you pleasant.</p>
+                <div class="d-flex ">
+                  <i class="fas fa-shower me-2"></i>
+                  <i class="fas fa-wifi me-2"></i>
+                  <i class="far fa-snowflake me-2"></i>
+                  <span class="fst-italic fw-light">(see more)</span>
+                </div>
+                <p>Default occupancy: 2 people - Room size: 28 sqm</p>
+                <!-- See more info -->
+                <div class="see-more d-none">
+                  <ul class="d-flex flex-wrap">
+                    <li>Air-conditioning</li>
+                    <li>Alarm clock</li>
+                    <li>Electricity adapters</li>
+                    <li>Hair dryer</li>
+                    <li>In-room safe</li>
+                    <li>Minibar</li>
+                    <li>Non-smoking rooms</li>
+                    <li>TV – cable/satellite</li>
+                    <li>Telephone</li>
+                    <li>Toiletries</li>
+                    <li>Towels provided</li>
+                    <li>Wardrobe</li>
+                    <li>Work/writing desk</li>
+                  </ul>
+                </div>
+
+                <!-- Check box -->
+                <div class="d-flex flex-wrap justify-content-between justify-content-md-start my-2">
+                  <div class="form-check me-md-4">
+                    <input class="form-check-input" type="radio" name="rate-plan" id="No-breakfast">
+                    <label class="form-check-label title fs-6" for="No-breakfast">
+                      No breakfast
+                    </label>
+                  </div>
+                  <div class="form-check me-md-4">
+                    <input class="form-check-input" type="radio" name="rate-plan" id="BF-Included">
+                    <label class="form-check-label title fs-6" for="BF-Included">
+                      Breakfast included
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="extrabed" id="extrabed">
+                    <label class="form-check-label des fs-6" for="extrabed">
+                      Extra-bed (15 USD/night, only 1 available for this room)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid g-0">
+            <!-- No breakfast -->
+            <div class="row row-cols-md-10 no-breakfast">
+              <div class="col-12 col-md-3 py-3">
+                <h5 class="title">No breakfast</h5>
+                <p class="cancellation">Free cancellation 1 day before check-in</p>
+              </div>
+              <div class="col-12 col-md-9 px-0 align-content-center">
+                <div class="container-fluid ">
+                  <div class="row row-cols-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+                      <p class="guest d-block d-flex align-items-center mb-0 justify-content-center">
+                        <i class="fa fa-lg fa-user d-block"></i>
+                        <i class="fa fa-lg fa-user d-block"></i> &plus;
+                        <i class="fa fa-lg fa-user d-block"></i>
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
+                      <div class="my-auto"><span class="rateRO title fs-3">50</span>&nbsp;&nbsp;<span
+                          class="current-currency">USD</span>/night</div>
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                        <select class="py-2 ps-2" id="roomNo">
+                          <option class="font-regular text-center" selected value="0">0 room</option>
+                          <option class="font-regular text-center" value="1">1 rooms</option>
+                          <option class="font-regular text-center" value="2">2 rooms</option>
+                          <option class="font-regular text-center" value="3">3 rooms</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Breakfast included -->
+            <div class="row row-cols-md-10 d-none breakfast">
+              <div class="col-12 col-md-3 py-3">
+                <h5 class="title">Breakfast included</h5>
+                <p class="cancellation">Free cancellation 1 day before check-in</p>
+              </div>
+              <div class="col-12 col-md-9 px-0 ">
+                <div class="container-fluid ">
+                  <div class="row row-cols-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+                      <p class="guest d-block d-flex align-items-center mb-0 justify-content-center">
+                        <i class="fa fa-lg fa-user d-block"></i>
+                        <i class="fa fa-lg fa-user d-block"></i> &plus;
+                        <i class="fa fa-lg fa-user d-block"></i>
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex">
+                      <div class="my-auto"><span class="rateBB title fs-3">60</span>&nbsp;&nbsp;<span
+                          class="current-currency">USD</span>/night</div>
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                        <select class="py-2 ps-2" id="roomNo1">
+                          <option class="font-regular text-center" selected value="0">0 room</option>
+                          <option class="font-regular text-center" value="1">1 rooms</option>
+                          <option class="font-regular text-center" value="2">2 rooms</option>
+                          <option class="font-regular text-center" value="3">3 rooms</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 3 -->
+          <div class="container-fluid g-0">
+            <div class="row row-cols-md-10">
+              <div class="col-12 col-md-3 py-3">
+                <img src="/img/room/ed/ed-r.webp" alt="room-photo" class="rounded-3 w-100">
+              </div>
+              <div class="col-12 col-md-9 text-break">
+                <h4 class="title py-3">SAPPHIRE QUARTER VIEW</h4>
+                <p class="">Offering a breathtaking beauty of Hanoi from our large window, The Sapphire Quarter View
+                  Room give a delight of comfortable accommodation in an elegant furnishing room with standing shower.
+                </p>
+                <div class="d-flex ">
+                  <i class="fas fa-shower me-2"></i>
+                  <i class="fas fa-wifi me-2"></i>
+                  <i class="far fa-snowflake me-2"></i>
+                  <span class="fst-italic fw-light">(see more)</span>
+                </div>
+                <p>Default occupancy: 2 people - Room size: 28 sqm</p>
+                <!-- See more info -->
+                <div class="see-more d-none">
+                  <ul class="d-flex flex-wrap">
+                    <li>Air-conditioning</li>
+                    <li>Alarm clock</li>
+                    <li>Electricity adapters</li>
+                    <li>Hair dryer</li>
+                    <li>In-room safe</li>
+                    <li>Minibar</li>
+                    <li>Non-smoking rooms</li>
+                    <li>TV – cable/satellite</li>
+                    <li>Telephone</li>
+                    <li>Toiletries</li>
+                    <li>Towels provided</li>
+                    <li>Wardrobe</li>
+                    <li>Work/writing desk</li>
+                  </ul>
+                </div>
+
+                <!-- Check box -->
+                <div class="d-flex flex-wrap justify-content-between justify-content-md-start my-2">
+                  <div class="form-check me-md-4">
+                    <input class="form-check-input" type="radio" name="rate-plan" id="No-breakfast">
+                    <label class="form-check-label title fs-6" for="No-breakfast">
+                      No breakfast
+                    </label>
+                  </div>
+                  <div class="form-check me-md-4">
+                    <input class="form-check-input" type="radio" name="rate-plan" id="BF-Included">
+                    <label class="form-check-label title fs-6" for="BF-Included">
+                      Breakfast included
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="extrabed" id="extrabed">
+                    <label class="form-check-label des fs-6" for="extrabed">
+                      Extra-bed (15 USD/night, only 1 available for this room)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid g-0">
+            <!-- No breakfast -->
+            <div class="row row-cols-md-10 no-breakfast">
+              <div class="col-12 col-md-3 py-3">
+                <h5 class="title">No breakfast</h5>
+                <p class="cancellation">Free cancellation 1 day before check-in</p>
+              </div>
+              <div class="col-12 col-md-9 px-0 align-content-center">
+                <div class="container-fluid ">
+                  <div class="row row-cols-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+                      <p class="guest d-block d-flex align-items-center mb-0 justify-content-center">
+                        <i class="fa fa-lg fa-user d-block"></i>
+                        <i class="fa fa-lg fa-user d-block"></i> &plus;
+                        <i class="fa fa-lg fa-user d-block"></i>
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
+                      <div class="my-auto"><span class="rateRO title fs-3">60</span>&nbsp;&nbsp;<span
+                          class="current-currency">USD</span>/night</div>
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                        <select class="py-2 ps-2" id="roomNo">
+                          <option class="font-regular text-center" selected value="0">0 room</option>
+                          <option class="font-regular text-center" value="1">1 rooms</option>
+                          <option class="font-regular text-center" value="2">2 rooms</option>
+                          <option class="font-regular text-center" value="3">3 rooms</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Breakfast included -->
+            <div class="row row-cols-md-10 d-none breakfast">
+              <div class="col-12 col-md-3 py-3">
+                <h5 class="title">Breakfast included</h5>
+                <p class="cancellation">Free cancellation 1 day before check-in</p>
+              </div>
+              <div class="col-12 col-md-9 px-0 ">
+                <div class="container-fluid ">
+                  <div class="row row-cols-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+                      <p class="guest d-block d-flex align-items-center mb-0 justify-content-center">
+                        <i class="fa fa-lg fa-user d-block"></i>
+                        <i class="fa fa-lg fa-user d-block"></i> &plus;
+                        <i class="fa fa-lg fa-user d-block"></i>
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex">
+                      <div class="my-auto"><span class="rateBB title fs-3">70</span>&nbsp;&nbsp;<span
+                          class="current-currency">USD</span>/night</div>
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                        <select class="py-2 ps-2" id="roomNo1">
+                          <option class="font-regular text-center" selected value="0">0 room</option>
+                          <option class="font-regular text-center" value="1">1 rooms</option>
+                          <option class="font-regular text-center" value="2">2 rooms</option>
+                          <option class="font-regular text-center" value="3">3 rooms</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- rOOM 4 -->
+          <div class="container-fluid g-0">
+            <div class="row row-cols-md-10">
+              <div class="col-12 col-md-3 py-3">
+                <img src="/img/room/dcv/dcv-r.webp" alt="room-photo" class="rounded-3 w-100">
+              </div>
+              <div class="col-12 col-md-9 text-break">
+                <h4 class="title py-3">DIAMOND CHURCH VIEW</h4>
+                <p class="">Offering a breathtaking beauty of Hanoi from our large window, The Sapphire Quarter View
+                  Room give a delight of comfortable accommodation in an elegant furnishing room with standing shower.
+                </p>
+                <div class="d-flex ">
+                  <i class="fas fa-shower me-2"></i>
+                  <i class="fas fa-wifi me-2"></i>
+                  <i class="far fa-snowflake me-2"></i>
+                  <span class="fst-italic fw-light">(see more)</span>
+                </div>
+                <p>Default occupancy: 2 people - Room size: 28 sqm</p>
+                <!-- See more info -->
+                <div class="see-more d-none">
+                  <ul class="d-flex flex-wrap">
+                    <li>Air-conditioning</li>
+                    <li>Alarm clock</li>
+                    <li>Electricity adapters</li>
+                    <li>Hair dryer</li>
+                    <li>In-room safe</li>
+                    <li>Minibar</li>
+                    <li>Non-smoking rooms</li>
+                    <li>TV – cable/satellite</li>
+                    <li>Telephone</li>
+                    <li>Toiletries</li>
+                    <li>Towels provided</li>
+                    <li>Wardrobe</li>
+                    <li>Work/writing desk</li>
+                  </ul>
+                </div>
+
+                <!-- Check box -->
+                <div class="d-flex flex-wrap justify-content-between justify-content-md-start my-2">
+                  <div class="form-check me-md-4">
+                    <input class="form-check-input" type="radio" name="rate-plan" id="No-breakfast">
+                    <label class="form-check-label title fs-6" for="No-breakfast">
+                      No breakfast
+                    </label>
+                  </div>
+                  <div class="form-check me-md-4">
+                    <input class="form-check-input" type="radio" name="rate-plan" id="BF-Included">
+                    <label class="form-check-label title fs-6" for="BF-Included">
+                      Breakfast included
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="extrabed" id="extrabed">
+                    <label class="form-check-label des fs-6" for="extrabed">
+                      Extra-bed (15 USD/night, only 1 available for this room)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid g-0">
+            <!-- No breakfast -->
+            <div class="row row-cols-md-10 no-breakfast">
+              <div class="col-12 col-md-3 py-3">
+                <h5 class="title">No breakfast</h5>
+                <p class="cancellation">Free cancellation 1 day before check-in</p>
+              </div>
+              <div class="col-12 col-md-9 px-0 align-content-center">
+                <div class="container-fluid ">
+                  <div class="row row-cols-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+                      <p class="guest d-block d-flex align-items-center mb-0 justify-content-center">
+                        <i class="fa fa-lg fa-user d-block"></i>
+                        <i class="fa fa-lg fa-user d-block"></i> &plus;
+                        <i class="fa fa-lg fa-user d-block"></i>
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
+                      <div class="my-auto"><span class="rateRO title fs-3">70</span>&nbsp;&nbsp;<span
+                          class="current-currency">USD</span>/night</div>
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                        <select class="py-2 ps-2" id="roomNo">
+                          <option class="font-regular text-center" selected value="0">0 room</option>
+                          <option class="font-regular text-center" value="1">1 rooms</option>
+                          <option class="font-regular text-center" value="2">2 rooms</option>
+                          <option class="font-regular text-center" value="3">3 rooms</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Breakfast included -->
+            <div class="row row-cols-md-10 d-none breakfast">
+              <div class="col-12 col-md-3 py-3">
+                <h5 class="title">Breakfast included</h5>
+                <p class="cancellation">Free cancellation 1 day before check-in</p>
+              </div>
+              <div class="col-12 col-md-9 px-0 ">
+                <div class="container-fluid ">
+                  <div class="row row-cols-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+                      <p class="guest d-block d-flex align-items-center mb-0 justify-content-center">
+                        <i class="fa fa-lg fa-user d-block"></i>
+                        <i class="fa fa-lg fa-user d-block"></i> &plus;
+                        <i class="fa fa-lg fa-user d-block"></i>
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex">
+                      <div class="my-auto"><span class="rateBB title fs-3">80</span>&nbsp;&nbsp;<span
+                          class="current-currency">USD</span>/night</div>
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                        <select class="py-2 ps-2" id="roomNo1">
+                          <option class="font-regular text-center" selected value="0">0 room</option>
+                          <option class="font-regular text-center" value="1">1 rooms</option>
+                          <option class="font-regular text-center" value="2">2 rooms</option>
+                          <option class="font-regular text-center" value="3">3 rooms</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
-        <div class="col-12 col-md-2 position-relative">
+
+        <div class="col-12 col-md-12 col-lg-2 position-relative">
           <a href="payment.html"
             class="btn rounded-pill text-center hvr-buzz-out my-4 d-block mx-auto position-sticky book-now">Book Now</a>
         </div>
       </div>
     </div>
+
+
+
+
+
 
   </section>
 
@@ -282,7 +769,7 @@
             Suites</a><br>
           <a href="services.html" target="_blank" class="text-white text-decoration-none lh-lg">Services</a><br>
           <a href="tours.html" target="_blank" class="text-white text-decoration-none lh-lg">Tours</a><br>
-          <a href="#" target="_blank" class="text-white text-decoration-none lh-lg">Legal Policy</a><br>
+          <a href="policy.html" target="_blank" class="text-white text-decoration-none lh-lg">Privacy Policies</a><br>
           <a href="index.html#location" target="_blank" class="text-white text-decoration-none lh-lg">Location & Map</a>
           <div class="accepted-card d-flex justify-content-start align-items-center">
             <div class="text-white">Accepted cards:</div>
@@ -303,7 +790,7 @@
   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/aos.js"></script>
   <script type="text/javascript" src="js/shared-js.js"></script>
-  <script type="text/javascript" src="js/rooms-and-suites.js"></script>
+  <script type="text/javascript" src="js/reservation.js"></script>
 
 </body>
 

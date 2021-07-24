@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/shared-style.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body id="top">
@@ -50,7 +50,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Tours
             </a>
@@ -61,15 +61,28 @@
               <li><a class="dropdown-item" href="#">Package Tours</a></li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item log-in-btn">
             <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signInModal">Log-in</a>
           </li>
-          <li class="nav-item d-flex align-items-center"><button class="signup hvr-rectangle-out" data-bs-toggle="modal"
-              data-bs-target="#signUpModal">Sign-up</button></li>
+          <li class="nav-item d-flex align-items-center sign-in-btn"><button class="signup hvr-rectangle-out"
+              data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</button></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              My account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="my-bookings.html">My bookings</a></li>
+              <li><a class="dropdown-item" >Log-out</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+
+ 
 
   <!-- Sign-up modal -->
   <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
@@ -96,8 +109,8 @@
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
-                    class="title" href="#" target="_blank">Terms of Use</a></span> and <span><a href="#" class="title"
-                    target="_blank">Privacy&nbsp;Policy</a> </span></label>
+                    class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a
+                    href="policy.html" class="title" target="_blank">Privacy&nbsp;Policy</a> </span></label>
             </div>
             <button type="submit" class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
           </form>
@@ -143,7 +156,8 @@
   </div>
 
   <!-- Back to top button -->
-  <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
+  <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
+        class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
 
   <!-- Hero content slide & pick date table -->
   <section class="hero-content">
@@ -221,7 +235,8 @@
           <input type="number" id="kidNumber" min="0" value="0" required>
         </div>
       </div>
-      <div class="check-avail"><a href="rooms-and-suites.html" class="text-white text-decoration-none">Check availability</a></div>
+      <div class="check-avail"><a href="rooms-and-suites.html" class="text-white text-decoration-none">Check
+          availability</a></div>
     </div>
   </section>
 
@@ -449,10 +464,11 @@
         <div class="col-lg-5 col-md-6 col-sm-12 col-12 pt-4">
           <h2 class="font-condense text-white">NAVIGATION</h2>
           <hr>
-          <a href="rooms-and-suites.html" target="_blank" class="text-white text-decoration-none lh-lg">Rooms & Suites</a><br>
+          <a href="rooms-and-suites.html" target="_blank" class="text-white text-decoration-none lh-lg">Rooms &
+            Suites</a><br>
           <a href="services.html" target="_blank" class="text-white text-decoration-none lh-lg">Services</a><br>
           <a href="tours.html" target="_blank" class="text-white text-decoration-none lh-lg">Tours</a><br>
-          <a href="#" target="_blank" class="text-white text-decoration-none lh-lg">Legal Policy</a><br>
+          <a href="policy.html" target="_blank" class="text-white text-decoration-none lh-lg">Privacy Policies</a><br>
           <a href="index.html#location" target="_blank" class="text-white text-decoration-none lh-lg">Location & Map</a>
           <div class="accepted-card d-flex justify-content-start align-items-center">
             <div class="text-white">Accepted cards:</div>
@@ -473,7 +489,7 @@
   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/aos.js"></script>
   <script type="text/javascript" src="js/shared-js.js"></script>
-  <script type="text/javascript" src="js/home-script.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 
 </body>
 
