@@ -137,6 +137,10 @@ p.d-block.me-2.rounded-pill{
   border: 1px solid #054e61;
 }
 
+div.filter{
+  overflow-x: auto;
+}
+
 /* End of Herocontent */
 
 @media (max-width: 1399.98px) {

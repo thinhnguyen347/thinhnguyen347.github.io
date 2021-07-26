@@ -150,6 +150,11 @@ hr {
   z-index: 1000;
 }
 
+div.tawk-min-container{
+  width: 45px !important;
+  height: 45px !important;
+}
+
 .back-to-top > a > i {
   font-size: 30px;
 }
