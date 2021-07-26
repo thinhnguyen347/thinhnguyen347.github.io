@@ -364,7 +364,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* Map */
-.location {
+#location {
   padding-top: 64px;
 }
 
@@ -601,5 +601,4 @@ input[type="number"]::-webkit-outer-spin-button {
   .special-offers .owl-carousel .owl-item {
     left: 0px;
   }
-
 }
