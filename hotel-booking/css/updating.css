@@ -1,0 +1,18 @@
+.hero-img{
+background-image: url('../img/bg/x.webp');
+height: 650px;
+background-position: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.update{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20%);
+    -webkit-backdrop-filter: blur(20%);
+    border-radius: 12px;
+}

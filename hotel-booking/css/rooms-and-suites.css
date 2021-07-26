@@ -128,6 +128,14 @@ h5.title::after {
     width: 24px;
 }
 
+p.active{
+  background-color: #054e61 !important;
+  color: white;
+}
+
+p.d-block.me-2.rounded-pill{
+  border: 1px solid #054e61;
+}
 
 /* End of Herocontent */
 

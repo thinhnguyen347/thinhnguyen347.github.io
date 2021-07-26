@@ -179,10 +179,6 @@ select:focus {
       color: red;
   }
 
-  #roomNo{
-      width: 110px
-  }
-
   .book-now{
     top: 10px;
     position: -webkit-sticky;
