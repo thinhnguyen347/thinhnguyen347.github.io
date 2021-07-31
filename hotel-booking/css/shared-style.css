@@ -344,7 +344,8 @@ h5.des {
   min-height: 70px;
 }
 
-#message-text:focus,
+textarea:hover,
+textarea:focus, #message-text:focus,
 #sender-email:focus,
 #sender-name:focus {
   border: 2px solid #eca413;
