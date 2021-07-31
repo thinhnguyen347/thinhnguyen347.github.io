@@ -149,9 +149,6 @@ p.border.border-secondary.rounded-pill:hover{
 
 /* End of Herocontent */
 
-@media (max-width: 1399.98px) {
-}
-
 @media (max-width: 1199.98px) {
   .hero-content img {
     width: 100%;

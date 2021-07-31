@@ -448,11 +448,15 @@ h5.des {
   }
 
   .btn {
-    width: 120px;
+    width: 140px;
   }
 
   .signup {
     width: 100%;
     margin: 10px 0;
+  }
+
+  #coupon{
+    width: 50%;
   }
 }

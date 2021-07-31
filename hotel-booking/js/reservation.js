@@ -148,7 +148,8 @@ $('.more-details').on('click', function () {
             item.bookedRoom = bookedRoom;
 
             // Extrabed & Currency
-            item.extraBed = $('input[name=extrabed]:checked').length
+            item.extraBed = $('input[name=extrabed]:checked').length;
+            item.exchangeRate = $('input[name=extrabed]:checked').val();
             item.currency = rateCode;
 
             // get booked room amount

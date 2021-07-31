@@ -17,152 +17,152 @@
 </head>
 
 <body id="top">
-<!-- Menu bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light px-100">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="img/logo.webp" alt="oriental-jade-hotel" width="100px"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="rooms-and-suites.html">Rooms & Suites</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="updating.html">Meeting room</a></li>
-            <li><a class="dropdown-item" href="updating.html">Visa on arrival</a></li>
-            <li><a class="dropdown-item" href="updating.html">Transportation</a></li>
-            <li><a class="dropdown-item" href="updating.html">Book tickets</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Tours
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="halong.html">Halong Bay Tours</a></li>
-            <li><a class="dropdown-item" href="updating.html">Sapa Tours</a></li>
-            <li><a class="dropdown-item" href="updating.html">Package Tours</a></li>
-            <li><a class="dropdown-item" href="updating.html">Daily Tours</a></li>
-          </ul>
-        </li>
-        <li class="nav-item log-in-btn">
-          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logInModal">Log-in</a>
-        </li>
-        <li class="nav-item d-flex align-items-center sign-up-btn"><button class="signup hvr-rectangle-out"
-            data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</button></li>
+  <!-- Menu bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-100">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.webp" alt="oriental-jade-hotel" width="100px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rooms-and-suites.html">Rooms & Suites</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="updating.html">Meeting room</a></li>
+              <li><a class="dropdown-item" href="updating.html">Visa on arrival</a></li>
+              <li><a class="dropdown-item" href="updating.html">Transportation</a></li>
+              <li><a class="dropdown-item" href="updating.html">Book tickets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Tours
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="halong.html">Halong Bay Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Sapa Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Package Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Daily Tours</a></li>
+            </ul>
+          </li>
+          <li class="nav-item log-in-btn">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logInModal">Log-in</a>
+          </li>
+          <li class="nav-item d-flex align-items-center sign-up-btn"><button class="signup hvr-rectangle-out"
+              data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</button></li>
 
-        <li class="nav-item dropdown user-btn d-none">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa fa-angle-double-right"></i>&nbsp;Hello, Thinh
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="updating.html">Edit profile</a></li>
-            <li><a class="dropdown-item" href="my-bookings.html"></i> Bookings&nbsp;<span
-                  class="badge rounded-pill bg-primary">2</span></a></li>
-            <li><a class="dropdown-item log-out">Log-out</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Log out toast -->
-<div class="toastMessage d-none position-fixed rounded align-items-center text-white bg-success border-0">
-  <div class="toast-body font-condense">
-    Log-out successfully!
-  </div>
-
-</div>
-
-<!-- Sign-up modal -->
-<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header pt-4 px-4">
-        <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
-          account</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-4">
-        <form class="myInput">
-          <div class="mb-3">
-            <label for="InputEmail" class="form-label title">Email address</label>
-            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text font-condense">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="InputPassword" class="form-label title">Password</label>
-            <input type="password" class="form-control" id="InputPassword">
-            <div id="passwordHelp" class="form-text font-condense">Use at least 8 characters with a mix of letters,
-              numbers.</div>
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
-                  class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a
-                  href="policy.html" class="title" target="_blank">Privacy&nbsp;Policy</a> </span></label>
-          </div>
-          <button class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
-        </form>
-        <br>
-        <p class="title mb-0">Already have an account? <a href="#0"
-            class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
-            data-bs-target="#logInModal" data-bs-dismiss="modal">Log-in</a></p>
+          <li class="nav-item dropdown user-btn d-none">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa fa-angle-double-right"></i>&nbsp;Hello, Thinh
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="updating.html">Edit profile</a></li>
+              <li><a class="dropdown-item" href="my-bookings.html"></i> Bookings&nbsp;<span
+                    class="badge rounded-pill bg-primary">2</span></a></li>
+              <li><a class="dropdown-item log-out">Log-out</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
+  </nav>
 
-<!-- Log-in modal -->
-<div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header pt-4 px-4">
-        <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
-          account</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-4">
-        <form>
-          <div class="mb-3">
-            <label for="logInEmail" class="form-label title">Email address</label>
-            <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="logInPassword" class="form-label title">Password</label>
-            <input type="password" class="form-control" id="logInPassword">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="rememberPassword">
-            <label class="form-check-label title" for="rememberPassword">Remeber my password</label>
-          </div>
-          <button class="btn hvr-shutter-in-horizontal w-100 log-in">Log-in</button>
-          <div class="form-text ">
-            <br>
-            <a href="updating.html" class="font-condense text-decoration-none">Forgot password?</a>
-            <p class="title mb-0">Donot have an account? <a href="#0"
-                class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
-                data-bs-target="#signUpModal" data-bs-dismiss="modal">Sign-up</a></p>
-          </div>
-        </form>
+  <!-- Log out toast -->
+  <div class="toastMessage d-none position-fixed rounded align-items-center text-white bg-success border-0">
+    <div class="toast-body font-condense">
+      Log-out successfully!
+    </div>
+
+  </div>
+
+  <!-- Sign-up modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
+            account</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form class="myInput">
+            <div class="mb-3">
+              <label for="InputEmail" class="form-label title">Email address</label>
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text font-condense">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="InputPassword" class="form-label title">Password</label>
+              <input type="password" class="form-control" id="InputPassword">
+              <div id="passwordHelp" class="form-text font-condense">Use at least 8 characters with a mix of letters,
+                numbers.</div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
+                    class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a
+                    href="policy.html" class="title" target="_blank">Privacy&nbsp;Policy</a> </span></label>
+            </div>
+            <button class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
+          </form>
+          <br>
+          <p class="title mb-0">Already have an account? <a href="#0"
+              class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#logInModal" data-bs-dismiss="modal">Log-in</a></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- Log-in modal -->
+  <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
+            account</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="logInEmail" class="form-label title">Email address</label>
+              <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="logInPassword" class="form-label title">Password</label>
+              <input type="password" class="form-control" id="logInPassword">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberPassword">
+              <label class="form-check-label title" for="rememberPassword">Remeber my password</label>
+            </div>
+            <button class="btn hvr-shutter-in-horizontal w-100 log-in">Log-in</button>
+            <div class="form-text ">
+              <br>
+              <a href="updating.html" class="font-condense text-decoration-none">Forgot password?</a>
+              <p class="title mb-0">Donot have an account? <a href="#0"
+                  class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+                  data-bs-target="#signUpModal" data-bs-dismiss="modal">Sign-up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <img src="img/bg/hanoi_west_lake.webp" alt="room-photo" class="w-100">
 
@@ -177,26 +177,7 @@
     </nav>
 
     <!-- Booking info -->
-    <div class="booking-info bg container-fluid rounded mt-4">
-      <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 text-break py-3">
-
-        <div class="col-12 col-md-6 col-lg-4 px-0">
-          <p class="px-3 fw-bold font-condense">Check-in date: <span id="checkInDate"> 15/04/2021</span></p>
-          <p class="px-3 fw-bold font-condense">Check-out date: <span id="checkOutDate"> 15/04/2021</span></p>
-          <p class="px-3 fw-bold font-condense">Room type: <span id="roomType"> abc</span></p>
-          <a class="px-3 fw-bold font-regular fst-italic text-decoration-none position-relative" href="reservation.html" >(Change date)</a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 px-0">
-          <p class="px-3 fw-bold font-condense">Adults: <span id="adult"> </span></p>
-          <p class="px-3 fw-bold font-condense">Childs: <span id="child"> </span></p>
-          <p class="px-3 fw-bold font-condense">Extra-bed: <span id="extraBedNumber"> </span></p>
-        </div>
-
-        <div class="col-lg-4"></div>
-      </div>
-    </div>
-
+    
     <!-- Price / Guest info / Booking condition / Card -->
 
     <div class="container-fluid rounded mt-4">
@@ -208,7 +189,7 @@
           <div class="bg p-3">
             <div class="d-flex justify-content-between">
               <p class="font-condense d-block">Room charge: </p>
-             <p><span id="roomCharge d-block"> 10</span> <span class="currency">USD</span></p>
+              <p><span id="roomCharge d-block"> 10</span> <span class="currency">USD</span></p>
             </div>
             <div class="d-flex justify-content-between">
               <p class=" font-condense">Extrabed:</p>
@@ -218,7 +199,8 @@
             <div class="d-flex justify-content-between align-items-center">
               <label for="coupon" class="fw-bold font-condense d-block">Coupon:</label>
               <input type="text" id="coupon" class="px-2">
-             <p class="d-block my-auto font-condense fw-bold">-<span id="discountPercent" class="font-condense fw-bold px-auto fs-6"> 0</span>%</p>
+              <p class="d-block my-auto font-condense fw-bold">-<span id="discountPercent"
+                  class="font-condense fw-bold px-auto fs-6"> 0</span>%</p>
             </div>
             <br>
             <div class="d-flex justify-content-between">
@@ -279,7 +261,7 @@
                     placeholder="Enter your phone number">
                 </div>
 
-                <div class="form-group col-sm-6 flex-column d-flex">
+                <div class="form-group col-sm-6 flex-column d-flex pt-2 pt-md-0">
                   <label class="form-control-label font-condense">Country<span class="text-danger"> *</span></label>
                   <input type="text" id="country" class="ps-2 font-condense" name="country"
                     placeholder="Enter your country">
@@ -413,7 +395,7 @@
             <div class="text-white">Accepted cards:</div>
             <img src="./img/icon/visa.png" alt="visa-card" height="36px" class="px-2">
             <img src="./img/icon/mastercard.png" alt="master-card" height="36px" class="pe-2">
-            <img src="./img/icon/amex.png" alt="american-express" height="36px" class="pe-2">
+            <img src="./img/icon/ame.png" alt="card" height="36px" class="pe-2">
             <img src="./img/icon/jcb.png" alt="jcb" height="32px">
           </div>
         </div>

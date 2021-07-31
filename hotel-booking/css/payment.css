@@ -19,8 +19,14 @@ select:focus {
   min-height: 80px;
 }
 
-.btn {
+a.btn {
   width: 200px !important;
+}
+
+p.btn {
+
+width: 100px;
+
 }
 
 a.fst-italic {
