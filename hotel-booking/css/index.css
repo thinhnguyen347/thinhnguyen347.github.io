@@ -525,10 +525,6 @@ input[type="number"]::-webkit-outer-spin-button {
     right: 4px;
   }
 
-  .carousel-indicators {
-    display: none;
-  }
-
   .service-item .icon i {
     font-size: 22px;
     line-height: 24px;

@@ -415,6 +415,10 @@ textarea{
     padding: 0 50px;
   }
 
+  .carousel-indicators {
+    display: none;
+  }
+
   .dropdown a {
     text-align: left;
   }
@@ -444,6 +448,10 @@ textarea{
 
   .px-100 {
     padding: 0 15px;
+  }
+
+  .carousel-indicators {
+    display: none;
   }
 
   .divider {
