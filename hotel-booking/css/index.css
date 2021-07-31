@@ -235,7 +235,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Outstanding Service */
 
 .services {
-  background-image: url("../img/bg/bg1.webp");
+  background-image: url(".././img/bg/bg1.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -281,7 +281,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Reviews */
 .guest-review {
-  background-image: url("../img/bg/bg-review.webp");
+  background-image: url(".././img/bg/bg-review.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
