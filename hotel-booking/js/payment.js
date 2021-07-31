@@ -42,7 +42,7 @@ function renderData() {
 
     extraBedPrice = extraBedNumber * 15 * exchangeRate;
 
-    $('#extraBedPrice').val(extraBedPrice);
+    $('#extraBedPrice').val(1);
 }
 
 
