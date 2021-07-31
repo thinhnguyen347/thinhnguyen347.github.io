@@ -181,14 +181,11 @@ li::marker {
   color: red;
 }
 
-.book-now {
-  top: 35%;
-  position: -webkit-sticky;
-}
-
-.more-details {
+.btn-div {
   top: 25%;
   position: -webkit-sticky;
+  position: sticky;
+
 }
 
 .fs {
@@ -199,8 +196,6 @@ li::marker {
   .btn {
     width: 150px;
   }
-
-  .more-details {
-    top: 0;
-  }
+ 
 }
+
