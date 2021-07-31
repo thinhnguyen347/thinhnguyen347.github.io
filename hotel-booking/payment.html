@@ -164,6 +164,44 @@
     </div>
   </div>
 
+  <!-- Back to top button -->
+  <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
+        class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
+
+  <!-- Chat button -->
+  <button class="chat-btn position-fixed" data-bs-toggle="modal" data-bs-target="#chatModal"><i
+      class="fas fa-comments text-white d-block px-auto"></i></button>
+  <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header px-4">
+          <h5 class="modal-title title" id="chatLabel">Fill in this form to contact with us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your name:</label>
+              <input type="text" class="form-control" id="sender-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your email: <span
+                  class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="sender-email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label title">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded-pill hvr-rectangle-out">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <img src="img/bg/hanoi_west_lake.webp" alt="room-photo" class="w-100">
 
   <section class="padding-standard">
@@ -177,7 +215,7 @@
     </nav>
 
     <!-- Booking info -->
-    
+
     <!-- Price / Guest info / Booking condition / Card -->
 
     <div class="container-fluid rounded mt-4">
@@ -228,12 +266,14 @@
                 </div>
 
                 <div class="form-group col-sm-5 flex-column d-flex pt-2">
-                  <label class="form-control-label font-condense">First name<span class="text-danger"> *</span></label>
+                  <label class="form-control-label font-condense" for="fname">First name<span class="text-danger">
+                      *</span></label>
                   <input type="text" id="fname" class="ps-2 font-condense" name="fname"
                     placeholder="Enter your first name">
                 </div>
                 <div class="form-group col-sm-5 flex-column d-flex pt-2">
-                  <label class="form-control-label font-condense">Last name<span class="text-danger"> *</span></label>
+                  <label class="form-control-label font-condense" for="lname">Last name<span class="text-danger">
+                      *</span></label>
                   <input type="text" id="lname" name="lname" class="ps-2 font-condense"
                     placeholder="Enter your last name">
                 </div>
@@ -245,7 +285,8 @@
                 </div>
 
                 <div class="form-group col-sm-10 flex-column d-flex">
-                  <label class="form-control-label font-condense">Email<span class="text-danger"> *</span></label>
+                  <label class="form-control-label font-condense" for="guest-email">Email<span class="text-danger">
+                      *</span></label>
                   <input type="text" id="guest-email" class="ps-2 font-condense" name="guest-email"
                     placeholder="Enter your email">
                 </div>
@@ -255,14 +296,15 @@
               <div class="row justify-content-between text-left pt-2 ">
 
                 <div class="form-group col-sm-6 flex-column d-flex pt-2 pt-md-0">
-                  <label class="form-control-label font-condense">Phone number<span class="text-danger">
+                  <label class="form-control-label font-condense" for="phone">Phone number<span class="text-danger">
                       *</span></label>
                   <input type="text" id="phone" class="ps-2 font-condense" name="phone"
                     placeholder="Enter your phone number">
                 </div>
 
                 <div class="form-group col-sm-6 flex-column d-flex pt-2 pt-md-0">
-                  <label class="form-control-label font-condense">Country<span class="text-danger"> *</span></label>
+                  <label class="form-control-label font-condense" for="country">Country<span class="text-danger">
+                      *</span></label>
                   <input type="text" id="country" class="ps-2 font-condense" name="country"
                     placeholder="Enter your country">
                 </div>
@@ -270,7 +312,7 @@
 
               <div class="row justify-content-between text-left pt-2">
                 <div class="form-group col-12 flex-column d-flex">
-                  <label class="form-control-label font-condense">Additional notes or requests <span
+                  <label class="form-control-label font-condense" for="comment">Additional notes or requests <span
                       class="fst-italic">(optional)</span> </label>
                   <textarea id="comment" name="comment"> </textarea>
                 </div>
