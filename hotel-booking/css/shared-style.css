@@ -352,6 +352,10 @@ h5.des {
   box-shadow: none !important;
 }
 
+textarea{
+  padding: 8px;
+}
+
 @media (max-width: 1199.98px) {
   .hero-content {
     height: auto;

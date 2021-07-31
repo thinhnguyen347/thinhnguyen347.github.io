@@ -266,4 +266,8 @@ p.border.border-secondary.rounded-pill:hover{
     width: 100%;
     margin: 10px 0;
   }
+
+  a.btn{
+    width: 120px !important;
+  }
 }

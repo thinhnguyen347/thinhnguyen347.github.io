@@ -26,6 +26,7 @@ function checkLoginStatus(logIn) {
     $('.log-in-btn, .sign-up-btn').addClass('d-none');
     $('.user-btn').removeClass('d-none');
   }
+
   if (logIn == false) {
     $('.log-in-btn, .sign-up-btn').removeClass('d-none');
     $('.user-btn').addClass('d-none');
