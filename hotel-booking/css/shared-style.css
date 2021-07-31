@@ -6,13 +6,15 @@
 
 @font-face {
   font-family: H-regular;
-  src: url("../fonts/helveticaneue.ttf") format("truetype"), url('../fonts/helveticaneue.woff') format('woff');
+  src: url("../fonts/helveticaneue.ttf") format("truetype"),
+    url("../fonts/helveticaneue.woff") format("woff");
   font-display: block;
 }
 
 @font-face {
   font-family: H-condensedbold;
-  src: url("../fonts/helveticaneuecondensedbold.ttf") format("truetype"), url('../fonts/helveticaneuecondensedbold.woff') format('woff');
+  src: url("../fonts/helveticaneuecondensedbold.ttf") format("truetype"),
+    url("../fonts/helveticaneuecondensedbold.woff") format("woff");
   font-display: block;
 }
 
@@ -55,13 +57,16 @@ nav .container-fluid {
   margin-left: 24px;
 }
 
-.nav-link, .signup{
+.nav-link,
+.signup {
   font-family: H-condensedbold;
   font-size: 1.1rem;
 }
 
-.nav-link:hover, .nav-link.active,
-.nav-item:hover, .dropdown-item:hover {
+.nav-link:hover,
+.nav-link.active,
+.nav-item:hover,
+.dropdown-item:hover {
   font-weight: bold;
   cursor: pointer;
   color: #054e61 !important;
@@ -85,12 +90,17 @@ nav .container-fluid {
   top: 35px;
   left: 0;
   border-bottom: 3px solid #f3a70c;
-  transition: width 0.5s ease;
+  transition: width 0.5s ease-in-out;
 }
 
 .nav-link:hover::before {
   content: "";
   width: 100%;
+}
+
+.dropdown-toggle:focus,
+.chat-btn {
+  outline: none;
 }
 
 .title {
@@ -103,8 +113,18 @@ nav .container-fluid {
   color: #177185;
 }
 
-.dropdown-item, .font-condense {
+.dropdown-item,
+.font-condense {
   font-family: H-condensedbold !important;
+}
+
+ul.dropdown-menu {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: #eca413;
 }
 
 .font-regular {
@@ -139,34 +159,46 @@ hr {
   color: #f3a70c;
 }
 
-.back-to-top {
-  width: 60px;
-  height: 60px;
+.back-to-top,
+.chat-btn {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #f3a70c;
   right: 21px;
-  bottom: 100px;
   border: none;
   z-index: 1000;
 }
 
-div.tawk-min-container{
-  width: 45px !important;
-  height: 45px !important;
+.back-to-top {
+  bottom: 80px;
 }
 
-.back-to-top > a > i {
-  font-size: 30px;
+.chat-btn {
+  bottom: 20px;
+}
+
+.back-to-top > a > i,
+.chat-btn > i {
+  font-size: 25px;
+}
+
+#chatModal .modal-dialog .modal-header {
+  background-color: #eca413;
 }
 
 .card {
   border-radius: 12px !important;
   border: 2px solid rgba(83, 83, 83, 0.25);
+  height: 100%;
+}
+
+.card img {
+  transition: transform 0.5s ease-in-out;
 }
 
 .card:hover img {
   transform: scale(1.05);
-  transition: transform 0.5s ease;
 }
 
 .btn {
@@ -296,9 +328,28 @@ h5.des {
   background: #fff;
 }
 
-.nav-link .fa-user-circle-o{
-  color:#054e61 !important;
+.nav-link .fa-user-circle-o {
+  color: #054e61 !important;
   cursor: pointer;
+}
+
+.toastMessage {
+  z-index: 9999;
+  bottom: 21px;
+  right: 21px;
+  transition: display 0.5 ease-in-out;
+}
+
+#message-text {
+  min-height: 70px;
+}
+
+#message-text:focus,
+#sender-email:focus,
+#sender-name:focus {
+  border: 2px solid #eca413;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 @media (max-width: 1199.98px) {

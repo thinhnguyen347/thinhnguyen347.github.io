@@ -1,7 +1,7 @@
 .hero-img{
 background-image: url('../img/bg/x.webp');
-height: 650px;
-background-position: fixed;
+min-height: 650px;
+background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 }

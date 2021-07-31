@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Halong bay tour | The Oriental Jade Hotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/shared-style.css">
+  <link rel="stylesheet" href="css/halongtour.css">
+</head>
+
+<body id="top">
+  <!-- Menu bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-100">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo.webp" alt="oriental-jade-hotel" width="100px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rooms-and-suites.html">Rooms & Suites</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="updating.html">Meeting room</a></li>
+              <li><a class="dropdown-item" href="updating.html">Visa on arrival</a></li>
+              <li><a class="dropdown-item" href="updating.html">Transportation</a></li>
+              <li><a class="dropdown-item" href="updating.html">Book tickets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" aria-current="page" href="updating.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Tours
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="halong.html">Halong Bay Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Sapa Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Package Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Daily Tours</a></li>
+            </ul>
+          </li>
+          <li class="nav-item log-in-btn">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logInModal">Log-in</a>
+          </li>
+          <li class="nav-item d-flex align-items-center log-in-btn"><button class="signup hvr-rectangle-out"
+              data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</button></li>
+
+          <li class="nav-item dropdown user-btn d-none">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fas fa-user-circle"></i>&nbsp;Hello, Thinh
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item">Edit profile</a></li>
+              <li><a class="dropdown-item" href="my-bookings.html"></i> Bookings</a></li>
+              <li><a class="dropdown-item log-out">Log-out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sign-up modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
+            account</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form class="myInput">
+            <div class="mb-3">
+              <label for="InputEmail" class="form-label title">Email address</label>
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text font-condense">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="InputPassword" class="form-label title">Password</label>
+              <input type="password" class="form-control" id="InputPassword">
+              <div id="passwordHelp" class="form-text font-condense">Use at least 8 characters with a mix of letters,
+                numbers.</div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
+                    class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a
+                    href="policy.html" class="title" target="_blank">Privacy&nbsp;Policy</a> </span></label>
+            </div>
+            <button class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
+          </form>
+          <br>
+          <p class="title mb-0">Already have an account? <a href="#0"
+              class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#logInModal" data-bs-dismiss="modal">Log-in</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Log-in modal -->
+  <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
+            account</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="logInEmail" class="form-label title">Email address</label>
+              <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="logInPassword" class="form-label title">Password</label>
+              <input type="password" class="form-control" id="logInPassword">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberPassword">
+              <label class="form-check-label title" for="rememberPassword">Remeber my password</label>
+            </div>
+            <button class="btn hvr-shutter-in-horizontal w-100 log-in">Log-in</button>
+            <div class="form-text ">
+              <br>
+              <a href="updating.html" class="font-condense text-decoration-none">Forgot password?</a>
+              <p class="title mb-0">Donot have an account? <a href="#0"
+                  class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+                  data-bs-target="#signUpModal" data-bs-dismiss="modal">Sign-up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
+        class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
+
+  <!-- Chat button -->
+  <button class="chat-btn position-fixed" data-bs-toggle="modal" data-bs-target="#chatModal"><i
+      class="fas fa-comments text-white d-block px-auto"></i></button>
+  <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header px-4">
+          <h5 class="modal-title title" id="chatLabel">Fill in this form to contact with us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your name:</label>
+              <input type="text" class="form-control" id="sender-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your email: <span
+                  class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="sender-email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label title">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded-pill hvr-rectangle-out">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hero content slide -->
+  <section class="hero-content">
+    <div id="carouselHaLong" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators intro">
+        <button type="button" data-bs-target="#carouselHaLong" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselHaLong" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselHaLong" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselHaLong" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselHaLong" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselHaLong" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselHaLong" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#image-zoom">
+          <img src="./img/tour/halong-details/0.webp" class="d-block w-100" alt="halongbay-1"
+            fullSize="./img/tour/halong-details/0f.webp" imgTitle="O'gallery Premium Cruise">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/tour/halong-details/1.webp" class="d-block w-100" alt="halongbay-2"
+            fullSize="./img/tour/halong-details/1f.webp" imgTitle="Sundeck">
+        </div>
+        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#image-zoom">
+          <img src="./img/tour/halong-details/3.webp" class="d-block w-100" alt="halongbay-3"
+            fullSize="./img/tour/halong-details/3f.webp" imgTitle="Morning on the bay">
+        </div>
+        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#image-zoom">
+          <img src="./img/tour/halong-details/5.webp" class="d-block w-100" alt="halongbay-4"
+            fullSize="./img/tour/halong-details/5f.webp" imgTitle="Kayaking">
+        </div>
+        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#image-zoom">
+          <img src="./img/tour/halong-details/7.webp" class="d-block w-100" alt="halongbay-5"
+            fullSize="./img/tour/halong-details/7f.webp" imgTitle="Traditional dancing on cruise">
+        </div>
+        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#image-zoom">
+          <img src="./img/tour/halong-details/8.webp" class="d-block w-100" alt="halongbay-6"
+            fullSize="./img/tour/halong-details/8f.webp" imgTitle="Preparing lunch on cruise">
+        </div>
+        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#image-zoom">
+          <img src="./img/tour/halong-details/12.webp" class="d-block w-100" alt="halongbay-7"
+            fullSize="./img/tour/halong-details/12f.webp" imgTitle="Sea-view cabin">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHaLong" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHaLong" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="image-zoom" tabindex="-1" aria-labelledby="imgLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content position-absolute top-50 start-50 translate-middle">
+          <div class="modal-header">
+            <h5 class="modal-title title" id="imgLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./img/gallery/39full.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour Program -->
+  <section id="content" class="padding-standard">
+    <h2 class="title text-center" >HA LONG BAY TOUR 2 DAYS 1 NIGHT WITH
+      O'GALLERY PREMIUM&nbsp;CRUISE</h2>
+    <img class="divider" src="./img/icon/divider.png" alt="floral-pattern">
+    <div>
+      <div class="container">
+
+        <p>Our O’Gallery Lotus Cruise is designed with the inspiration from the “lotus d’orient” – a flower symbolizing
+          compassion and wisdom, being gently beautiful without any mediocre competition but bringing an excellently
+          perfection because of both scent and colors. When O’Gallery Lotus cruises her voyage in the bay, it is likened
+          to a fairy scene: a lotus floating on the water.
+        </p><br>
+        <h3 class="title">Itinerary</h3><br>
+        <h6 class="title">FIRST DAY</h6>
+        <ul>
+          <li><span class="font-condense pe-2">12:00</span> Arrive at Tuan Chau Island</li>
+          <li><span class="font-condense pe-2">12:15</span>Transfer to cruise ship</li>
+          <li><span class="font-condense pe-2">12:30</span>Welcome Drink – cruise briefing, safety instructions,
+            check-in
+            cabins. Cruise and program commence
+          </li>
+          <li><span class="font-condense pe-2">13.00 – 14.30</span> Serve Special Paradise Lunch on board while cruising
+            passing by islets, Hoa Cuong fishing
+            village. After lunch continues exploration of Halong Bay passing by Soi Sim Beach, Coconut Three Island.
+            Anchoring the vessels at Dark and Bright Cave area.
+          </li>
+          <li><span class="font-condense pe-2">14.45 – 15.45</span>14.45 – 15.45 Exploring Dark and Bright Cave by
+            rowing
+            bamboo boats with local people or kayaking by
+            yourself.</li>
+
+          <li><span class="font-condense pe-2">15.45 – 16.15</span>15.45 – 16.15 The Vessels will continuous cruising in
+            Lan Ha Bay passing by Cua Van floating Village, Tien
+            Ong Cave and anchoring the vessels in Ho Dong Tien.</li>
+          <li><span class="font-condense pe-2">16.15 – 17:00</span> Enjoy swimming and kayaking at Ho dong Tien area.
+          </li>
+          <li><span class="font-condense pe-2">17:00 – 19:00</span> Enjoying “Happy Hour” Buy one take one on selected
+            beverages, while the vessels is cruising in
+            Halong Bay, passing by Trong Cave, Ho Dong Tien Cave, Luon Cave and Titop Island. Docking at Coconut Three
+            Island
+            for overnight stay. Enjoy spa at your leisure on board
+          </li>
+          <li><span class="font-condense pe-2">18.00 – 18.30 </span>Enjoy cooking demonstration with Chef to discover
+            the
+            Vietnamese cuisine of traditional
+            spring
+            rolls. Learn how to toast Vietnamese way through the evening’s toast of the local rice wine.
+          </li><span class="font-condense pe-2">19.30 – 22.00</span> Serve elegant Paradise dinner. Start dinner in
+          Traditional Bao Dai dress and photo shoot with
+          <li><span class="font-condense pe-2">18.30 – 19.00</span> Pre-dinner cocktail on sundeck serving assorted nuts
+            and canapé.
+            captain and manager on board.</li>
+          <li><span class="font-condense pe-2">21.00 – 23.00</span> Evening Activities – relax at leisure; enjoy Movie
+            Night and squid Fishing or Beauty Spa
+            services.
+          </li>
+        </ul>
+
+
+        <h6 class="title">SECOND DAY</h6>
+
+        <ul>
+          <li><span class="font-condense pe-2">6.30</span> Tai Chi session on Sundeck. </li>
+          <li><span class="font-condense pe-2">7.00 – 7.30 </span> Coffee & tea with assorted homemade pastries.</li>
+          the most beautiful and biggest cave in Halong bay.
+          <li><span class="font-condense pe-2">7.30 – 8.30 </span>Relax or Visit Sung Sot Cave – Hiking up and down 600
+            steps to the magnificent limestone formations of
+          </li>
+          <li><span class="font-condense pe-2"> 8.30</span> International Breakfast Menu.</li>
+          <li><span class="font-condense pe-2"> 9.30</span> Check-out cabins and settle bills.</li>
+          <li><span class="font-condense pe-2">10.30 </span> Arrive at Tuan Chau Island.</li>
+          <li><span class="font-condense pe-2"> 10.30 – 12.00</span> Set lunch served at Paradise Suites Hotel (Applied
+            ONLY for guests booked shuttle bus of Paradise
+            Cruises)</li>
+          <li><span class="font-condense pe-2">12.15 – 12.30 </span>Shuttle bus pick up guests at Paradise Suites Hotel
+            to
+            come back Hanoi</li>
+        </ul>
+      </div>
+
+      <div class="container pt-3">
+        <div class="row row-cols-2">
+          <div class="col-12 col-md-6 px-0">
+            <h3 class="title">Inclusion</h3>
+            <ul>
+              <li>Cruise Itinerary and Program</li>
+              <li>Entrance and Sightseeing Fees</li>
+              <li>Luxury Cabins and Suites with A/C</li>
+              <li>Luxury en-suite Bathroom</li>
+              <li>1 Breakfast / 1 Lunch / 1 Dinner</li>
+              <li>Snorkel Equipment (subject to availability)</li>
+              <li>Kayaking</li>
+              <li>Meeting Facilities and Equipment (charter only)</li>
+              <li>Tai Chi Session</li>
+              <li>Insurance, Taxes and Service Charges</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 px-0">
+            <h3 class="title">Exclusion</h3>
+            <ul>
+              <li>Airfares, Car Transfers and Hotel Accommodation</li>
+              <li>Visa Arrangements</li>
+              <li>Beauty Spa Services and Massage</li>
+              <li>Beverages and Tobacco</li>
+              <li>Tips and other Personal Expenses</li>
+              <li>All other services not clearly mentioned above</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 class="title pt-3">Price</h3>
+        <ul>
+          <li>Option 1: Bus (soft sleeping, air-condition): <span class="font-condense">125+ USD/per person</span> </li>
+          <li>Option 2: Luxury van (D-Car Limousine, only 9 sharing soft seats, air-condition): <span
+              class="font-condense">145+ USD/per person</span> </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="padding-standard">
+    <div class="container">
+      <div class="row row-cols-lg-2">
+        <div class="col-12 col-md-12 col-lg-6 px-lg-5 pt-4">
+
+          <h3 class="title text-center">PREFER TO ARRANGE YOUR&nbsp;TOUR.</h3>
+          <h3 class="title text-center">CONTACT US&nbsp;NOW!</h3>
+
+          <img class="img-fluid d-block pt-4" src="./img/bg/contact.webp" alt="contact">
+        </div>
+
+
+        <div class="col-12 col-md-12 col-lg-6 px-lg-5 pt-4">
+          <div class="bg px-4 pt-3">
+            <form class="form-card">
+              <div class="row justify-content-between text-left">
+                <div class="form-group col-sm-2 flex-column d-flex pt-2">
+                  <label class="form-control-label font-condense" for="guest-title">Title</label>
+                  <select name="guest-title" id="guest-title" class="ps-2 font-condense">
+                    <option value="Mr">Mr.</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Mrs">Mrs.</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-sm-10 flex-column d-flex pt-2">
+                  <label class="form-control-label font-condense">Your name<span class="text-danger"> *</span></label>
+                  <input type="text" id="fname" class="ps-2 font-condense" name="fname" placeholder="Enter your name">
+                </div>
+              </div>
+
+              <div class="row justify-content-between text-left pt-2 ">
+                <div class="form-group col-sm-6 flex-column d-flex">
+                  <label class="form-control-label font-condense">Email<span class="text-danger"> *</span></label>
+                  <input type="text" id="guest-email" class="ps-2 font-condense" name="guest-email"
+                    placeholder="Enter your email">
+                </div>
+                <div class="form-group col-sm-6 flex-column d-flex pt-2 pt-md-0">
+                  <label class="form-control-label font-condense">Phone number</label>
+                  <input type="text" id="phone" class="ps-2 font-condense" name="phone"
+                    placeholder="Enter your phone number">
+                </div>
+              </div>
+
+              <div class="row justify-content-between text-left pt-2 ">
+                
+                <div class="form-group col-sm-6 flex-column d-flex">
+                  <label class="form-control-label font-condense">Country</label>
+                  <input type="text" id="country" class="ps-2 font-condense" name="country"
+                    placeholder="Enter your country">
+                </div>
+
+                <div class="form-group col-sm-6 flex-column d-flex pt-2 pt-md-0">
+                  <label class="form-control-label font-condense">Starting date</label>
+                  <input type="date" id="startDate" class="ps-2 font-condense" name="startDate">
+                </div>
+
+              </div>
+              <div class="row justify-content-between text-left pt-2">
+                <div class="form-group col-12 flex-column d-flex">
+                  <label class="form-control-label font-condense">Additional notes or requests <span
+                      class="fst-italic">(optional)</span> </label>
+                  <textarea id="comment" name="comment"> </textarea>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <a class="btn rounded-pill text-center hvr-wobble-to-top-right my-4 book-now ">SEND</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="padding-standard">
+    <div class="container-fluid">
+      <div class="row row-col-sm-1 row-col-xs-1 justify-content-between justify-content-xs-center">
+        <div class="col-lg-5 col-md-6 col-sm col-12 pt-4">
+          <h2 class="font-condense text-white">THE ORIENTAL&nbsp;JADE&nbsp;HOTEL</h2>
+          <hr>
+          <span class="lh-lg text-white">Address: No. 92-94 Hang Trong Street, Hoan Kiem District, Hanoi,
+            Vietnam</span><br>
+          <a href="tel:+842439367777" class="text-white text-decoration-none lh-lg">Phone: (+84) 24 3936
+            7777</a><br>
+          <a href="tel:+84942217271" class="text-white text-decoration-none lh-lg">Hotline: (+84) 942 217
+            271</a><br>
+          <a href="mailto:sales@theorientaljadehotel.com" class="text-white text-decoration-none lh-lg">Email:
+            sales@theorientaljadehotel.com</a><br>
+          <div class="social-media d-flex justify-content-start align-items-center">
+            <a href="https://www.facebook.com/orientalhospitality.com.vn/" target="_blank"><i
+                class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/ohg_orientalhospitalitygroup/" target="_blank"><i
+                class="fab fa-instagram px-3"></i></a>
+            <a href="https://www.youtube.com/channel/UCmHHeUSFuVT2i_o4TJTZtIA" target="_blank"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 col-12 pt-4">
+          <h2 class="font-condense text-white">NAVIGATION</h2>
+          <hr>
+          <a href="rooms-and-suites.html" target="_blank" class="text-white text-decoration-none lh-lg">Rooms &
+            Suites</a><br>
+          <a href="services.html" target="_blank" class="text-white text-decoration-none lh-lg">Services</a><br>
+          <a href="tours.html" target="_blank" class="text-white text-decoration-none lh-lg">Tours</a><br>
+          <a href="policy.html" target="_blank" class="text-white text-decoration-none lh-lg">Privacy Policies</a><br>
+          <a href="#location" class="text-white text-decoration-none lh-lg">Location & Map</a>
+          <div class="accepted-card d-flex justify-content-start align-items-center">
+            <div class="text-white">Accepted cards:</div>
+            <img src="./img/icon/visa.png" alt="visa-card" height="36px" class="px-2">
+            <img src="./img/icon/mastercard.png" alt="master-card" height="36px" class="pe-2">
+            <img src="./img/icon/amex.png" alt="american-express" height="36px" class="pe-2">
+            <img src="./img/icon/jcb.png" alt="jcb" height="32px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/shared-js.js"></script>
+  <script type="text/javascript" src="js/halongtour.js"></script>
+
+
+</body>
+
+</html>

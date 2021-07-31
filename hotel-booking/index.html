@@ -38,15 +38,15 @@
             <a class="nav-link" href="rooms-and-suites.html">Rooms & Suites</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Meeting room</a></li>
-              <li><a class="dropdown-item" href="#">Visa on arrival</a></li>
-              <li><a class="dropdown-item" href="#">Transportation</a></li>
-              <li><a class="dropdown-item" href="#">Book tickets</a></li>
+              <li><a class="dropdown-item" href="updating.html">Meeting room</a></li>
+              <li><a class="dropdown-item" href="updating.html">Visa on arrival</a></li>
+              <li><a class="dropdown-item" href="updating.html">Transportation</a></li>
+              <li><a class="dropdown-item" href="updating.html">Book tickets</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -55,26 +55,27 @@
               Tours
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Daily Tours</a></li>
-              <li><a class="dropdown-item" href="#">Sapa Tours</a></li>
-              <li><a class="dropdown-item" href="#">Halong Bay Tours</a></li>
-              <li><a class="dropdown-item" href="#">Package Tours</a></li>
+              <li><a class="dropdown-item" href="halong.html">Halong Bay Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Sapa Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Package Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Daily Tours</a></li>
             </ul>
           </li>
           <li class="nav-item log-in-btn">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signInModal">Log-in</a>
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logInModal">Log-in</a>
           </li>
-          <li class="nav-item d-flex align-items-center sign-in-btn"><button class="signup hvr-rectangle-out"
+          <li class="nav-item d-flex align-items-center log-in-btn"><button class="signup hvr-rectangle-out"
               data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</button></li>
 
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown user-btn d-none">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              My account
+              <i class="fas fa-user-circle"></i>&nbsp;Hello, Thinh
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="my-bookings.html">My bookings</a></li>
-              <li><a class="dropdown-item">Log-out</a></li>
+              <li><a class="dropdown-item" href="updating.html">Edit profile</a></li>
+              <li><a class="dropdown-item " href="my-bookings.html"></i> Bookings &nbsp;<span class="badge rounded-pill bg-primary">0</span></a></li>
+              <li><a class="dropdown-item log-out">Log-out</a></li>
             </ul>
           </li>
         </ul>
@@ -82,18 +83,25 @@
     </div>
   </nav>
 
+  <!-- Log out toast -->
+  <div class="toastMessage d-none position-fixed rounded align-items-center text-white bg-success border-0">
 
+      <div class="toast-body font-condense">
+        Log-out successfully!
+      </div>
+    
+  </div>
 
   <!-- Sign-up modal -->
   <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title title" id="signInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
             account</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body p-4">
           <form class="myInput">
             <div class="mb-3">
               <label for="InputEmail" class="form-label title">Email address</label>
@@ -114,21 +122,25 @@
             </div>
             <button class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
           </form>
+          <br>
+          <p class="title mb-0">Already have an account? <a href="#0"
+              class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#logInModal" data-bs-dismiss="modal">Log-in</a></p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Sign-in modal -->
-  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <!-- Log-in modal -->
+  <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title title" id="signInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
             account</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body p-4">
           <form>
             <div class="mb-3">
               <label for="logInEmail" class="form-label title">Email address</label>
@@ -145,8 +157,10 @@
             <button class="btn hvr-shutter-in-horizontal w-100 log-in">Log-in</button>
             <div class="form-text ">
               <br>
-              <a href="updating.html" class="font-condense">Forgot password?</a>
-              <br>
+              <a href="updating.html" class="font-condense text-decoration-none">Forgot password?</a>
+              <p class="title mb-0">Donot have an account? <a href="#0"
+                  class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+                  data-bs-target="#signUpModal" data-bs-dismiss="modal">Sign-up</a></p>
             </div>
           </form>
         </div>
@@ -158,22 +172,51 @@
   <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
         class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
 
+  <!-- Chat button -->
+  <button class="chat-btn position-fixed" data-bs-toggle="modal" data-bs-target="#chatModal"><i
+      class="fas fa-comments text-white d-block px-auto"></i></button>
+  <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header px-4">
+          <h5 class="modal-title title" id="chatLabel">Fill in this form to contact with us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your name:</label>
+              <input type="text" class="form-control" id="sender-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your email: <span
+                  class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="sender-email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label title">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded-pill hvr-rectangle-out">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Hero content slide & pick date table -->
   <section class="hero-content">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselIndex" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators intro">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-          aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselIndex" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -195,13 +238,11 @@
           <img src="./img/intro/packagetour.webp" class="d-block w-100" alt="sky-bar">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndex" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselIndex" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -231,7 +272,7 @@
         </div>
         <div class="kid-number d-flex flex-column align-content-between">
           <label for="kidNumber">Child</label>
-          <input type="number" id="kidNumber" min="0" value="0" required>
+          <input type="number" id="kidNumber" min="0" max="2" value="0" required>
         </div>
       </div>
       <div class="check-avail"><a href="rooms-and-suites.html" class="text-white text-decoration-none">Check
@@ -240,9 +281,11 @@
   </section>
 
   <!-- Welcome content -->
-  <section class="welcome-content container-fluid d-flex flex-row justify-content-between flex-wrap padding-standard">
-    <div class="welcome-text">
-      <h1 class="title text-center" data-aos="fade-up" data-aos-duration="1500">WELCOME TO
+  <section
+    class="welcome-content container-fluid d-flex flex-row justify-content-between justify-content-lg-center flex-wrap padding-standard"
+    data-aos="fade-up" data-aos-duration="2000">
+    <div class="welcome-text pe-lg-3">
+      <h1 class="title text-center">WELCOME TO
         THE&nbsp;ORIENTAL&nbsp;JADE&nbsp;HOTEL</h1><br>
       <img class="divider" src="./img/icon/floral-n.png" alt="floral-pattern">
       <p>The Oriental Jade Hotel – a member of Oriental Hospitality Group (OHG) - offers 120 premium guest rooms
@@ -256,7 +299,7 @@
       </p>
     </div>
 
-    <div class="welcome-img">
+    <div class="welcome-img ps-lg-3">
       <img src="img/intro/welcome-img.webp" alt="oriental-jade-room">
     </div>
   </section>
@@ -266,46 +309,52 @@
     <h2 class="title text-center" data-aos="fade-up" data-aos-duration="1500">OUR OUTSTANDING FEATURES AND&nbsp;SERVICES
     </h2>
     <img class="divider" src="./img/icon/divider.png" alt="floral-pattern">
-    <div class="service-list d-flex flex-wrap">
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-bath"></i></div>
-        <div class="service-name">Ensuite Bathroom</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-bath"></i></div>
+          <div class="service-name">Ensuite Bathroom</div>
+        </div>
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-water"></i></div>
+          <div class="service-name">Lake view</div>
+        </div>
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-swimmer"></i></div>
+          <div class="service-name">Swimming Pool</div>
+        </div>
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-wifi"></i></div>
+          <div class="service-name">Free Wifi</div>
+        </div>
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-suitcase-rolling"></i></div>
+          <div class="service-name">Awesome Package</div>
+        </div>
       </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-water"></i></div>
-        <div class="service-name">Lake view</div>
-      </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-swimmer"></i></div>
-        <div class="service-name">Swimming Pool</div>
-      </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-wifi"></i></div>
-        <div class="service-name">Free Wifi</div>
-      </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-suitcase-rolling"></i></div>
-        <div class="service-name">Awesome Package</div>
-      </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-concierge-bell"></i></div>
-        <div class="service-name">24-hour Reception</div>
-      </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-users"></i></div>
-        <div class="service-name">Meeting Room</div>
-      </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-dumbbell"></i></div>
-        <div class="service-name">Gym</div>
-      </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-spa"></i></div>
-        <div class="service-name">Spa</div>
-      </div>
-      <div class="service-item">
-        <div class="icon d-flex justify-content-center"><i class="fas fa-shield-alt"></i></div>
-        <div class="service-name">24/7 Security</div>
+
+      <div class="row pt-2 pt-md-3 pt-lg-5">
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-concierge-bell"></i></div>
+          <div class="service-name">24-hour Reception</div>
+        </div>
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-users"></i></div>
+          <div class="service-name">Meeting Room</div>
+        </div>
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-dumbbell"></i></div>
+          <div class="service-name">Gym</div>
+        </div>
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-spa"></i></div>
+          <div class="service-name">Spa</div>
+        </div>
+        <div class="col service-item mx-1 mx-md-2 mx-lg-3 mx-xl-5">
+          <div class="icon d-flex justify-content-center"><i class="fas fa-shield-alt"></i></div>
+          <div class="service-name">24/7 Security</div>
+        </div>
       </div>
     </div>
   </section>
@@ -316,18 +365,50 @@
     <img class="divider" src="./img/icon/divider.png" alt="floral-pattern">
     <div class="gallery">
       <div class="owl-carousel owl-theme">
-        <div class="item"><img class="img-fluid" src="./img/gallery/31.webp" alt="reception"></div>
-        <div class="item"><img class="img-fluid" src="./img/gallery/32.webp" alt="bedroom"></div>
-        <div class="item"><img class="img-fluid" src="./img/gallery/33.webp" alt="balcony"></div>
-        <div class="item"><img class="img-fluid" src="./img/gallery/34.webp" alt="church-view"></div>
-        <div class="item"><img class="img-fluid" src="./img/gallery/35.webp" alt="buffet"></div>
-        <div class="item"><img class="img-fluid" src="./img/gallery/36.webp" alt="hotel-front"></div>
-        <div class="item"><img class="img-fluid" src="./img/gallery/37.webp" alt="meeting-room"></div>
-        <div class="item"><img class="img-fluid" src="./img/gallery/38.webp" alt="lobby"></div>
-        <div class="item"><img class="img-fluid" src="./img/gallery/39.webp" alt="bathroom"></div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/31.webp" alt="reception" img-title="Hotel reception"
+            full-size="./img/gallery/31full.webp"></div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/32.webp" alt="bedroom" img-title="Cozy bedroom" full-size="./img/gallery/32full.webp">
+        </div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/33.webp" alt="balcony" img-title="Enjoy drinks on roof-top bar"
+            full-size="./img/gallery/33full.webp"></div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/34.webp" alt="church-view" img-title="View of St. Joseph Cathedral from bedroom"
+            full-size="./img/gallery/34full.webp"></div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/35.webp" alt="buffet" img-title="Daily breakfast buffet with many options"
+            full-size="./img/gallery/35full.webp"></div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/36.webp" alt="hotel-front" img-title="Hotel entrance on Hang Trong street"
+            full-size="./img/gallery/36full.webp"></div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/37.webp" alt="meeting-room" img-title="Meeting room"
+            full-size="./img/gallery/37full.webp"></div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/38.webp" alt="room-service" img-title="Daily room service"
+            full-size="./img/gallery/38full.webp"></div>
+        <div class="item" data-bs-toggle="modal" data-bs-target="#gallery-image-zoom"><img class="img-fluid"
+            src="./img/gallery/39.webp" alt="bathroom" img-title="Well-designed bathroom"
+            full-size="./img/gallery/39full.webp"></div>
       </div>
     </div>
   </section>
+
+  <div class="modal fade" id="gallery-image-zoom" tabindex="-1" aria-labelledby="imgLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content position-absolute top-50 start-50 translate-middle">
+        <div class="modal-header">
+          <h5 class="modal-title title" id="imgLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="./img/gallery/39full.webp">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Special offers -->
   <section class="padding-standard">
@@ -338,10 +419,11 @@
 
         <div class="card overflow-hidden">
           <div class="position-relative">
-            <a href="updating.html"><img src="./img/tour/halong.webp" class="card-img-top" alt="combo-1"></a>
-            <div class="card-img-overlay">
-              <h3 class="card-title rounded text-white text-center">HALONG&nbsp;BAY SUMMER&nbsp;PACKAGE</h3>
-            </div>
+            <a href="halong.html"><img src="./img/tour/halong.webp" class="card-img-top" alt="combo-1">
+              <div class="card-img-overlay">
+                <h3 class="card-title rounded text-white text-center">HALONG&nbsp;BAY SUMMER&nbsp;PACKAGE</h3>
+              </div>
+            </a>
           </div>
           <div class="card-body text-center">
             <a href="updating.html" class="btn rounded-pill lh-lg text-center hvr-rectangle-out">More details</a>
@@ -350,10 +432,11 @@
 
         <div class="card overflow-hidden">
           <div class="position-relative">
-            <img src="./img/tour/sapa.webp" class="card-img-top" alt="combo-1">
-            <div class="card-img-overlay">
-              <h3 class="card-title rounded text-white text-center">SAPA RETREAT&nbsp;PACKAGE</h3>
-            </div>
+            <a href="updating.html"><img src="./img/tour/sapa.webp" class="card-img-top" alt="combo-1">
+              <div class="card-img-overlay">
+                <h3 class="card-title rounded text-white text-center">SAPA RETREAT&nbsp;PACKAGE</h3>
+              </div>
+            </a>
           </div>
           <div class="card-body text-center">
             <a href="updating.html" class="btn rounded-pill lh-lg text-center hvr-rectangle-out">More details</a>
@@ -362,10 +445,11 @@
 
         <div class="card overflow-hidden">
           <div class="position-relative">
-            <img src="./img/tour/ninhbinh.webp" class="card-img-top" alt="combo-1">
-            <div class="card-img-overlay">
-              <h3 class="card-title rounded text-white text-center">BAI&nbsp;DINH TRANG&nbsp;AN DAY&nbsp;TRIP</h3>
-            </div>
+            <a href="updating.html"><img src="./img/tour/ninhbinh.webp" class="card-img-top" alt="combo-1">
+              <div class="card-img-overlay">
+                <h3 class="card-title rounded text-white text-center">BAI&nbsp;DINH TRANG&nbsp;AN DAY&nbsp;TRIP</h3>
+              </div>
+            </a>
           </div>
           <div class="card-body text-center">
             <a href="updating.html" class="btn rounded-pill lh-lg text-center hvr-rectangle-out">More details</a>
@@ -374,13 +458,14 @@
 
         <div class="card overflow-hidden">
           <div class="position-relative">
-            <img src="./img/tour/hanoi.webp" class="card-img-top" alt="combo-1">
-            <div class="card-img-overlay">
-              <h3 class="card-title rounded text-white text-center">CITY&nbsp;TOUR DAY&nbsp;TRIP</h3>
-            </div>
+            <a href="updating.html"><img src="./img/tour/hanoi.webp" class="card-img-top" alt="combo-1">
+              <div class="card-img-overlay">
+                <h3 class="card-title rounded text-white text-center">CITY&nbsp;TOUR DAY&nbsp;TRIP</h3>
+              </div>
+            </a>
           </div>
           <div class="card-body text-center">
-            <a href="tours.html" class="btn rounded-pill lh-lg text-center hvr-rectangle-out">More details</a>
+            <a href="updating.html" class="btn rounded-pill lh-lg text-center hvr-rectangle-out">More details</a>
           </div>
         </div>
 

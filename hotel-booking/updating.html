@@ -27,55 +27,75 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="rooms-and-suites.html">Rooms & Suites</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Meeting room</a></li>
-              <li><a class="dropdown-item" href="#">Visa on arrival</a></li>
-              <li><a class="dropdown-item" href="#">Transportation</a></li>
-              <li><a class="dropdown-item" href="#">Book tickets</a></li>
+              <li><a class="dropdown-item" href="updating.html">Meeting room</a></li>
+              <li><a class="dropdown-item" href="updating.html">Visa on arrival</a></li>
+              <li><a class="dropdown-item" href="updating.html">Transportation</a></li>
+              <li><a class="dropdown-item" href="updating.html">Book tickets</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Tours
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Daily Tours</a></li>
-              <li><a class="dropdown-item" href="#">Sapa Tours</a></li>
-              <li><a class="dropdown-item" href="#">Halong Bay Tours</a></li>
-              <li><a class="dropdown-item" href="#">Package Tours</a></li>
+              <li><a class="dropdown-item" href="halong.html">Halong Bay Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Sapa Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Package Tours</a></li>
+              <li><a class="dropdown-item" href="updating.html">Daily Tours</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signInModal">Log-in</a>
+          <li class="nav-item log-in-btn">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logInModal">Log-in</a>
           </li>
-          <li class="nav-item d-flex align-items-center"><button class="signup hvr-rectangle-out" data-bs-toggle="modal"
-              data-bs-target="#signUpModal">Sign-up</button></li>
+          <li class="nav-item d-flex align-items-center sign-up-btn"><button class="signup hvr-rectangle-out"
+              data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</button></li>
+
+          <li class="nav-item dropdown user-btn d-none">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fas fa-user-circle"></i>&nbsp;Hello, Thinh
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="updating.html">Edit profile</a></li>
+              <li><a class="dropdown-item" href="my-bookings.html"></i> Bookings&nbsp;<span
+                    class="badge rounded-pill bg-primary">0</span></a></li>
+              <li><a class="dropdown-item log-out">Log-out</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Log out toast -->
+  <div class="toastMessage d-none position-fixed rounded align-items-center text-white bg-success border-0">
+    <div class="toast-body font-condense">
+      Log-out successfully!
+    </div>
+  </div>
+
   <!-- Sign-up modal -->
   <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title title" id="signInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
             account</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body p-4">
           <form class="myInput">
             <div class="mb-3">
               <label for="InputEmail" class="form-label title">Email address</label>
@@ -91,29 +111,33 @@
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
-                    class="title" href="#" target="_blank">Terms of Use</a></span> and <span><a href="#" class="title"
-                    target="_blank">Privacy&nbsp;Policy</a> </span></label>
+                    class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a
+                    href="policy.html" class="title" target="_blank">Privacy&nbsp;Policy</a> </span></label>
             </div>
-            <button type="submit" class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
+            <button class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
           </form>
+          <br>
+          <p class="title mb-0">Already have an account? <a href="#0"
+              class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#logInModal" data-bs-dismiss="modal">Log-in</a></p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Sign-in modal -->
-  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <!-- Log-in modal -->
+  <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title title" id="signInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
             account</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body p-4">
           <form>
             <div class="mb-3">
-              <label for="logInEmail" class="form-label title">Email address/ Mobile number</label>
+              <label for="logInEmail" class="form-label title">Email address</label>
               <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
@@ -124,12 +148,13 @@
               <input type="checkbox" class="form-check-input" id="rememberPassword">
               <label class="form-check-label title" for="rememberPassword">Remeber my password</label>
             </div>
-            <button type="submit" class="btn hvr-shutter-in-horizontal w-100">Log-in</button>
+            <button class="btn hvr-shutter-in-horizontal w-100 log-in">Log-in</button>
             <div class="form-text ">
               <br>
-              <a href="#" class="font-condense">Forgot password?</a>
-              <br>
-              <!-- <p class="title">Please <a href="/" class="font-condense openSignup" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</a> if you are a new member.</p> -->
+              <a href="updating.html" class="font-condense text-decoration-none">Forgot password?</a>
+              <p class="title mb-0">Donot have an account? <a href="#0"
+                  class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+                  data-bs-target="#signUpModal" data-bs-dismiss="modal">Sign-up</a></p>
             </div>
           </form>
         </div>
@@ -141,12 +166,46 @@
   <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
         class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
 
+  <!-- Chat button & modal -->
+  <button class="chat-btn position-fixed" data-bs-toggle="modal" data-bs-target="#chatModal"><i
+      class="fas fa-comments text-white d-block px-auto"></i></button>
+  <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header px-4">
+          <h5 class="modal-title title" id="chatLabel">Fill in this form to contact with us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your name:</label>
+              <input type="text" class="form-control" id="sender-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your email: <span
+                  class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="sender-email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label title">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded-pill hvr-rectangle-out">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="hero-img position-relative">
     
     <!-- Message -->
-    <div class="update position-absolute p-5">
-      <h2 class=" font-condense text-center text-white">THE FUNCTION IS UPDATING</h2>
-      <h2 class=" font-condense text-center text-white">PLEASE COMEBACK LATER</h2>
+    <div class="update position-absolute p-3 p-md-5">
+      <h2 class="font-condense text-center text-white">THE&nbsp;FUNCTION&nbsp;IS&nbsp;UPDATING</h2>
+      <h2 class="font-condense text-center text-white">PLEASE&nbsp;COME&nbsp;BACK&nbsp;LATER!</h2>
       <hr>
       <!-- <img class="divider" src="img/icon/divider.png" alt="floral-pattern"> -->
     </div>

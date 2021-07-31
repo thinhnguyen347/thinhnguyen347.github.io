@@ -1,0 +1,1 @@
+let bookingList= JSON.parse(localStorage.bookingList)

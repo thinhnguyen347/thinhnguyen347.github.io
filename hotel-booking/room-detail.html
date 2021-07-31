@@ -18,131 +18,152 @@
 
 <body id="top">
   <!-- Menu bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light px-100">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.webp" alt="oriental-jade-hotel" width="100px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="rooms-and-suites.html">Rooms & Suites</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Meeting room</a></li>
-              <li><a class="dropdown-item" href="#">Visa on arrival</a></li>
-              <li><a class="dropdown-item" href="#">Transportation</a></li>
-              <li><a class="dropdown-item" href="#">Book tickets</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Tours
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Daily Tours</a></li>
-              <li><a class="dropdown-item" href="#">Sapa Tours</a></li>
-              <li><a class="dropdown-item" href="#">Halong Bay Tours</a></li>
-              <li><a class="dropdown-item" href="#">Package Tours</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signInModal">Log-in</a>
-          </li>
-          <li class="nav-item d-flex align-items-center"><button class="signup hvr-rectangle-out" data-bs-toggle="modal"
-              data-bs-target="#signUpModal">Sign-up</button></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-100">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.webp" alt="oriental-jade-hotel" width="100px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="rooms-and-suites.html">Rooms & Suites</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="updating.html">Meeting room</a></li>
+            <li><a class="dropdown-item" href="updating.html">Visa on arrival</a></li>
+            <li><a class="dropdown-item" href="updating.html">Transportation</a></li>
+            <li><a class="dropdown-item" href="updating.html">Book tickets</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="updating.html" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Tours
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="halong.html">Halong Bay Tours</a></li>
+            <li><a class="dropdown-item" href="updating.html">Sapa Tours</a></li>
+            <li><a class="dropdown-item" href="updating.html">Package Tours</a></li>
+            <li><a class="dropdown-item" href="updating.html">Daily Tours</a></li>
+          </ul>
+        </li>
+        <li class="nav-item log-in-btn">
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logInModal">Log-in</a>
+        </li>
+        <li class="nav-item d-flex align-items-center sign-up-btn"><button class="signup hvr-rectangle-out"
+            data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</button></li>
 
-  <!-- Sign-up modal -->
-  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title title" id="signInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
-            account</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form class="myInput">
-            <div class="mb-3">
-              <label for="InputEmail" class="form-label title">Email address</label>
-              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text font-condense">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="InputPassword" class="form-label title">Password</label>
-              <input type="password" class="form-control" id="InputPassword">
-              <div id="passwordHelp" class="form-text font-condense">Use at least 8 characters with a mix of letters,
-                numbers.</div>
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
-                    class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a href="policy.html" class="title"
-                    target="_blank">Privacy&nbsp;Policy</a> </span></label>
-            </div>
-            <button type="submit" class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
-          </form>
-        </div>
+        <li class="nav-item dropdown user-btn d-none">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fas fa-user-circle"></i>&nbsp;Hello, Thinh
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="updating.html">Edit profile</a></li>
+            <li><a class="dropdown-item" href="my-bookings.html"></i> Bookings&nbsp;<span
+                  class="badge rounded-pill bg-primary">0</span></a></li>
+            <li><a class="dropdown-item log-out">Log-out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Log out toast -->
+<div class="toastMessage d-none position-fixed rounded align-items-center text-white bg-success border-0">
+  <div class="toast-body font-condense">
+    Log-out successfully!
+  </div>
+
+</div>
+
+<!-- Sign-up modal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header pt-4 px-4">
+        <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
+          account</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <form class="myInput">
+          <div class="mb-3">
+            <label for="InputEmail" class="form-label title">Email address</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text font-condense">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="InputPassword" class="form-label title">Password</label>
+            <input type="password" class="form-control" id="InputPassword">
+            <div id="passwordHelp" class="form-text font-condense">Use at least 8 characters with a mix of letters,
+              numbers.</div>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
+                  class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a
+                  href="policy.html" class="title" target="_blank">Privacy&nbsp;Policy</a> </span></label>
+          </div>
+          <button class="btn w-100 hvr-shutter-in-horizontal">Sign-up</button>
+        </form>
+        <br>
+        <p class="title mb-0">Already have an account? <a href="#0"
+            class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+            data-bs-target="#logInModal" data-bs-dismiss="modal">Log-in</a></p>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Sign-in modal -->
-  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title title" id="signInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
-            account</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="logInEmail" class="form-label title">Email address/ Mobile number</label>
-              <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="logInPassword" class="form-label title">Password</label>
-              <input type="password" class="form-control" id="logInPassword">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="rememberPassword">
-              <label class="form-check-label title" for="rememberPassword">Remeber my password</label>
-            </div>
-            <button type="submit" class="btn hvr-shutter-in-horizontal w-100">Log-in</button>
-            <div class="form-text ">
-              <br>
-              <a href="#" class="font-condense">Forgot password?</a>
-              <br>
-              <!-- <p class="title">Please <a href="/" class="font-condense openSignup" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign-up</a> if you are a new member.</p> -->
-            </div>
-          </form>
-        </div>
+<!-- Log-in modal -->
+<div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header pt-4 px-4">
+        <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
+          account</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <form>
+          <div class="mb-3">
+            <label for="logInEmail" class="form-label title">Email address</label>
+            <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="logInPassword" class="form-label title">Password</label>
+            <input type="password" class="form-control" id="logInPassword">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberPassword">
+            <label class="form-check-label title" for="rememberPassword">Remeber my password</label>
+          </div>
+          <button class="btn hvr-shutter-in-horizontal w-100 log-in">Log-in</button>
+          <div class="form-text ">
+            <br>
+            <a href="updating.html" class="font-condense text-decoration-none">Forgot password?</a>
+            <p class="title mb-0">Donot have an account? <a href="#0"
+                class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+                data-bs-target="#signUpModal" data-bs-dismiss="modal">Sign-up</a></p>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Back to top button -->
-  <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
-        class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
-
-  <img src="img/bg/room-detail-hero-content.webp" alt="room-photo" class="w-100">
   <!-- Room detail -->
   <section class="padding-standard">
     <!-- Breadcrumb -->
@@ -154,12 +175,12 @@
       </ol>
     </nav>
 
-    <h2 class="mt-5 title text-center" data-aos="fade-up" data-aos-duration="1500">ORIENTAL PEARL TWIN</h2>
+    <h2 class="mt-5 title text-center" >ORIENTAL PEARL TWIN</h2>
     <h5 class="text-center des position-relative"><span class="badge bg-success">4</span> rooms available on selected
       dates</h5><br>
     <img class="divider" src="img/icon/divider.png" alt="floral-pattern">
 
-    <p>
+    <p class="description">
       Contemporarily designed with modern furnishings and en-suite with a standing shower, The Oriental Pearl Room (25 -
       28 sqm) also features a medium-sized window to allow natural light for a relaxing&nbsp;stay.
     </p><br>
@@ -173,7 +194,7 @@
               <button class="accordion-button title" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseOne">
-                <p class="title d-block my-auto" data-aos="fade-right" data-aos-duration="1500">Highlights</p>
+                <p class="h5 title d-block my-auto" >Highlights</p>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
@@ -197,7 +218,7 @@
               <button class="accordion-button title" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo">
-                <p class="title d-block my-auto" data-aos="fade-right" data-aos-duration="1500">Facilities</p>
+                <p class="h5 title d-block my-auto" >Facilities</p>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
@@ -226,7 +247,7 @@
               <button class="accordion-button title " type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapse1" aria-expanded="true"
                 aria-controls="panelsStayOpen-collapse1">
-                <p class="title d-block my-auto" data-aos="fade-right" data-aos-duration="1500">Bed & Bath</p>
+                <p class="h5 title d-block my-auto" >Bed & Bath</p>
               </button>
             </h2>
             <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse show"
@@ -250,7 +271,7 @@
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false"
                 aria-controls="panelsStayOpen-collapse2">
-                <p class="title d-block my-auto" data-aos="fade-right" data-aos-duration="1500">Other offers & Attentions</p>
+                <p class="h5 title d-block my-auto">Other offers & Attentions</p>
               </button>
             </h2>
             <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse show"
@@ -272,9 +293,7 @@
       </div>
     </div>
 
-    <div class="text-center d-flex justify-content-around">
-      <a href="reservation.html" class="btn rounded-pill text-center hvr-wobble-to-top-right my-5 book-now">Book Now</a>
-    </div>
+    <h5 class="title pt-5 text-center">Room photos:</h5>
 
     <div class="photo-area px-100 pt-3">
       <div id="carouselExampleIndicators" class="carousel slide overflow-hidden mx-auto" data-bs-ride="carousel">
@@ -313,6 +332,10 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
+
+    <div class="text-center d-flex justify-content-around">
+      <a href="reservation.html" class="btn rounded-pill text-center text-white hvr-wobble-to-top-right my-5 book-now">BOOK NOW</a>
     </div>
 
   </section>
@@ -368,6 +391,7 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/aos.js"></script>
   <script type="text/javascript" src="js/shared-js.js"></script>
+  <script type="text/javascript" src="js/room-details.js"></script>
 
 </body>
 
