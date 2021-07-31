@@ -1,6 +1,10 @@
 localStorage.setItem('logIn', false);
 checkLoginStatus(localStorage.logIn)
 
+//Title animation 
+
+AOS.init();
+
 // Date Picker
 let date = new Date();
 let day = date.getDate();
