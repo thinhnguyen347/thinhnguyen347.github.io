@@ -345,7 +345,8 @@ h5.des {
 }
 
 textarea:hover,
-textarea:focus, #message-text:focus,
+textarea:focus,
+#message-text:focus,
 #sender-email:focus,
 #sender-name:focus {
   border: 2px solid #eca413;
@@ -353,7 +354,7 @@ textarea:focus, #message-text:focus,
   box-shadow: none !important;
 }
 
-textarea{
+textarea {
   padding: 8px;
 }
 
@@ -439,6 +440,19 @@ textarea{
     width: 100% !important;
     margin: 10px auto;
   }
+
+  .back-to-top,
+  .chat-btn {
+    right: 8px;
+  }
+
+  .back-to-top {
+    bottom: 70px;
+  }
+
+  .chat-btn {
+    bottom: 10px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -469,7 +483,20 @@ textarea{
     margin: 10px 0;
   }
 
-  #coupon{
+  #coupon {
     width: 50%;
+  }
+
+  .back-to-top,
+  .chat-btn {
+    right: 8px;
+  }
+
+  .back-to-top {
+    bottom: 70px;
+  }
+
+  .chat-btn {
+    bottom: 10px;
   }
 }
