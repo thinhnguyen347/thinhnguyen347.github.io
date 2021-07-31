@@ -95,23 +95,30 @@ $('input[type=radio].breakfast').each(function (index) {
 
 // Update available room
 
-for (let i = 0; i < roomInventory.length; i++) {
+function updateAvailableRoom() {
 
-    if (roomInventory[i] === 0) {
-        $('h4.title.py-3').eq(i).append(`<span class="badge fs position-absolute top-10 ms-3 bg-danger">SOLD OUT</span>`)
-        $('.checkbox').eq(i).addClass('d-none')
+    for (let i = 0; i < roomInventory.length; i++) {
+
+        if (roomInventory[i] === 0) {
+            $('h4.title.py-3').eq(i).append(`<span class="badge fs position-absolute top-10 ms-3 bg-danger">SOLD OUT</span>`)
+            $('.checkbox').eq(i).addClass('d-none')
+        }
+
+        for (let k = 0; k <= roomInventory[i]; k++) {
+
+            $('.roomNo-RO').eq(i).append(`<option class="font-regular text-center" value="${k}"> ${k} rooms</option>`)
+            $('.roomNo-RO').eq(i).find('option[value=0]').attr('selected', 'selected')
+
+            $('.roomNo-BB').eq(i).append(`<option class="font-regular text-center" value="${k}"> ${k} rooms</option>`)
+            $('.roomNo-BB').eq(i).find('option[value=0]').attr('selected', 'selected')
+        }
+
     }
 
-    for (let k = 0; k <= roomInventory[i]; k++) {
-
-        $('.roomNo-RO').eq(i).append(`<option class="font-regular text-center" value="${k}"> ${k} rooms</option>`)
-        $('.roomNo-RO').eq(i).find('option[value=0]').attr('selected', 'selected')
-
-        $('.roomNo-BB').eq(i).append(`<option class="font-regular text-center" value="${k}"> ${k} rooms</option>`)
-        $('.roomNo-BB').eq(i).find('option[value=0]').attr('selected', 'selected')
-    }
-
+    $('input[name=extrabed]:checked').removeAttr('checked','checked');
 }
+
+updateAvailableRoom()
 
 // Book-now button on click
 
@@ -132,6 +139,10 @@ $('.more-details').on('click', function () {
             let price = $(target).text();
             item.price = price;
 
+            // ID
+            let roomID = totalSelect.eq(i).attr('roomID');
+            item.roomID = roomID;
+
             // get room name
             let bookedRoom = totalSelect.eq(i).attr('data')
             item.bookedRoom = bookedRoom;
@@ -151,9 +162,13 @@ $('.more-details').on('click', function () {
 
             console.log(item)
 
+
         }
+
     }
 
+    updateAvailableRoom();
+    
     console.log(booked_list)
 })
 
