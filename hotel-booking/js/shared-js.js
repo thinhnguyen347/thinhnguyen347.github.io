@@ -23,7 +23,7 @@ function checkLoginStatus(logIn) {
     $('.user-btn').removeClass('d-none');
   }
 
-  if (logIn == false) {
+  if (logIn == false ) {
     $('.log-in-btn, .sign-up-btn').removeClass('d-none');
     $('.user-btn').addClass('d-none');
   }
@@ -53,7 +53,7 @@ $('#logInModal').on('click', '.log-in', function (e) {
 
 
       setTimeout(function () {
-        $('.log-in-btn, .log-in-btn').addClass('d-none');
+        $('.log-in-btn, .sign-up-btn').addClass('d-none');
         $('.user-btn').removeClass('d-none');
         $('#logInModal').removeClass('show');
         $('#logInModal').fadeOut(800);
