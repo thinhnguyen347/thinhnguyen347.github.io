@@ -163,6 +163,44 @@
   </div>
 </div>
 
+<!-- Back to top button -->
+<button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
+  class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
+<!-- Chat button -->
+<button class="chat-btn position-fixed" data-bs-toggle="modal" data-bs-target="#chatModal"><i
+class="fas fa-comments text-white d-block px-auto"></i></button>
+<div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+  <div class="modal-header px-4">
+    <h5 class="modal-title title" id="chatLabel">Fill in this form to contact with us</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body p-4">
+    <form>
+      <div class="mb-3">
+        <label for="recipient-name" class="col-form-label title">Your name:</label>
+        <input type="text" class="form-control" id="sender-name">
+      </div>
+      <div class="mb-3">
+        <label for="recipient-name" class="col-form-label title">Your email: <span
+            class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="sender-email">
+      </div>
+      <div class="mb-3">
+        <label for="message-text" class="col-form-label title">Message:</label>
+        <textarea class="form-control" id="message-text"></textarea>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn rounded-pill hvr-rectangle-out">Send</button>
+  </div>
+</div>
+</div>
+</div>
+
+
   <!-- Room detail -->
   <section class="padding-standard">
     <!-- Breadcrumb -->
