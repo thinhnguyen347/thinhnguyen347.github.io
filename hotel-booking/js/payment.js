@@ -1,5 +1,6 @@
-checkLoginStatus(localStorage.logIn);
-
+let logIn = localStorage.logIn;
+checkLoginStatus(logIn);
+//-----------
 let bookingList = JSON.parse(localStorage.bookingList)
 
 let extraBedNumber = 0, exchangeRate = 0, extraBedPrice = 0, roomcharge = 0

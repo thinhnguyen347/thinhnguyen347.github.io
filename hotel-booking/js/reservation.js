@@ -1,4 +1,5 @@
-checkLoginStatus(localStorage.logIn);
+let logIn = localStorage.logIn;
+checkLoginStatus(logIn);
 
 // Date Picker
 if (localStorage.checkOut == undefined || localStorage.checkIn == undefined || localStorage.checkIn == "" || localStorage.checkOut == "") {

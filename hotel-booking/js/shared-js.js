@@ -17,13 +17,11 @@ function scrollFunction() {
 let users = [{ id: 1, password: "admin123", title: "Mr", firstName: "Thinh", lastName: "Nguyen", email: "admin@gmail.com", password: "admin", phone: "0984018891", country: "Vietnam" }]
 
 // Log-in
-function checkLoginStatus(logIn) {
-  if (logIn == true) {
+function checkLoginStatus(status) {
+  if (status == 'true') {
     $('.log-in-btn, .sign-up-btn').addClass('d-none');
     $('.user-btn').removeClass('d-none');
-  }
-
-  if (logIn == false ) {
+  } else {
     $('.log-in-btn, .sign-up-btn').removeClass('d-none');
     $('.user-btn').addClass('d-none');
   }

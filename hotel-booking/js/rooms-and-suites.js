@@ -2,23 +2,22 @@ let logInStatus = localStorage.logIn;
 checkLoginStatus(logInStatus);
 
 // Date Picker
-if (localStorage.checkOut == undefined || localStorage.checkIn == undefined || localStorage.checkIn == "" || localStorage.checkOut == "") {
 
-    let date = new Date();
-    let day = date.getDate();
-    let month = date.getMonth() + 1;
-    let year = date.getFullYear();
-    let today = month + "/" + day + "/" + year;
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+let today = month + "/" + day + "/" + year;
 
-    if (month < 10) month = "0" + month;
-    if (day < 10) day = "0" + day;
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
 
-    $("#checkIn, #checkOut").attr("value", today);
-    $("#checkIn, #checkOut").datepicker({
-        minDate: today,
-    });
+$("#checkIn, #checkOut").attr("value", today);
+$("#checkIn, #checkOut").datepicker({
+    minDate: today,
+});
 
-} else {
+if (localStorage.checkOut != undefined || localStorage.checkIn != undefined || localStorage.checkIn != "" || localStorage.checkOut != "") {
 
     $("#checkIn").attr("value", localStorage.checkIn);
     $("#checkOut").attr("value", localStorage.checkOut);
@@ -57,15 +56,15 @@ for (let i = 0; i < roomInventory.length; i++) {
 $('a.more-details').each(function (index) {
 
     $(this).on('click', function () {
-        
+
         let roomName = $('h3').eq(index).text();
         let roomDescription = $('p.card-text').eq(index).text();
 
         localStorage.setItem('more_detail_name', roomName)
         localStorage.setItem('more_detail_des', roomDescription)
 
-        let html1= $('.card').eq(index).find('.carousel').html();
-        html = '<div id="carousel'+index +'" class="carousel slide" data-bs-ride="carousel">'+ html1+'</div>'
+        let html1 = $('.card').eq(index).find('.carousel').html();
+        html = '<div id="carousel' + index + '" class="carousel slide" data-bs-ride="carousel">' + html1 + '</div>'
 
         localStorage.setItem('roomGallery', JSON.stringify(html))
 

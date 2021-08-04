@@ -1,4 +1,5 @@
-checkLoginStatus(localStorage.logIn);
+let logIn = localStorage.logIn;
+checkLoginStatus(logIn);
 
 // Update room name & description
 

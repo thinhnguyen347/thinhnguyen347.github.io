@@ -1,5 +1,6 @@
 localStorage.setItem('logIn', false);
-checkLoginStatus(localStorage.logIn)
+let logIn = localStorage.logIn;
+checkLoginStatus(logIn);
 
 //Title animation 
 
