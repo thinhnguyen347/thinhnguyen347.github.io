@@ -166,7 +166,8 @@ hr {
 }
 
 .social-media i {
-  font-size: 32px;
+  font-size: 24px;
+  line-height: 36px;
   color: #f3a70c;
 }
 
@@ -286,49 +287,6 @@ h5.des {
 }
 
 /* Modal */
-
-.hvr-shutter-in-horizontal {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-  background: #f3a70c;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.hvr-shutter-in-horizontal:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #f0c062;
-  /* border: 1px solid #f3a70c; */
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-shutter-in-horizontal:hover,
-.hvr-shutter-in-horizontal:focus,
-.hvr-shutter-in-horizontal:active {
-  color: white;
-}
-.hvr-shutter-in-horizontal:hover:before,
-.hvr-shutter-in-horizontal:focus:before,
-.hvr-shutter-in-horizontal:active:before {
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-}
 
 .book-now {
   background: #f3a70c !important;

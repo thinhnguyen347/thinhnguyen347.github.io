@@ -115,8 +115,12 @@ h5.des::after {
   transform: translateX(-50%);
 }
 
-.card-body .btn:hover {
-  transform: translateY(-10px);
+.card-body .book-now:hover {
+  transform: translateY(-12px);
+}
+
+.card-body .book-now {
+  transition: 0.5s ease-in-out;
 }
 
 .col i {
@@ -144,7 +148,7 @@ p.border.border-secondary.rounded-pill {
 }
 
 p.border.border-secondary.rounded-pill:hover{
-  background-color: #f3a70c;
+  background-color: #054f6167;
 }
 
 /* End of Herocontent */
@@ -159,6 +163,11 @@ p.border.border-secondary.rounded-pill:hover{
   .hero-content input[type="number"] {
     font-size: 20px;
     text-align: center;
+  }
+
+  .calendar {
+    bottom: 13px;
+    right: 6px;
   }
 }
 

@@ -89,8 +89,84 @@
 
   </div>
 
+  <!-- Sign-up modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-chevron-right"></i> &nbsp; Create your
+            account</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form class="myInput">
+            <div class="mb-3">
+              <label for="InputEmail" class="form-label title">Email address</label>
+              <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text font-condense">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="InputPassword" class="form-label title">Password</label>
+              <input type="password" class="form-control" id="InputPassword">
+              <div id="passwordHelp" class="form-text font-condense">Use at least 8 characters with a mix of letters,
+                numbers.</div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label title" for="exampleCheck1">I agree to the Oriental Jade Hotel's <span><a
+                    class="title" href="updating.html" target="_blank">Terms of Use</a></span> and <span><a
+                    href="policy.html" class="title" target="_blank">Privacy&nbsp;Policy</a> </span></label>
+            </div>
+            <button class="btn w-100 rounded-pill hvr-rectangle-out">Sign-up</button>
+          </form>
+          <br>
+          <p class="title mb-0">Already have an account? <a href="#0"
+              class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#logInModal" data-bs-dismiss="modal">Log-in</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Log-in modal -->
+  <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header pt-4 px-4">
+          <h4 class="modal-title title" id="logInModalLabel"> <i class="fas fa-sign-in-alt"></i> &nbsp; Log-in to your
+            account</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="logInEmail" class="form-label title">Email address</label>
+              <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="logInPassword" class="form-label title">Password</label>
+              <input type="password" class="form-control" id="logInPassword">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberPassword">
+              <label class="form-check-label title" for="rememberPassword">Remeber my password</label>
+            </div>
+            <button class="btn w-100 log-in rounded-pill hvr-rectangle-out">Log-in</button>
+            <div class="form-text ">
+              <br>
+              <a href="updating.html" class="font-condense text-decoration-none">Forgot password?</a>
+              <p class="title mb-0">Donot have an account? <a href="#0"
+                  class="font-condense text-primary text-decoration-none" data-bs-toggle="modal"
+                  data-bs-target="#signUpModal" data-bs-dismiss="modal">Sign-up</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
  <!-- Back to top button -->
-  <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
+  <button class="back-to-top position-fixed"><a href="#top" class="text-decoration-none"><i
         class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
 
   <!-- Chat button & modal -->
@@ -260,7 +336,7 @@
             </div>
             <div class="text-center d-flex justify-content-around py-3">
               <a href="reservation.html" class="btn rounded-pill lh-lg text-center book-now text-white">BOOK NOW</a>
-              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details">More details</a>
+              <a href="room-detail.html" class="btn hvr-rectangle-out rounded-pill lh-lg text-center more-details">More details</a>
             </div>
           </div>
         </div>
@@ -344,7 +420,7 @@
             </div>
             <div class="text-center d-flex justify-content-around py-3 align-items-end mt-auto mb-0">
               <a href="reservation.html" class="btn rounded-pill lh-lg text-center book-now text-white">BOOK NOW</a>
-              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details">More details</a>
+              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details hvr-rectangle-out">More details</a>
             </div>
 
           </div>
@@ -433,7 +509,7 @@
             </div>
             <div class="text-center d-flex justify-content-around py-3">
               <a href="reservation.html" class="btn rounded-pill lh-lg text-center book-now text-white">BOOK NOW</a>
-              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details">More details</a>
+              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details hvr-rectangle-out">More details</a>
             </div>
           </div>
         </div>
@@ -517,7 +593,7 @@
             </div>
             <div class="text-center d-flex justify-content-around py-3">
               <a href="reservation.html" class="btn rounded-pill lh-lg text-center book-now text-white">BOOK NOW</a>
-              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details">More details</a>
+              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details hvr-rectangle-out">More details</a>
             </div>
           </div>
         </div>
@@ -604,7 +680,7 @@
             </div>
             <div class="text-center d-flex justify-content-around py-3">
               <a href="reservation.html" class="btn rounded-pill lh-lg text-center book-now text-white">BOOK NOW</a>
-              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details">More details</a>
+              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details hvr-rectangle-out">More details</a>
             </div>
           </div>
         </div>
@@ -688,7 +764,7 @@
             </div>
             <div class="text-center d-flex justify-content-around py-3">
               <a href="reservation.html" class="btn rounded-pill lh-lg text-center book-now text-white">BOOK NOW</a>
-              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details">More details</a>
+              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details hvr-rectangle-out">More details</a>
             </div>
           </div>
         </div>
@@ -776,7 +852,7 @@
             </div>
             <div class="text-center d-flex justify-content-around py-3">
               <a href="reservation.html" class="btn rounded-pill lh-lg text-center book-now text-white">BOOK NOW</a>
-              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details">More details</a>
+              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details hvr-rectangle-out">More details</a>
             </div>
           </div>
         </div>
@@ -862,7 +938,7 @@
             </div>
             <div class="text-center d-flex justify-content-around py-3 mb-0">
               <a href="reservation.html" class="btn rounded-pill lh-lg text-center text-white book-now text-white">BOOK NOW</a>
-              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details">More details</a>
+              <a href="room-detail.html" class="btn rounded-pill lh-lg text-center more-details hvr-rectangle-out">More details</a>
             </div>
           </div>
         </div>

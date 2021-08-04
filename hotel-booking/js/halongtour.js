@@ -19,5 +19,12 @@ let month = date.getMonth() + 1;
 let year = date.getFullYear();
 if (month < 10) month = "0" + month;
 if (day < 10) day = "0" + day;
-let today = year + "-" + month  + "-" + day;
+let today = month + "/" + day + "/" + year;
 $("#startDate").attr("value", today);
+$("#startDate").datepicker({
+  minDate: today,
+});
+
+$('.fa-calendar-alt').click(()=>{
+  $("input#startDate").click();
+})
