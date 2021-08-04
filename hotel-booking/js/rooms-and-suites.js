@@ -1,3 +1,17 @@
+// filter
+
+$('.filter p.rounded-pill').on('click', function (e) {
+    $(e.target).addClass('active');
+    $(e.target).siblings().removeClass('active');
+
+    let target = $(e.target).attr('data-filter');
+    $('.row.g-5').isotope({
+        filter: target,
+    })
+
+})
+
+// check log in
 let logInStatus = localStorage.logIn;
 checkLoginStatus(logInStatus);
 
@@ -44,7 +58,8 @@ for (let i = 0; i < roomInventory.length; i++) {
     badge.eq(i + 1).text(roomInventory[i])
 
     if (roomInventory[i] == 0) {
-        badge.eq(i + 1).addClass('bg-danger')
+        badge.eq(i + 1).addClass('bg-danger');
+        $('.book-now').eq(i + 1).addClass('d-none');
     } else {
         badge.eq(i + 1).addClass('bg-success')
     }
@@ -63,7 +78,7 @@ $('a.more-details').each(function (index) {
         localStorage.setItem('more_detail_name', roomName)
         localStorage.setItem('more_detail_des', roomDescription)
 
-        let html1 = $('.card').eq(index).find('.carousel').html();
+        let html1 = $('.carousel').eq(index).html();
         html = '<div id="carousel' + index + '" class="carousel slide" data-bs-ride="carousel">' + html1 + '</div>'
 
         localStorage.setItem('roomGallery', JSON.stringify(html))

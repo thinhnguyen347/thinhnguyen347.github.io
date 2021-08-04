@@ -240,15 +240,14 @@
   <!-- Filter -->
   <section class="pb-0 d-flex pt-3 ms-md-3 px-md-3">
     <p class="ms-md-3 px-3 px-md-3">Filters:</p>
-    <div class="filter d-flex flex-start px-3 ">
-      <p class="border border-secondary text-nowrap px-3 me-3 rounded-pill active">All</p>
-      <p class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Flexible cancellation</p>
-      <p class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Price range</p>
-      <p class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Lake view</p>
-      <p class="border border-secondary text-nowrap px-3 me-3 rounded-pill">City view</p>
-      <p class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Bathtub</p>
-      <p class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Twin bed</p>
-      <p class="border border-secondary text-nowrap px-3 me-3 rounded-pill">King-sized bed</p>
+    <div class="filter d-flex flex-start px-3">
+      <p data-filter="*" class="border border-secondary text-nowrap px-3 me-3 rounded-pill active">All</p>
+      <p data-filter=".flexible-cancel" class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Flexible cancellation</p>
+      <p data-filter=".lake-view" class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Lake view</p>
+      <p data-filter=".city-view" class="border border-secondary text-nowrap px-3 me-3 rounded-pill">City view</p>
+      <p data-filter=".bathtub" class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Bathtub</p>
+      <p data-filter=".twin-bed" class="border border-secondary text-nowrap px-3 me-3 rounded-pill">Twin bed</p>
+      <p data-filter=".king-bed" class="border border-secondary text-nowrap px-3 me-3 rounded-pill">King-sized bed</p>
     </div>
 
   </section>
@@ -258,7 +257,7 @@
 
     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-5">
       <!-- Card 1 -->
-      <div class="col">
+      <div class="col flexible-cancel twin-bed">
         <div class="card overflow-hidden">
           <div id="carousel0" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -284,19 +283,19 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="flex-fill pb-4">
               <h3 class="card-title title text-center">ORIENTAL PEARL TWIN</h3>
               <h5 class="text-center des position-relative"><span class="badge">4</span> rooms available now
               </h5><br>
-              <p class="card-text">Contemporarily designed with modern furnishings and en-suite with a standing shower,
+              <p class="card-text flex-fill">Contemporarily designed with modern furnishings and en-suite with a standing shower,
                 The Oriental Pearl Room also features a medium-sized window to allow natural light for a
                 relaxing&nbsp;stay.
               </p>
             </div>
             <div class="container px-0">
               <div class="row row-cols-2">
-                <div class="col d-flex">
+                <div class="col d-flex flex-row">
                   <div class="icon"><i class="fa fa-lg fa-ruler-combined"></i></div>
                   <div class="ps-2 w-100">
                     <p>Room size: 25 sqm</p>
@@ -323,7 +322,7 @@
                 <div class="col d-flex">
                   <div class="icon"><i class="fa fa-lg fa-user"></i></div>
                   <div class="ps-2 w-100">
-                    <p>Dèault occupancy: 2 people</p>
+                    <p>Default occupancy: 2 people</p>
                   </div>
                 </div>
                 <div class="col d-flex">
@@ -344,7 +343,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="col">
+      <div class="col flexible-cancel twin-bed king-bed">
         <div class="card overflow-hidden">
           <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -370,17 +369,17 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="card-body ">
+          <div class="card-body d-flex flex-column">
             <div class="flex-fill pb-4">
               <h3 class="card-title title text-center">ORIENTAL EMERALD</h3>
               <h5 class="text-center des position-relative"><span class="badge ">0</span> rooms available now
               </h5><br>
-              <p class="card-text">Featuring a large window to bring in natural light, the Oriental Emerald Room is
+              <p class="card-text flex-fill">Featuring a large window to bring in natural light, the Oriental Emerald Room is
                 equipped with modern facilities and designed in a stylish way that makes you&nbsp;pleasant.</p>
             </div>
             <div class="container px-0">
               <div class="row row-cols-2">
-                <div class="col d-flex">
+                <div class="col d-flex flex-row">
                   <div class="icon"><i class="fa fa-lg fa-ruler-combined"></i></div>
                   <div class="ps-2 w-100">
                     <p>Room size: 28 sqm</p>
@@ -428,7 +427,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="col">
+      <div class="col flexible-cancel twin-bed king-bed">
         <div class="card overflow-hidden">
           <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -457,12 +456,12 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="flex-fill pb-4">
               <h3 class="card-title title text-center">SAPPHIRE QUARTER VIEW</h3>
               <h5 class="text-center des position-relative"><span class="badge">1</span> rooms available now
               </h5><br>
-              <p class="card-text">Offering a breathtaking beauty of Hanoi from our large window, The Sapphire Quarter
+              <p class="card-text flex-fill">Offering a breathtaking beauty of Hanoi from our large window, The Sapphire Quarter
                 View Room give a delight of comfortable accommodation in an elegant furnishing room with standing
                 shower.
               </p>
@@ -516,7 +515,7 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="col">
+      <div class="col city-view bathtub king-bed">
         <div class="card overflow-hidden">
           <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -542,12 +541,12 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="flex-fill pb-4">
               <h3 class="card-title title text-center">DIAMOND CHURCH VIEW</h3>
               <h5 class="text-center des position-relative"><span class="badge ">2</span> rooms available now
               </h5><br>
-              <p class="card-text">Admire the ancient beauty of Hanoi Cathedral from the room, which have been designed
+              <p class="card-text flex-fill">Admire the ancient beauty of Hanoi Cathedral from the room, which have been designed
                 meticulous and sophisticated with huge window and large bathroom with separate bath-tub and
                 standing&nbsp;shower.</p>
             </div>
@@ -600,7 +599,7 @@
       </div>
 
       <!-- Card 5 -->
-      <div class="col">
+      <div class="col city-view bathtub king-bed">
         <div class="card overflow-hidden">
           <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -629,12 +628,12 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="flex-fill pb-4">
               <h3 class="card-title title text-center">RUBY CITY VIEW</h3>
               <h5 class="text-center des position-relative"><span class="badge ">2</span> rooms available now
               </h5><br>
-              <p class="card-text">Designed with luxurious boutique style in harmony with the local culture, from the
+              <p class="card-text flex-fill">Designed with luxurious boutique style in harmony with the local culture, from the
                 Ruby City View room (32 sqm), you will enjoy the beauty of Hanoi Old Quarter through a
                 large&nbsp;window.
             </div>
@@ -687,7 +686,7 @@
       </div>
 
       <!-- Card 6 -->
-      <div class="col">
+      <div class="col lake-view bathtub king-bed">
         <div class="card overflow-hidden">
           <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -713,7 +712,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="flex-fill pb-4">
               <h3 class="card-title title text-center">GEM SUITE</h3>
               <h5 class="text-center des position-relative"><span class="badge ">2</span> rooms available now
@@ -771,7 +770,7 @@
       </div>
 
       <!-- Card 7 -->
-      <div class="col">
+      <div class="col city-view bathtub king-bed">
         <div class="card overflow-hidden">
           <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -800,12 +799,12 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="flex-fill pb-4">
               <h3 class="card-title title text-center">JADE TERRACE SUITE</h3>
               <h5 class="text-center des position-relative"><span class="badge ">2</span> rooms available now
               </h5><br>
-              <p class="card-text">Enjoy the beauty of Quarter view from the living room and bedroom space of Oriental
+              <p class="card-text flex-fill">Enjoy the beauty of Quarter view from the living room and bedroom space of Oriental
                 Jade Suite (70-75 sqm) with elegance design and luxurious boutique style in harmony of indigenous
                 culture
                 will bring you a fabulous stay in&nbsp;Hanoi.</p>
@@ -859,7 +858,7 @@
       </div>
 
       <!-- Card 8 -->
-      <div class="col">
+      <div class="col twin-bed city-view bathtub king-bed">
         <div class="card overflow-hidden">
           <div id="carousel7" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -893,7 +892,7 @@
               <h3 class="card-title title text-center">FAMILY ROOM</h3>
               <h5 class="text-center des position-relative"><span class="badge ">2</span> rooms available now</h5>
               <br>
-              <p class="card-text">Family room is a harmonious combination of two special rooms, extremely
+              <p class="card-text flex-fill">Family room is a harmonious combination of two special rooms, extremely
                 suitable for families or groups of friends when together exploring&nbsp;Hanoi.</p>
             </div>
             <div class="container px-0">
@@ -913,7 +912,7 @@
                 <div class="col d-flex">
                   <div class="icon"><i class="fa fa-bed"></i></div>
                   <div class="ps-2 w-100">
-                    <p>Bed type: King-size or Twin</p>
+                    <p>Bed type: King-size & Twin</p>
                   </div>
                 </div>
                 <div class="col d-flex">
@@ -995,7 +994,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
   <script type="text/javascript" src="js/shared-js.js"></script>
   <script type="text/javascript" src="js/rooms-and-suites.js"></script>
 

@@ -131,6 +131,7 @@ h5.des::after {
   width: 24px;
 }
 
+/* filter */
 p.active {
   background-color: #054e61 !important;
   color: white;
@@ -144,12 +145,13 @@ p.border.border-secondary.rounded-pill {
   line-height: 36px;
   cursor: pointer;
   border: 1px solid #054e61;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 p.border.border-secondary.rounded-pill:hover{
   background-color: #054f6167;
 }
+
 
 /* End of Herocontent */
 
