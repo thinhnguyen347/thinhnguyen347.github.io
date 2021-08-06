@@ -201,7 +201,7 @@ hr {
 
 .card {
   border-radius: 12px !important;
-  border: 2px solid rgba(83, 83, 83, 0.25);
+  border: 2px solid #53535340;
   height: 100%;
 }
 
@@ -277,6 +277,7 @@ h5.des {
 .hvr-rectangle-out:focus,
 .hvr-rectangle-out:active {
   color: white;
+  outline: none !important;
 }
 
 .hvr-rectangle-out:hover:before,

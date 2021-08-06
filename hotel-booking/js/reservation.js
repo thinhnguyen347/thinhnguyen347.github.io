@@ -2,16 +2,16 @@ let logIn = localStorage.logIn;
 checkLoginStatus(logIn);
 
 // Date Picker
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+let today = month + "/" + day + "/" + year;
+
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+
 if (localStorage.checkOut == undefined || localStorage.checkIn == undefined || localStorage.checkIn == "" || localStorage.checkOut == "") {
-
-    let date = new Date();
-    let day = date.getDate();
-    let month = date.getMonth() + 1;
-    let year = date.getFullYear();
-    let today = month + "/" + day + "/" + year;
-
-    if (month < 10) month = "0" + month;
-    if (day < 10) day = "0" + day;
 
     $("#checkIn, #checkOut").attr("value", today);
     $("#checkIn, #checkOut").datepicker({
@@ -22,10 +22,35 @@ if (localStorage.checkOut == undefined || localStorage.checkIn == undefined || l
 
     $("#checkIn").attr("value", localStorage.checkIn);
     $("#checkOut").attr("value", localStorage.checkOut);
-    // $("#adultNumber").attr("value", localStorage.adult);
-    // $("#kidNumber").attr("value", localStorage.child);
-
+    $("#checkIn, #checkOut").datepicker({
+        minDate: today,
+    });
 }
+
+let check_in = $('#checkIn').val(), check_out = $('#checkOut').val();
+
+$("#checkOut").datepicker({
+    minDate: new Date(check_in),
+});
+
+$('#checkIn').on('change', function(){
+    check_in = $('#checkIn').val();
+    $('#checkOut').val(check_in);
+})
+
+$('#checkOut').on('change', function(){
+    check_out = $('#checkOut').val()
+})
+
+let night, In = new Date(check_in), Out = new Date(check_out);
+function Night(a, b) {
+    let t2 = b.getTime();
+    let t1 = a.getTime();
+    night = parseInt((t2 - t1) / (24 * 3600 * 1000));
+    // console.log(night)
+}
+
+Night(In, Out);
 
 //See more
 
@@ -42,7 +67,6 @@ let room_rate_RO = [30, 40, 50, 60, 70, 80, 90, 100]
 for (let i = 0; i < room_rate_RO.length; i++) {
     $('.rateRO').eq(i).text(room_rate_RO[i])
     $('.rateBB').eq(i).text(room_rate_RO[i] + 10)
-
 }
 
 // Currency Change
@@ -103,6 +127,8 @@ function updateAvailableRoom() {
         if (roomInventory[i] === 0) {
             $('h4.title.py-3').eq(i).append(`<span class="badge fs position-absolute top-10 ms-3 bg-danger">SOLD OUT</span>`)
             $('.checkbox').eq(i).addClass('d-none')
+            $('div.no-breakfast').eq(i).addClass('d-none');
+            $('div.breakfast').eq(i).addClass('d-none');
         }
 
         for (let k = 0; k <= roomInventory[i]; k++) {
@@ -116,10 +142,26 @@ function updateAvailableRoom() {
 
     }
 
-    $('input[name=extrabed]:checked').removeAttr('checked','checked');
+    $('input[name=extrabed]:checked').removeAttr('checked', 'checked');
 }
 
 updateAvailableRoom()
+
+function UpdateAvailabilityAfterAdded() {
+    // Update available room after added to booked list
+
+    for (let i = 0; i < roomInventory.length; i++) {
+
+        for (let k = 0; k <= roomInventory[i]; k++) {
+
+            $('.roomNo-RO').eq(i).empty()
+            $('.roomNo-BB').eq(i).empty()
+        }
+
+    }
+
+    updateAvailableRoom();
+}
 
 // Book-now button on click
 
@@ -149,29 +191,53 @@ $('.more-details').on('click', function () {
             item.bookedRoom = bookedRoom;
 
             // Extrabed & Currency
-            item.extraBed = $('input[name=extrabed]:checked').length;
+            let extra_bed = $('input[name=extrabed]:checked').length;
+            item.extraBed = extra_bed;
             item.exchangeRate = $('input[name=extrabed]:checked').val();
             item.currency = rateCode;
 
-            // get booked room amount
-            item.amount = totalSelect.eq(i).val()
+            // get booked amount
+            let amount = totalSelect.eq(i).val();
+            item.amount = amount;
 
             // Check in-out
-            item.checkIn = $('#checkIn').val();
-            item.checkOut = $('#checkOut').val();
+            item.checkIn = check_in;
+            item.checkOut = check_out;
+
+            // night
+            item.night = night;
+
+            // display added rooms
+            $('button.more-details').before(function () {
+
+                if (index === 7) {
+                    return `<div class="p-2 rounded mb-2 mb-lg-4">
+                    <p class="title p-0 m-0 room-name ">${bookedRoom}</p>
+                    <p class="fs title text-end">${amount} room(s)</p>
+                    <p class="fs p-0 m-0 text-center"> ${check_in} - ${check_out}</p>
+                    <p class="fs p-0 m-0 text-center"> 4 adults & ${extra_bed} extra person</p></div>`
+
+                } else {
+                    return `<div class="added-item p-2 rounded mb-2 mb-lg-4">
+                    <p class="title p-0 m-0 room-name ">${bookedRoom}</p>
+                    <p class="fs title text-end">${amount} room(s)</p>
+                    <p class="fs p-0 m-0 text-center"> ${check_in} - ${check_out}</p>
+                    <p class="fs p-0 m-0 text-center"> 2 adults & ${extra_bed} extra person</p></div>`
+                }
+            })
+
+            // Minus available room
+            roomInventory[index] -= amount;
 
             booked_list.push(JSON.stringify(item));
-
-            console.log(item)
-
 
         }
 
     }
 
-    updateAvailableRoom();
-    
-    console.log(booked_list)
+    UpdateAvailabilityAfterAdded();
+
+    // console.log(booked_list)
 })
 
 $('.book-now').on('click', function () {

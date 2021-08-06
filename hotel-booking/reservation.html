@@ -162,43 +162,43 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Back to top button -->
   <button class="back-to-top position-fixed "><a href="#top" class="text-decoration-none"><i
-    class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
-<!-- Chat button -->
-<button class="chat-btn position-fixed" data-bs-toggle="modal" data-bs-target="#chatModal"><i
-  class="fas fa-comments text-white d-block px-auto"></i></button>
-<div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-  <div class="modal-content">
-    <div class="modal-header px-4">
-      <h5 class="modal-title title" id="chatLabel">Fill in this form to contact with us</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body p-4">
-      <form>
-        <div class="mb-3">
-          <label for="recipient-name" class="col-form-label title">Your name:</label>
-          <input type="text" class="form-control" id="sender-name">
+        class="fas fa-arrow-up text-white d-block px-auto"></i></a></button>
+  <!-- Chat button -->
+  <button class="chat-btn position-fixed" data-bs-toggle="modal" data-bs-target="#chatModal"><i
+      class="fas fa-comments text-white d-block px-auto"></i></button>
+  <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header px-4">
+          <h5 class="modal-title title" id="chatLabel">Fill in this form to contact with us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="mb-3">
-          <label for="recipient-name" class="col-form-label title">Your email: <span
-              class="text-danger">*</span></label>
-          <input type="text" class="form-control" id="sender-email">
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your name:</label>
+              <input type="text" class="form-control" id="sender-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label title">Your email: <span
+                  class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="sender-email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label title">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="message-text" class="col-form-label title">Message:</label>
-          <textarea class="form-control" id="message-text"></textarea>
+        <div class="modal-footer">
+          <button type="button" class="btn rounded-pill hvr-rectangle-out">Send</button>
         </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn rounded-pill hvr-rectangle-out">Send</button>
+      </div>
     </div>
   </div>
-</div>
-</div>
 
   <img src="img/bg/book-hero-content.webp" alt="room-photo" class="w-100">
 
@@ -218,7 +218,7 @@
       <div class="row ">
 
         <div class="col">
-          <div class="row row-cols-lg-3">
+          <div class="row row-cols-lg-2">
             <div class="col">
               <div class="check-in-date d-flex flex-column mx-auto ms-lg-0 align-content-between position-relative">
                 <label for="checkIn">
@@ -343,7 +343,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateRO title fs-3">40</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="py-1 d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 py-1 py-1 py-1 py-1 py-1 py-1 py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-RO" data="Oriental Pearl Twin no breakfast" plan="RO"
                           roomID="0">
                         </select>
@@ -374,7 +374,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateBB title fs-3">50</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-BB" data="Oriental Pearl Twin with breakfast" plan="BB"
                           roomID="0">
                         </select>
@@ -386,11 +386,13 @@
             </div>
           </div>
 
-          <div class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
+          <div
+            class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center more-details my-3 me-md-4 me-lg-0 mb-lg-4 hvr-rectangle-out">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now mb-lg-4" disabled>Recheck &
+            <button class="btn rounded-pill text-center text-white book-now mb-lg-4 hvr-rectangle-out1" disabled>Recheck
+              &
               Pay</button>
           </div>
           <hr>
@@ -477,7 +479,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateRO title fs-3">50</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-RO" data="Oriental Emerald no breakfast" plan="RO" roomID="1">
                         </select>
                       </div>
@@ -506,7 +508,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateBB title fs-3">60</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-BB" data="Oriental Emerald with breakfast" plan="BB" roomID="1">
                         </select>
                       </div>
@@ -517,11 +519,12 @@
             </div>
           </div>
 
-          <div class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
+          <div
+            class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center hvr-rectangle-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now mb-lg-4" disabled>Recheck &
+            <button class="btn rounded-pill text-center hvr-rectangle-out1 book-now mb-lg-4" disabled>Recheck &
               Pay</button>
           </div>
           <hr>
@@ -609,7 +612,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateRO title fs-3">60</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-RO" data="Sapphire Quarter View no breakfast" plan="RO"
                           roomID="2">
                         </select>
@@ -639,7 +642,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateBB title fs-3">70</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-BB" data="Sapphire Quarter View with breakfast" plan="BB"
                           roomID="2">
                         </select>
@@ -651,11 +654,12 @@
             </div>
           </div>
 
-          <div class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
+          <div
+            class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center hvr-rectangle-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now mb-lg-4" disabled>Recheck &
+            <button class="btn rounded-pill text-center hvr-rectangle-out1 book-now mb-lg-4" disabled>Recheck &
               Pay</button>
           </div>
           <hr>
@@ -743,7 +747,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateRO title fs-3">70</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-RO" data="Diamond Church View no breakfast" plan="RO"
                           roomID="3">
                         </select>
@@ -773,7 +777,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateBB title fs-3">80</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-BB" data="Diamond Church View with breakfast" plan="BB"
                           roomID="3">
                         </select>
@@ -785,11 +789,12 @@
             </div>
           </div>
 
-          <div class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
+          <div
+            class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center hvr-rectangle-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now mb-lg-4" disabled>Recheck &
+            <button class="btn rounded-pill text-center hvr-rectangle-out1 book-now mb-lg-4" disabled>Recheck &
               Pay</button>
           </div>
 
@@ -877,7 +882,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateRO title fs-3">80</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-RO" data="Ruby City View no breakfast" plan="RO" roomID="4">
                         </select>
                       </div>
@@ -906,7 +911,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateBB title fs-3">90</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-BB" data="Ruby City View with breakfast" plan="BB" roomID="4">
                         </select>
                       </div>
@@ -917,11 +922,12 @@
             </div>
           </div>
 
-          <div class=" d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
+          <div
+            class=" d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center hvr-rectangle-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now mb-lg-4" disabled>Recheck &
+            <button class="btn rounded-pill text-center hvr-rectangle-out1 book-now mb-lg-4" disabled>Recheck &
               Pay</button>
           </div>
           <hr>
@@ -1008,7 +1014,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateRO title fs-3">90</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-RO" data="Gem Suite no breakfast" plan="RO" roomID="5">
                         </select>
                       </div>
@@ -1037,7 +1043,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateBB title fs-3">100</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-BB" data="Gem Suite with breakfast" plan="BB" roomID="5">
                         </select>
                       </div>
@@ -1048,11 +1054,12 @@
             </div>
           </div>
 
-          <div class=" d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
+          <div
+            class=" d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center hvr-rectangle-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now mb-lg-4" disabled>Recheck &
+            <button class="btn rounded-pill text-center hvr-rectangle-out1 book-now mb-lg-4" disabled>Recheck &
               Pay</button>
           </div>
           <hr>
@@ -1140,7 +1147,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateRO title fs-3">100</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-RO" data="Jade Terrace Suite no breakfast" plan="RO" roomID="6">
                         </select>
                       </div>
@@ -1169,7 +1176,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateBB title fs-3">110</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-BB" data="Jade Terrace Suite with breakfast" plan="BB"
                           roomID="6">
                         </select>
@@ -1181,11 +1188,12 @@
             </div>
           </div>
 
-          <div class=" d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
+          <div
+            class=" d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center hvr-rectangle-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now mb-lg-4" disabled>Recheck &
+            <button class="btn rounded-pill text-center hvr-rectangle-out1 book-now mb-lg-4" disabled>Recheck &
               Pay</button>
           </div>
           <hr>
@@ -1274,7 +1282,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateRO title fs-3">110</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-RO" data="Family Room no breakfast" plan="RO" roomID="7">
                         </select>
                       </div>
@@ -1305,7 +1313,7 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex py-3">
                       <div class="my-auto"><span class="rateBB title fs-3">120</span>&nbsp;&nbsp;<span
                           class="current-currency">USD</span>/night</div>
-                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto mx-xs-auto mx-auto">
+                      <div class="d-flex flex-column align-content-between me-lg-0 ms-md-auto py-1 mx-xs-auto mx-auto">
                         <select class="py-2 px-2 roomNo-BB" data="Family Room with breakfast" plan="BB" roomID="7">
                         </select>
                       </div>
@@ -1315,24 +1323,25 @@
               </div>
             </div>
           </div>
-          
-          <div class=" d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center ">
+
+          <div
+            class="d-lg-none btn-div1 w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center align-items-lg-center ">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center hvr-rectangle-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now mb-lg-4" disabled>Recheck &
+            <button class="btn rounded-pill text-center hvr-rectangle-out1 book-now mb-lg-4" disabled>Recheck &
               Pay</button>
           </div>
           <hr>
 
         </div>
 
-        <div class="col-12 col-md-12 col-lg-2 position-relative">
-          <div class="d-none d-sm-none d-md-none d-lg-block btn-div w-100 d-flex flex-column align-items-center flex-md-row  flex-lg-column justify-content-md-center p-lg-3 align-items-lg-center">
+        <div class="col-12 col-md-12 col-lg-2 position-relative me-0 pe-0">
+          <div class="d-none d-sm-none d-md-none d-lg-block btn-div w-100 d-flex flex-column flex-md-row  flex-lg-column justify-content-md-center align-items-lg-center">
             <button
-              class="btn rounded-pill text-center hvr-buzz-out more-details my-3 me-md-4 me-lg-0 mb-lg-4">Add&nbsp;to
+              class="btn rounded-pill text-center hvr-rectangle-out more-details mb-lg-4">Add&nbsp;to
               book&nbsp;list</button>
-            <button class="btn rounded-pill text-center text-white hvr-buzz-out book-now" disabled>Recheck &
+            <button class="btn rounded-pill text-center hvr-rectangle-out1 book-now d-block" disabled>Recheck &
               Pay</button>
           </div>
         </div>

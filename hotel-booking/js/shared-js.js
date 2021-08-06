@@ -86,7 +86,7 @@ $('.log-out').on('click', function () {
 
 // Room Data
 
-let roomInventory = [3, 5, 4, 1, 0, 0, 3, 2,];
+let roomInventory = [4, 4, 4, 1, 0, 0, 3, 2,];
 
 
 
