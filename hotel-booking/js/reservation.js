@@ -33,12 +33,12 @@ $("#checkOut").datepicker({
     minDate: new Date(check_in),
 });
 
-$('#checkIn').on('change', function(){
+$('#checkIn').on('change', function () {
     check_in = $('#checkIn').val();
     $('#checkOut').val(check_in);
 })
 
-$('#checkOut').on('change', function(){
+$('#checkOut').on('change', function () {
     check_out = $('#checkOut').val()
 })
 
@@ -46,7 +46,7 @@ let night, In = new Date(check_in), Out = new Date(check_out);
 function Night(a, b) {
     let t2 = b.getTime();
     let t1 = a.getTime();
-    night = parseInt((t2 - t1) / (24 * 3600 * 1000));
+    return night = parseInt((t2 - t1) / (24 * 3600 * 1000));
     // console.log(night)
 }
 
@@ -104,18 +104,21 @@ $('input[type=radio].no-breakfast').each(function (index) {
     $('input[type=radio].no-breakfast').eq(index).on('change', function () {
         $('div.no-breakfast').eq(index).removeClass('d-none');
         $('div.breakfast').eq(index).addClass('d-none');
-
     })
 })
 
 $('input[type=radio].breakfast').each(function (index) {
-
     $('input[type=radio].breakfast').eq(index).on('change', function () {
         $('div.breakfast').eq(index).removeClass('d-none');
         $('div.no-breakfast').eq(index).addClass('d-none');
-
     })
+})
 
+$('input[type=checkbox].extrabed').each(function (index) {
+    $('input[type=checkbox].extrabed').eq(index).click(function(){
+        let target = `.addEB${index}`;
+        $(target).toggleClass('d-none');
+    })
 })
 
 // Update available room
@@ -212,14 +215,14 @@ $('.more-details').on('click', function () {
 
                 if (index === 7) {
                     return `<div class="p-2 rounded mb-2 mb-lg-4">
-                    <p class="title p-0 m-0 room-name ">${bookedRoom}</p>
+                    <p class="title p-0 m-0 room-name "><i class="fa fa-angle-double-right"></i>${bookedRoom}</p>
                     <p class="fs title text-end">${amount} room(s)</p>
                     <p class="fs p-0 m-0 text-center"> ${check_in} - ${check_out}</p>
                     <p class="fs p-0 m-0 text-center"> 4 adults & ${extra_bed} extra person</p></div>`
 
                 } else {
                     return `<div class="added-item p-2 rounded mb-2 mb-lg-4">
-                    <p class="title p-0 m-0 room-name ">${bookedRoom}</p>
+                    <p class="title p-0 m-0 room-name "><i class="fa fa-angle-double-right"></i> ${bookedRoom}</p>
                     <p class="fs title text-end">${amount} room(s)</p>
                     <p class="fs p-0 m-0 text-center"> ${check_in} - ${check_out}</p>
                     <p class="fs p-0 m-0 text-center"> 2 adults & ${extra_bed} extra person</p></div>`
@@ -230,6 +233,8 @@ $('.more-details').on('click', function () {
             roomInventory[index] -= amount;
 
             booked_list.push(JSON.stringify(item));
+
+            $('.btn-div').css('top', '50px');
 
         }
 
