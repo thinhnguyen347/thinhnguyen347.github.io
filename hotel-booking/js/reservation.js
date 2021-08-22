@@ -30,7 +30,7 @@ if (localStorage.checkOut == undefined || localStorage.checkIn == undefined || l
 let check_in = $('#checkIn').val(), check_out = $('#checkOut').val();
 
 $("#checkOut").datepicker({
-    minDate: new Date(check_in),
+    minDate: check_in,
 });
 
 $('#checkIn').on('change', function () {
@@ -115,7 +115,7 @@ $('input[type=radio].breakfast').each(function (index) {
 })
 
 $('input[type=checkbox].extrabed').each(function (index) {
-    $('input[type=checkbox].extrabed').eq(index).click(function(){
+    $('input[type=checkbox].extrabed').eq(index).click(function () {
         let target = `.addEB${index}`;
         $(target).toggleClass('d-none');
     })
@@ -150,7 +150,7 @@ function updateAvailableRoom() {
 
 updateAvailableRoom()
 
-function UpdateAvailabilityAfterAdded() {
+function decreaseAvailabilityAfterAdded() {
     // Update available room after added to booked list
 
     for (let i = 0; i < roomInventory.length; i++) {
@@ -166,10 +166,10 @@ function UpdateAvailabilityAfterAdded() {
     updateAvailableRoom();
 }
 
-// Book-now button on click
+// Add to book list & Book-now button on click
 
 let booked_list = [];
-let totalSelect = $('select.py-2.px-2')
+let totalSelect = $('select.py-2.px-2');
 let item = {};
 
 $('.more-details').on('click', function () {
@@ -211,21 +211,23 @@ $('.more-details').on('click', function () {
             item.night = night;
 
             // display added rooms
-            $('button.more-details').before(function () {
+            $('button.more-details.mb-lg-4').before(function () {
 
                 if (index === 7) {
-                    return `<div class="p-2 rounded mb-2 mb-lg-4">
-                    <p class="title p-0 m-0 room-name "><i class="fa fa-angle-double-right"></i>${bookedRoom}</p>
-                    <p class="fs title text-end">${amount} room(s)</p>
+                    return `<div class="added-item p-2 rounded mb-1 mb-lg-2 position-relative">
+                    <button type="button" class="fs delete btn-close position-absolute top-0 end-0 bg-white"></button>
+                    <p class="title p-0 m-0 room-name "><i class="fa fa-angle-double-right"></i> ${bookedRoom} x <span class="title">${amount} room(s)</span></p>
                     <p class="fs p-0 m-0 text-center"> ${check_in} - ${check_out}</p>
-                    <p class="fs p-0 m-0 text-center"> 4 adults & ${extra_bed} extra person</p></div>`
+                    <p class="fs p-0 m-0 text-center"> 4 adults & ${extra_bed} extra person</p>
+                  </div>`
 
                 } else {
-                    return `<div class="added-item p-2 rounded mb-2 mb-lg-4">
-                    <p class="title p-0 m-0 room-name "><i class="fa fa-angle-double-right"></i> ${bookedRoom}</p>
-                    <p class="fs title text-end">${amount} room(s)</p>
+                    return `<div class="added-item p-2 rounded mb-1 mb-lg-2 position-relative">
+                    <button type="button" class="fs delete btn-close position-absolute top-0 end-0 bg-white"></button>
+                    <p class="title p-0 m-0 room-name "><i class="fa fa-angle-double-right"></i> ${bookedRoom} x <span class="title">${amount} room(s)</span></p>
                     <p class="fs p-0 m-0 text-center"> ${check_in} - ${check_out}</p>
-                    <p class="fs p-0 m-0 text-center"> 2 adults & ${extra_bed} extra person</p></div>`
+                    <p class="fs p-0 m-0 text-center"> 2 adults & ${extra_bed} extra person</p>
+                  </div>`
                 }
             })
 
@@ -240,9 +242,9 @@ $('.more-details').on('click', function () {
 
     }
 
-    UpdateAvailabilityAfterAdded();
+    decreaseAvailabilityAfterAdded();
 
-    // console.log(booked_list)
+    console.log(booked_list)
 })
 
 $('.book-now').on('click', function () {
@@ -251,4 +253,37 @@ $('.book-now').on('click', function () {
     window.location.href = "payment.html"
 
 })
+
+// Remove added items
+
+
+    // Hide targeted room
+    // $(e.target).fadeOut(500);
+
+    // Increase availability
+    // let index = $(e.target).index();
+    // let end = index + 1;
+
+    // let arr = JSON.parse(booked_list.slice(index, end));
+    // console.log(arr)
+
+    // Clear related data
+    // booked_list.splice(index, 1);
+
+$(document).on('click','.delete', function(){
+
+    // Increase availability
+    // let index = $(this);
+    // let end = index + 1;
+    // console.log(index)
+
+ }) 
+
+ $('.delete').each(function(index){
+
+    $('.delete').eq(index).click(function(){
+        console.log(index)
+    })
+
+ })
 

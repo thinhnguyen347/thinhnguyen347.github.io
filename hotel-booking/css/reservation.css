@@ -78,12 +78,10 @@ li::marker {
 .btn-div {
   top: 25%;
   position: -webkit-sticky;
-  position: sticky;
-
 }
 
 .fs {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .added-item{
