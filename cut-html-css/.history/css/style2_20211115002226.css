@@ -66,10 +66,7 @@
     margin-top: 30px
   }
 
-  .more-info{
-    flex-direction: column;
-    background: linear-gradient(45deg, #fff 80%, #14b35b 20% );
-  }
+  
 }
 
 @media (max-width: 768px) {

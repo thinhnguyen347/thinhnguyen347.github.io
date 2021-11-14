@@ -657,10 +657,5 @@ footer {
 }
 
 .more-info > p:nth-child(1){
-  margin-right: 16px;
+  margin-right: 16px;;
 }
-
-.more-info > p{
-  line-height: 24px;
-}
-

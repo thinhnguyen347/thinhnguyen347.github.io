@@ -649,7 +649,7 @@ footer {
 .more-info{
   padding: 8px;
   display: flex;
-  background: linear-gradient(45deg, #fff 80%, #14b35b 20% );
+  background: linear-gradient(to right , #fff 80%, #14b35b 20% );
 }
 
 .more-info p > a{
@@ -657,10 +657,5 @@ footer {
 }
 
 .more-info > p:nth-child(1){
-  margin-right: 16px;
+  margin-right: 16px;;
 }
-
-.more-info > p{
-  line-height: 24px;
-}
-

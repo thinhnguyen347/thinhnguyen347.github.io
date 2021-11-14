@@ -67,7 +67,7 @@
   }
 
   .more-info{
-    flex-direction: column;
+    fl
     background: linear-gradient(45deg, #fff 80%, #14b35b 20% );
   }
 }
