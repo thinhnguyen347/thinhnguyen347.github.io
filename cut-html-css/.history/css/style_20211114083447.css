@@ -30,7 +30,6 @@ body {
 
 a {
   text-decoration: none !important;
-  color: white;
 }
 
 .fontwhite {
@@ -76,11 +75,7 @@ button {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
+  border-
 }
 
 button:hover{

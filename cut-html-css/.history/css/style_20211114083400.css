@@ -30,7 +30,6 @@ body {
 
 a {
   text-decoration: none !important;
-  color: white;
 }
 
 .fontwhite {
@@ -76,11 +75,6 @@ button {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
 }
 
 button:hover{
@@ -120,7 +114,12 @@ li.menu-item:hover .drop-down {
   font-size: 13px;
   border: none;
   padding: 10px;
-  width: 135px;
+  
+  10pxwidth: 135px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 .menu-panel-mobile {
